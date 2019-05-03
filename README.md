@@ -2,7 +2,7 @@
 
 ### Caracterización y comprensión de los procesos en la detección de exoplanetas a través de la validación de modelos de aprendizaje automáticos. 
 
-**Objetivo general:**
+**Objetivo general:**  
 Utilizando series de tiempo, en específico curvas de luz, proponemos automatizar la detección exoplanetas así como su caracterización y modelado a través de herramientas de aprendizaje automático.
 
 **Objetivos específicos:**
