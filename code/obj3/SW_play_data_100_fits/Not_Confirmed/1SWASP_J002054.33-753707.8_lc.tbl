@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J002054.33-753707.8'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569525
+\TSTOP = 124572982
+\JD_REF = 2453005.5
+\RA_OBJ = '5.226414'
+\DEC_OBJ = '-75.618842'
+\WASP_MAG = 14.34665
+\HJD_START = 2454447.276910
+\HJD_STOP = 2454447.316921
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Sat Sep 14, 16:50:16 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569525   2.073697e+00   2.834491e-01   2.073697e+00   2.834491e-01 221200712121841060      23232       9121     0 2454447.276910  1.420814e+01  1.484075e-01  1.420814e+01  1.484075e-01 
+  124571584   1.808333e+00   1.036151e-01   1.808333e+00   1.036151e-01 222200712121915250       1684      15853     0 2454447.300741  1.435680e+01  6.221145e-02  1.435680e+01  6.221145e-02 
+  124571648   1.613288e+00   8.581267e-02   1.613288e+00   8.581267e-02 221200712121916280      23180       9256     0 2454447.301481  1.448072e+01  5.775179e-02  1.448072e+01  5.775179e-02 
+  124572982   1.805947e+00   8.353757e-02   1.805947e+00   8.353757e-02 221200712121938430      23218       9329     0 2454447.316921  1.435824e+01  5.022302e-02  1.435824e+01  5.022302e-02 

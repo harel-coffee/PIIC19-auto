@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J001817.45-753252.7'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569524
+\TSTOP = 124572981
+\JD_REF = 2453005.5
+\RA_OBJ = '4.572714'
+\DEC_OBJ = '-75.547994'
+\WASP_MAG = 13.94512
+\HJD_START = 2454447.276898
+\HJD_STOP = 2454447.316910
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Tue Sep 17, 07:01:37 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569524   2.265774e+00   2.879112e-01   2.265774e+00   2.879112e-01 221200712121841060      23000       8444     0 2454447.276898  1.411196e+01  1.379646e-01  1.411196e+01  1.379646e-01 
+  124571646   2.770842e+00   8.773215e-02   2.770842e+00   8.773215e-02 221200712121916280      22949       8579     0 2454447.301458  1.389347e+01  3.437738e-02  1.389347e+01  3.437738e-02 
+  124572790   2.798951e+00   1.037200e-01   2.798951e+00   1.037200e-01 222200712121935320       1621      16579     0 2454447.314699  1.388251e+01  4.023398e-02  1.388251e+01  4.023398e-02 
+  124572981   2.732865e+00   8.562528e-02   2.732865e+00   8.562528e-02 221200712121938430      22988       8652     0 2454447.316910  1.390845e+01  3.401807e-02  1.390845e+01  3.401807e-02 

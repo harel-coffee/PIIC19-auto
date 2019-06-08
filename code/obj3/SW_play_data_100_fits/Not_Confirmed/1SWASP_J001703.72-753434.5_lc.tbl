@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J001703.72-753434.5'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569523
+\TSTOP = 124572981
+\JD_REF = 2453005.5
+\RA_OBJ = '4.265539'
+\DEC_OBJ = '-75.576272'
+\WASP_MAG = 15.2823
+\HJD_START = 2454447.276887
+\HJD_STOP = 2454447.316910
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Thu Sep 12, 20:48:26 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569523   7.676428e-01   2.884481e-01   7.676428e-01   2.884481e-01 221200712121841060      23142       8147     0 2454447.276887  1.528710e+01  4.079757e-01  1.528710e+01  4.079757e-01 
+  124571582   7.069913e-01   1.005301e-01   7.069913e-01   1.005301e-01 222200712121915250       1391      16786     0 2454447.300718  1.537646e+01  1.543859e-01  1.537646e+01  1.543859e-01 
+  124572790   8.336998e-01   9.847227e-02   8.336998e-01   9.847227e-02 222200712121935320       1375      16798     0 2454447.314699  1.519748e+01  1.282419e-01  1.519748e+01  1.282419e-01 
+  124572981   7.758380e-01   8.252988e-02   7.758380e-01   8.252988e-02 221200712121938430      23129       8355     0 2454447.316910  1.527557e+01  1.154958e-01  1.527557e+01  1.154958e-01 

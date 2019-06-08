@@ -1,0 +1,124 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                           = "HD 102195"
+\STAR_ID_DEFINED                   = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                  = "HIP 57370"
+\NSTED_DEFAULT_ID_DEFINED          = "NStED default name"
+\DATA_CATEGORY                     = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED             = "Category of time series data"
+\PUBLIC                            = "Y"
+\PUBLIC_DEFINED                    = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                  = "5"
+\NUMBER_OF_POINTS_DEFINED          = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME              = "HJD"
+\TIME_REFERENCE_FRAME_DEFINED      = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED        = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                      = "2453490.6339"
+\MINIMUM_DATE_DEFINED              = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                = "days"
+\MAXIMUM_DATE                      = "2453494.6381"
+\MAXIMUM_DATE_DEFINED              = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                = "days"
+\MINIMUM_VALUE                     = "0.3758"
+\MINIMUM_VALUE_DEFINED             = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS               = "mag"
+\MAXIMUM_VALUE                     = "0.3651"
+\MAXIMUM_VALUE_DEFINED             = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS               = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                      = "0.3723"
+\MEDIAN_VALUE_DEFINED              = "Median value of data points"
+\MEDIAN_VALUE_UNITS                = "mag"
+\MEAN_VALUE                        = "0.37062"
+\MEAN_VALUE_DEFINED                = "Mean value of data points"
+\MEAN_VALUE_UNITS                  = "mag"
+\MEDIAN_UNCERTAINTY                = ""
+\MEDIAN_UNCERTAINTY_DEFINED        = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS          = "mag"
+\MEDIAN_ABSOLUTE_DEVIATION         = "0.0035"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS   = "mag"
+\DISPERSION                        = "0.0051181"
+\DISPERSION_DEFINED                = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                  = "mag"
+\DISPERSION_MEAN                   = "0.0047610"
+\DISPERSION_MEAN_DEFINED           = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS             = "mag"
+\CHISQUARED                        = ""
+\CHISQUARED_DEFINED                = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                    = "0"
+\NUMBER_5_SIGMA_DEFINED            = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                  = "0"
+\FRACTION_5_SIGMA_DEFINED          = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                        = "Ge et al. 2006 (ApJ, 648, 683)"
+\REFERENCES_DEFINED                = "Literature or other references for data"
+\BIBCODES                          = "2006ApJ...648..683G"
+\BIBCODES_DEFINED                  = "ADS bibcodes for REFERENCES"
+\TELESCOPE                         = "T10 0.8m APT"
+\TELESCOPE_DEFINED                 = "Telescope used for data acquisition"
+\INSTRUMENT                        = "2-channel precision photometer"
+\INSTRUMENT_DEFINED                = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER           = "(b+y)/2 (Stromgren)"
+\TIME_SERIES_DATA_FILTER_DEFINED   = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                  = "Fairborn Observatory, Arizona"
+\OBSERVATORY_SITE_DEFINED          = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                             = "This light curve file contains 5 measurements and is plotted by the NStED visualizer as Differential_Magnitude (mag) vs. HJD (days)."
+\NOTE2                             = "This data set covers HJD between 2453490.6339 and 2453494.6381 days HJD, and the range of Differential_Magnitude is between 0.3758 and 0.3651 mag."
+\NOTE3                             = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE          = "Tue Jun  7 02:09:22 2011 UTC"
+\CONTACT_LINK                      = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                            = "HJD"
+\X_AXIS_UNITS                      = "days"
+\Y_AXIS                            = "Differential_Magnitude"
+\Y_AXIS_UNITS                      = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_HJD                        = "Heliocentric Julian date of observation"
+\COLUMN_DIFFERENTIAL_MAGNITUDE     = "Difference between measured magnitude and another (single or group of) reference magnitudes"
+\COLUMN_ACCEPTED                   = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|          HJD | Differential_Magnitude | Accepted |
+|       double |                 double |      int |
+|         days |                    mag |          |
+  2453490.6339                   0.3651          1  
+  2453490.6494                   0.3661          1  
+  2453493.6380                   0.3723          1  
+  2453493.6498                   0.3738          1  
+  2453494.6381                   0.3758          1  

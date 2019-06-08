@@ -1,0 +1,27 @@
+\OBJNAME = '1SWASP J001628.06-753020.3'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:35:32'
+\TSTART = 124569523
+\TSTOP = 124572790
+\JD_REF = 2453005.5
+\RA_OBJ = '4.116942'
+\DEC_OBJ = '-75.505647'
+\WASP_MAG = 10.90985
+\HJD_START = 2454447.276887
+\HJD_STOP = 2454447.314699
+\fixlen = T
+\NUMRECORDS = 5
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Thu Sep 19, 05:54:29 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569523   4.242802e+01   3.212274e-01   4.242802e+01   3.212274e-01 221200712121841060      22871       7972     0 2454447.276887  1.093087e+01  8.220261e-03  1.093087e+01  8.220261e-03 
+  124570450   4.323049e+01   1.950433e-01   4.323049e+01   1.950433e-01 222200712121856320       1552      17105     0 2454447.287616  1.091052e+01  4.898542e-03  1.091052e+01  4.898542e-03 
+  124571582   4.361401e+01   1.709829e-01   4.361401e+01   1.709829e-01 222200712121915250       1573      17052     0 2454447.300718  1.090094e+01  4.256499e-03  1.090094e+01  4.256499e-03 
+  124571646   4.239008e+01   1.512441e-01   4.239008e+01   1.512441e-01 221200712121916280      22821       8106     0 2454447.301458  1.093184e+01  3.873825e-03  1.093184e+01  3.873825e-03 
+  124572790   4.462448e+01   1.723522e-01   4.462448e+01   1.723522e-01 222200712121935320       1557      17064     0 2454447.314699  1.087607e+01  4.193432e-03  1.087607e+01  4.193432e-03 

@@ -1,0 +1,27 @@
+\OBJNAME = '1SWASP J001429.18-754208.9'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569521
+\TSTOP = 124572979
+\JD_REF = 2453005.5
+\RA_OBJ = '3.621617'
+\DEC_OBJ = '-75.702492'
+\WASP_MAG = 14.02705
+\HJD_START = 2454447.276863
+\HJD_STOP = 2454447.316887
+\fixlen = T
+\NUMRECORDS = 5
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Wed Sep 18, 23:24:24 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569521   2.024925e+00   2.899370e-01   2.024925e+00   2.899370e-01 221200712121841060      23710       7556     0 2454447.276863  1.423398e+01  1.554607e-01  1.423398e+01  1.554607e-01 
+  124571580   2.575080e+00   1.074250e-01   2.575080e+00   1.074250e-01 222200712121915250        639      17112     0 2454447.300694  1.397302e+01  4.529400e-02  1.397302e+01  4.529400e-02 
+  124571644   2.509857e+00   8.859400e-02   2.509857e+00   8.859400e-02 221200712121916280      23660       7691     0 2454447.301435  1.400088e+01  3.832491e-02  1.400088e+01  3.832491e-02 
+  124572788   2.622659e+00   1.047209e-01   2.622659e+00   1.047209e-01 222200712121935320        623      17123     0 2454447.314676  1.395315e+01  4.335282e-02  1.395315e+01  4.335282e-02 
+  124572979   2.517828e+00   8.696826e-02   2.517828e+00   8.696826e-02 221200712121938430      23698       7764     0 2454447.316887  1.399743e+01  3.750253e-02  1.399743e+01  3.750253e-02 

@@ -1,0 +1,27 @@
+\OBJNAME = '1SWASP J000440.20-752706.8'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569517
+\TSTOP = 124572975
+\JD_REF = 2453005.5
+\RA_OBJ = '1.167503'
+\DEC_OBJ = '-75.451894'
+\WASP_MAG = 14.39395
+\HJD_START = 2454447.276817
+\HJD_STOP = 2454447.316840
+\fixlen = T
+\NUMRECORDS = 5
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Fri Sep 13, 06:16:49 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569517   1.552579e+00   3.028295e-01   1.552579e+00   3.028295e-01 221200712121841060      23011       4986     0 2454447.276817  1.452237e+01  2.117729e-01  1.452237e+01  2.117729e-01 
+  124570444   1.858562e+00   1.486087e-01   1.858562e+00   1.486087e-01 222200712121856320        273      19806     0 2454447.287546  1.432706e+01  8.681461e-02  1.432706e+01  8.681461e-02 
+  124571576   1.844117e+00   1.089157e-01   1.844117e+00   1.089157e-01 222200712121915250        292      19751     0 2454447.300648  1.433553e+01  6.412506e-02  1.433553e+01  6.412506e-02 
+  124571640   1.776985e+00   8.911595e-02   1.776985e+00   8.911595e-02 221200712121916280      22962       5120     0 2454447.301389  1.437579e+01  5.444996e-02  1.437579e+01  5.444996e-02 
+  124572975   1.705341e+00   8.837752e-02   1.705341e+00   8.837752e-02 221200712121938430      23002       5194     0 2454447.316840  1.442047e+01  5.626733e-02  1.442047e+01  5.626733e-02 

@@ -1,0 +1,204 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                                   = "Gl 581"
+\STAR_ID_DEFINED                           = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                          = "HIP 74995"
+\NSTED_DEFAULT_ID_DEFINED                  = "NStED default name"
+\DATA_CATEGORY                             = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED                     = "Category of time series data"
+\PUBLIC                                    = "Y"
+\PUBLIC_DEFINED                            = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                          = "82"
+\NUMBER_OF_POINTS_DEFINED                  = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME                      = "HJD"
+\TIME_REFERENCE_FRAME_DEFINED              = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                        = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED                = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                              = "2453865.604493"
+\MINIMUM_DATE_DEFINED                      = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                        = "days"
+\MAXIMUM_DATE                              = "2453865.848360"
+\MAXIMUM_DATE_DEFINED                      = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                        = "days"
+\MINIMUM_VALUE                             = "0.0021096"
+\MINIMUM_VALUE_DEFINED                     = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS                       = "mag"
+\MAXIMUM_VALUE                             = "-0.0029698"
+\MAXIMUM_VALUE_DEFINED                     = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS                       = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                              = "0.0000257"
+\MEDIAN_VALUE_DEFINED                      = "Median value of data points"
+\MEDIAN_VALUE_UNITS                        = "mag"
+\MEAN_VALUE                                = "0.0000257220"
+\MEAN_VALUE_DEFINED                        = "Mean value of data points"
+\MEAN_VALUE_UNITS                          = "mag"
+\MEDIAN_UNCERTAINTY                        = "4E-7"
+\MEDIAN_UNCERTAINTY_DEFINED                = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS                  = "mag"
+\MEDIAN_ABSOLUTE_DEVIATION                 = "0.00075415"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED         = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS           = "mag"
+\DISPERSION                                = "0.00105566"
+\DISPERSION_DEFINED                        = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                          = "mag"
+\DISPERSION_MEAN                           = "0.00105566"
+\DISPERSION_MEAN_DEFINED                   = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS                     = "mag"
+\CHISQUARED                                = "5.8E+6"
+\CHISQUARED_DEFINED                        = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                            = "0"
+\NUMBER_5_SIGMA_DEFINED                    = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                          = "0"
+\FRACTION_5_SIGMA_DEFINED                  = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                                = "Lopez-Morales et al. 2006 (PASP, 118, 1506)"
+\REFERENCES_DEFINED                        = "Literature or other references for data"
+\BIBCODES                                  = "2006PASP..118.1506L"
+\BIBCODES_DEFINED                          = "ADS bibcodes for REFERENCES"
+\TELESCOPE                                 = "1.0m Henrietta Swope Telescope"
+\TELESCOPE_DEFINED                         = "Telescope used for data acquisition"
+\INSTRUMENT                                = "CCD camera"
+\INSTRUMENT_DEFINED                        = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER                   = "B (Johnson)"
+\TIME_SERIES_DATA_FILTER_DEFINED           = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                          = "Las Campanas Observatory, Chile"
+\OBSERVATORY_SITE_DEFINED                  = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                                     = "This light curve file contains 82 measurements and is plotted by the NStED visualizer as Differential_Magnitude (mag) vs. HJD (days)."
+\NOTE2                                     = "This data set covers HJD between 2453865.604493 and 2453865.848360 days HJD, and the range of Differential_Magnitude is between 0.0021096 and -0.0029698 mag."
+\NOTE3                                     = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE                  = "Tue Jun  7 02:37:59 2011 UTC"
+\CONTACT_LINK                              = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                                    = "HJD"
+\X_AXIS_UNITS                              = "days"
+\Y_AXIS                                    = "Differential_Magnitude"
+\Y_AXIS_UNITS                              = "mag"
+\Y_AXIS_UNCERTAINTY                        = "Differential_Magnitude_Uncertainty"
+\Y_AXIS_UNCERTAINTY_UNITS                  = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_HJD                                = "Heliocentric Julian date of observation"
+\COLUMN_DIFFERENTIAL_MAGNITUDE             = "Difference between measured magnitude and another (single or group of) reference magnitudes"
+\COLUMN_DIFFERENTIAL_MAGNITUDE_UNCERTAINTY = "Uncertainty in DIFFERENTIAL_MAGNITUDE"
+\COLUMN_ACCEPTED                           = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|            HJD | Differential_Magnitude | Differential_Magnitude_Uncertainty | Accepted |
+|         double |                 double |                             double |      int |
+|           days |                    mag |                                mag |          |
+  2453865.604493               -0.0025374                            0.0000005          1  
+  2453865.607757                0.0007653                            0.0000005          1  
+  2453865.611091                0.0005909                            0.0000005          1  
+  2453865.614100                0.0007751                            0.0000005          1  
+  2453865.616947               -0.0005518                            0.0000005          1  
+  2453865.620662               -0.0002550                            0.0000005          1  
+  2453865.623996                0.0000830                            0.0000005          1  
+  2453865.627051               -0.0002241                            0.0000005          1  
+  2453865.629899               -0.0003191                            0.0000004          1  
+  2453865.632746                0.0017821                            0.0000004          1  
+  2453865.635720                0.0010099                            0.0000004          1  
+  2453865.638510               -0.0001608                            0.0000004          1  
+  2453865.642051                0.0002750                            0.0000004          1  
+  2453865.645500                0.0012167                            0.0000004          1  
+  2453865.648706               -0.0000779                            0.0000004          1  
+  2453865.651531                0.0013864                            0.0000004          1  
+  2453865.654331               -0.0005889                            0.0000004          1  
+  2453865.657341               -0.0000149                            0.0000004          1  
+  2453865.660894                0.0010791                            0.0000004          1  
+  2453865.663695               -0.0012032                            0.0000004          1  
+  2453865.666484               -0.0010626                            0.0000004          1  
+  2453865.669459                0.0003577                            0.0000004          1  
+  2453865.672260               -0.0009072                            0.0000004          1  
+  2453865.675836                0.0000825                            0.0000004          1  
+  2453865.679366               -0.0025586                            0.0000004          1  
+  2453865.682711                0.0004249                            0.0000004          1  
+  2453865.685697                0.0002268                            0.0000004          1  
+  2453865.688498               -0.0002313                            0.0000004          1  
+  2453865.691299               -0.0000708                            0.0000004          1  
+  2453865.694308               -0.0012047                            0.0000004          1  
+  2453865.697109                0.0003979                            0.0000004          1  
+  2453865.699899                0.0000557                            0.0000004          1  
+  2453865.703487                0.0007846                            0.0000004          1  
+  2453865.706288               -0.0018038                            0.0000004          1  
+  2453865.709088                0.0008746                            0.0000004          1  
+  2453865.712364               -0.0006483                            0.0000004          1  
+  2453865.715466                0.0010904                            0.0000004          1  
+  2453865.718255                0.0008383                            0.0000004          1  
+  2453865.721126               -0.0015511                            0.0000004          1  
+  2453865.723926               -0.0009544                            0.0000004          1  
+  2453865.726716               -0.0008158                            0.0000004          1  
+  2453865.729702                0.0014832                            0.0000004          1  
+  2453865.732491                0.0009651                            0.0000004          1  
+  2453865.735292               -0.0005532                            0.0000004          1  
+  2453865.738209               -0.0000770                            0.0000004          1  
+  2453865.740998                0.0006770                            0.0000004          1  
+  2453865.744031                0.0001145                            0.0000004          1  
+  2453865.746832                0.0009854                            0.0000004          1  
+  2453865.749621               -0.0008654                            0.0000004          1  
+  2453865.752538               -0.0005548                            0.0000004          1  
+  2453865.755339                0.0012155                            0.0000004          1  
+  2453865.758139                0.0014653                            0.0000004          1  
+  2453865.761045               -0.0003603                            0.0000004          1  
+  2453865.763846                0.0007145                            0.0000004          1  
+  2453865.768602               -0.0001955                            0.0000004          1  
+  2453865.771924               -0.0005958                            0.0000004          1  
+  2453865.774714                0.0013190                            0.0000004          1  
+  2453865.778475               -0.0017445                            0.0000004          1  
+  2453865.781751                0.0002651                            0.0000004          1  
+  2453865.784968               -0.0000834                            0.0000004          1  
+  2453865.787769                0.0000230                            0.0000004          1  
+  2453865.790663               -0.0002771                            0.0000004          1  
+  2453865.793464               -0.0010976                            0.0000005          1  
+  2453865.796438                0.0006366                            0.0000005          1  
+  2453865.799239                0.0016391                            0.0000005          1  
+  2453865.802028                0.0005325                            0.0000005          1  
+  2453865.805281               -0.0003039                            0.0000005          1  
+  2453865.808082                0.0003660                            0.0000005          1  
+  2453865.810871                0.0017963                            0.0000005          1  
+  2453865.813880                0.0000284                            0.0000005          1  
+  2453865.816670               -0.0010772                            0.0000005          1  
+  2453865.819471               -0.0002404                            0.0000005          1  
+  2453865.822549               -0.0008001                            0.0000005          1  
+  2453865.825350               -0.0018240                            0.0000005          1  
+  2453865.828267               -0.0009155                            0.0000005          1  
+  2453865.831068               -0.0029698                            0.0000005          1  
+  2453865.834181                0.0010327                            0.0000005          1  
+  2453865.836971               -0.0008114                            0.0000005          1  
+  2453865.839876                0.0017596                            0.0000005          1  
+  2453865.842665                0.0008170                            0.0000005          1  
+  2453865.845466                0.0011555                            0.0000005          1  
+  2453865.848360                0.0021096                            0.0000005          1  

@@ -1,0 +1,28 @@
+\OBJNAME = '1SWASP J000536.20-751053.6'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569518
+\TSTOP = 124572976
+\JD_REF = 2453005.5
+\RA_OBJ = '1.400844'
+\DEC_OBJ = '-75.181561'
+\WASP_MAG = 10.64722
+\HJD_START = 2454447.276829
+\HJD_STOP = 2454447.316852
+\fixlen = T
+\NUMRECORDS = 6
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Wed Sep 18, 19:24:11 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569518   5.472239e+01   3.477182e-01   5.472239e+01   3.477182e-01 221200712121841060      21898       5068     0 2454447.276829  1.065459e+01  6.899034e-03  1.065459e+01  6.899034e-03 
+  124570445   5.429589e+01   2.119952e-01   5.429589e+01   2.119952e-01 222200712121856320       1331      20158     0 2454447.287558  1.066308e+01  4.239211e-03  1.066308e+01  4.239211e-03 
+  124571577   5.571716e+01   1.896683e-01   5.571716e+01   1.896683e-01 222200712121915250       1350      20104     0 2454447.300660  1.063503e+01  3.695996e-03  1.063503e+01  3.695996e-03 
+  124571641   5.484162e+01   1.748253e-01   5.484162e+01   1.748253e-01 221200712121916280      21849       5202     0 2454447.301400  1.065222e+01  3.461145e-03  1.065222e+01  3.461145e-03 
+  124572785   5.627979e+01   1.901323e-01   5.627979e+01   1.901323e-01 222200712121935320       1331      20115     0 2454447.314641  1.062412e+01  3.667999e-03  1.062412e+01  3.667999e-03 
+  124572976   5.471388e+01   1.746648e-01   5.471388e+01   1.746648e-01 221200712121938430      21889       5275     0 2454447.316852  1.065476e+01  3.466041e-03  1.065476e+01  3.466041e-03 

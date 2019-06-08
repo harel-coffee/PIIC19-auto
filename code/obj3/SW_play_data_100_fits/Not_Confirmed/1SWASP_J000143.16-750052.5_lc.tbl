@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000143.16-750052.5'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569517
+\TSTOP = 124572975
+\JD_REF = 2453005.5
+\RA_OBJ = '0.42985 '
+\DEC_OBJ = '-75.014606'
+\WASP_MAG = 13.53941
+\HJD_START = 2454447.276817
+\HJD_STOP = 2454447.316840
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Wed Sep 18, 22:50:42 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569517   3.549142e+00   3.073753e-01   3.549142e+00   3.073753e-01 221200712121841060      21381       3973     0 2454447.276817  1.362469e+01  9.403110e-02  1.362469e+01  9.403110e-02 
+  124571576   4.003493e+00   1.125963e-01   4.003493e+00   1.125963e-01 222200712121915250       1404      21314     0 2454447.300648  1.349390e+01  3.053590e-02  1.349390e+01  3.053590e-02 
+  124572784   4.115110e+00   1.119537e-01   4.115110e+00   1.119537e-01 222200712121935320       1383      21325     0 2454447.314630  1.346405e+01  2.953812e-02  1.346405e+01  2.953812e-02 
+  124572975   3.688929e+00   9.274176e-02   3.688929e+00   9.274176e-02 221200712121938430      21373       4179     0 2454447.316840  1.358275e+01  2.729612e-02  1.358275e+01  2.729612e-02 

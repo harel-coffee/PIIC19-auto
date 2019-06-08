@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000435.98-752302.9'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:35:32'
+\TSTART = 124569517
+\TSTOP = 124572784
+\JD_REF = 2453005.5
+\RA_OBJ = '1.149944'
+\DEC_OBJ = '-75.38415'
+\WASP_MAG = 15.63053
+\HJD_START = 2454447.276817
+\HJD_STOP = 2454447.314630
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Tue Sep 17, 05:21:10 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569517   4.828801e-01   3.034074e-01   4.828801e-01   3.034074e-01 221200712121841060      22743       4929     0 2454447.276817  1.579040e+01  6.822014e-01  1.579040e+01  6.822014e-01 
+  124571576   5.409110e-01   1.057115e-01   5.409110e-01   1.057115e-01 222200712121915250        517      19907     0 2454447.300648  1.566719e+01  2.121888e-01  1.566719e+01  2.121888e-01 
+  124571640   4.981928e-01   8.738123e-02   4.981928e-01   8.738123e-02 221200712121916280      22695       5063     0 2454447.301389  1.575651e+01  1.904349e-01  1.575651e+01  1.904349e-01 
+  124572784   7.159534e-01   1.025898e-01   7.159534e-01   1.025898e-01 222200712121935320        498      19917     0 2454447.314630  1.536279e+01  1.555769e-01  1.536279e+01  1.555769e-01 

@@ -1,0 +1,100 @@
+#!/bin/sh
+
+# If wget is not installed on your system,
+# please refer to http://irsa.ipac.caltech.edu/docs/batch_download_help.html.
+#
+# Windows users: the name of wget may have version number (ie: wget-1.10.2.exe)
+# Please rename it to wget in order to successfully run this script
+# Also the location of wget executable may need to be added to the PATH environment.
+#
+wget -O 'KELT_N02_lc_000001_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/28/KELT_N02_lc_000001_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000001_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000001_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_007676_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/28/KELT_N02_lc_007676_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_007676_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_007676_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000002_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/28/KELT_N02_lc_000002_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000002_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000002_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_008346_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/28/KELT_N02_lc_008346_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_008346_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_008346_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000003_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000003_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000003_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000003_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_014156_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_014156_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_014156_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_014156_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000004_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000004_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000004_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000004_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_020975_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_020975_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_020975_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_020975_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000005_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000005_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000005_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000005_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_028453_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_028453_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_028453_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_028453_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000006_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000006_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000006_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000006_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_006932_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_006932_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_006932_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_006932_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000007_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000007_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000007_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000007_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_005295_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_005295_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_005295_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_005295_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000008_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000008_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000008_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_000008_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_012061_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_012061_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_012061_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/73/KELT_N02_lc_012061_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000009_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000009_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000009_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000009_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_013389_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_013389_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_013389_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_013389_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000010_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000010_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000010_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000010_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_005688_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_005688_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_005688_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_005688_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000011_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000011_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000011_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000011_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_026602_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_026602_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_026602_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_026602_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000012_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000012_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000012_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000012_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_020425_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_020425_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_020425_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_020425_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000013_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000013_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000013_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000013_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_003795_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_003795_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_003795_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_003795_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000014_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000014_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000014_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000014_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_009468_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_009468_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_009468_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_009468_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000015_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000015_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000015_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000015_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_010778_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_010778_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_010778_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_010778_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000016_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000016_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000016_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000016_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_008353_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_008353_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_008353_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_008353_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000017_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000017_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000017_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000017_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_009163_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_009163_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_009163_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_009163_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000018_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000018_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000018_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000018_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_018276_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_018276_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_018276_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_018276_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000019_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000019_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000019_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000019_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_023937_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_023937_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_023937_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_023937_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000020_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000020_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000020_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000020_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_017291_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_017291_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_017291_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_017291_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000021_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000021_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000021_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000021_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_006937_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_006937_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_006937_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_006937_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000022_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000022_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000022_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000022_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_005054_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_005054_V01_west_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_005054_V01_west_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_005054_V01_west_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000023_V01_east_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_000023_V01_east_raw_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_000023_V01_east_tfa_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/74/KELT_N02_lc_000023_V01_east_tfa_lc.tbl' -a search_351942936.log
+wget -O 'KELT_N02_lc_006234_V01_west_raw_lc.tbl' 'http://exoplanetarchive.ipac.caltech.edu:80/data/ETSS//KELT2/005/055/29/KELT_N02_lc_006234_V01_west_raw_lc.tbl' -a search_351942936.log

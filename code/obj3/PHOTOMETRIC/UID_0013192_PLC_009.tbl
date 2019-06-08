@@ -1,0 +1,226 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                              = "HD 17156"
+\STAR_ID_DEFINED                      = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                     = "HIP 13192"
+\NSTED_DEFAULT_ID_DEFINED             = "NStED default name"
+\DATA_CATEGORY                        = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED                = "Category of time series data"
+\TRANSIT_TYPE                         = "Primary"
+\TRANSIT_TYPE_DEFINED                 = "Type of transit (Primary, Secondary, Both)"
+\PUBLIC                               = "Y"
+\PUBLIC_DEFINED                       = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                     = "92"
+\NUMBER_OF_POINTS_DEFINED             = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME                 = "BJD"
+\TIME_REFERENCE_FRAME_DEFINED         = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                   = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED           = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                         = "2454353.444645"
+\MINIMUM_DATE_DEFINED                 = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                   = "days"
+\MAXIMUM_DATE                         = "2454353.638043"
+\MAXIMUM_DATE_DEFINED                 = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                   = "days"
+\MINIMUM_VALUE                        = "0.971483"
+\MINIMUM_VALUE_DEFINED                = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS                  = ""
+\MAXIMUM_VALUE                        = "1.015554"
+\MAXIMUM_VALUE_DEFINED                = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS                  = ""
+\PERIOD                               = "21.21663"
+\PERIOD_DEFINED                       = "Published orbital period"
+\PERIOD_UNITS                         = "days"
+\PERIOD_UNCERTAINTY                   = "0.00045"
+\PERIOD_UNCERTAINTY_DEFINED           = "Published orbital period uncertainty"
+\PERIOD_UNCERTAINTY_UNITS             = "days"
+\TRANSIT_MIDPOINT                     = "2454756.73134"
+\TRANSIT_MIDPOINT_DEFINED             = "Published value of the transit center (midpoint) used to phase data"
+\TRANSIT_MIDPOINT_UNITS               = "days"
+\TRANSIT_MIDPOINT_UNCERTAINTY         = "0.00205"
+\TRANSIT_MIDPOINT_UNCERTAINTY_DEFINED = "Uncertainty in TRANSIT_MIDPOINT"
+\TRANSIT_MIDPOINT_UNCERTAINTY_UNITS   = "days"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                         = "0.9973215"
+\MEDIAN_VALUE_DEFINED                 = "Median value of data points"
+\MEDIAN_VALUE_UNITS                   = ""
+\MEAN_VALUE                           = "0.9966876"
+\MEAN_VALUE_DEFINED                   = "Mean value of data points"
+\MEAN_VALUE_UNITS                     = ""
+\MEDIAN_UNCERTAINTY                   = ""
+\MEDIAN_UNCERTAINTY_DEFINED           = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS             = ""
+\MEDIAN_ABSOLUTE_DEVIATION            = "0.0061880"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED    = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS      = ""
+\DISPERSION                           = "0.009266932"
+\DISPERSION_DEFINED                   = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                     = ""
+\DISPERSION_MEAN                      = "0.009244987"
+\DISPERSION_MEAN_DEFINED              = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS                = ""
+\CHISQUARED                           = ""
+\CHISQUARED_DEFINED                   = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                       = "0"
+\NUMBER_5_SIGMA_DEFINED               = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                     = "0"
+\FRACTION_5_SIGMA_DEFINED             = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                           = "Barbieri et al. 2009 (A&A, 503, 601)"
+\REFERENCES_DEFINED                   = "Literature or other references for data"
+\BIBCODES                             = "2009A&A...503..601B"
+\BIBCODES_DEFINED                     = "ADS bibcodes for REFERENCES"
+\TELESCOPE                            = "0.18m Maksutov-Newton telescope"
+\TELESCOPE_DEFINED                    = "Telescope used for data acquisition"
+\INSTRUMENT                           = "CCD camera"
+\INSTRUMENT_DEFINED                   = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER              = "R (Generic)"
+\TIME_SERIES_DATA_FILTER_DEFINED      = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                     = "La Spezia, Italy"
+\OBSERVATORY_SITE_DEFINED             = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                                = "This light curve file contains 92 measurements and is plotted by the NStED visualizer as Normalized_Flux () vs. BJD (days)."
+\NOTE2                                = "This data set covers BJD between 2454353.444645 and 2454353.638043 days BJD, and the range of Normalized_Flux is between 0.971483 and 1.015554 ."
+\NOTE3                                = "The time at the center of the transit was quoted by the authors to be 2454756.73134 days BJD, with best fit orbital period of 21.21663 days."
+\NOTE4                                = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE             = "Tue Jun  7 01:23:40 2011 UTC"
+\CONTACT_LINK                         = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                               = "BJD"
+\X_AXIS_UNITS                         = "days"
+\Y_AXIS                               = "Normalized_Flux"
+\Y_AXIS_UNITS                         = ""
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_BJD                           = "Barycentric Julian date of observation"
+\COLUMN_NORMALIZED_FLUX               = "Flux relative to baseline flux (F-F_0)/F_0"
+\COLUMN_ACCEPTED                      = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|            BJD | Normalized_Flux | Accepted |
+|         double |          double |      int |
+|           days |                 |          |
+  2454353.444645          1.000890          1  
+  2454353.447076          1.009046          1  
+  2454353.449159          0.995418          1  
+  2454353.451243          0.996310          1  
+  2454353.453326          1.008329          1  
+  2454353.455411          1.008296          1  
+  2454353.457494          1.004818          1  
+  2454353.459577          1.013865          1  
+  2454353.461661          1.006933          1  
+  2454353.463744          1.007235          1  
+  2454353.465828          0.997614          1  
+  2454353.467911          0.997298          1  
+  2454353.469994          0.999099          1  
+  2454353.472079          1.002152          1  
+  2454353.474162          0.995344          1  
+  2454353.476246          1.000054          1  
+  2454353.478329          1.007338          1  
+  2454353.480760          0.984014          1  
+  2454353.483190          0.985404          1  
+  2454353.485274          1.008454          1  
+  2454353.487358          0.984968          1  
+  2454353.489441          1.006336          1  
+  2454353.491525          1.000204          1  
+  2454353.493608          1.001873          1  
+  2454353.495692          0.992434          1  
+  2454353.497775          0.992657          1  
+  2454353.499859          0.997848          1  
+  2454353.501942          1.008936          1  
+  2454353.504026          0.997375          1  
+  2454353.506110          0.996327          1  
+  2454353.508193          0.999228          1  
+  2454353.510277          0.999696          1  
+  2454353.512360          1.006072          1  
+  2454353.514443          1.011170          1  
+  2454353.516527          0.997284          1  
+  2454353.518960          1.000364          1  
+  2454353.521389          0.995714          1  
+  2454353.523457          0.999425          1  
+  2454353.525533          1.011363          1  
+  2454353.527616          0.995896          1  
+  2454353.529699          0.999350          1  
+  2454353.531783          0.990302          1  
+  2454353.533866          0.992141          1  
+  2454353.535950          1.001616          1  
+  2454353.538034          0.989437          1  
+  2454353.540117          1.007835          1  
+  2454353.542201          0.996586          1  
+  2454353.544284          1.004465          1  
+  2454353.546368          0.995871          1  
+  2454353.548451          0.999292          1  
+  2454353.550535          0.997345          1  
+  2454353.552618          1.009416          1  
+  2454353.554702          0.998414          1  
+  2454353.557133          0.992983          1  
+  2454353.559564          1.012147          1  
+  2454353.561647          0.991241          1  
+  2454353.563730          0.993674          1  
+  2454353.565814          0.988385          1  
+  2454353.567897          0.997471          1  
+  2454353.569981          0.998776          1  
+  2454353.572065          0.989715          1  
+  2454353.574148          0.998604          1  
+  2454353.576232          0.994228          1  
+  2454353.578315          0.984251          1  
+  2454353.580399          0.992824          1  
+  2454353.582482          0.994243          1  
+  2454353.584565          1.006871          1  
+  2454353.586649          0.998546          1  
+  2454353.588733          0.978487          1  
+  2454353.590817          0.971483          1  
+  2454353.592900          0.997795          1  
+  2454353.595331          0.994009          1  
+  2454353.597761          0.985315          1  
+  2454353.599845          0.981852          1  
+  2454353.601928          0.984340          1  
+  2454353.604012          0.995528          1  
+  2454353.606096          0.982217          1  
+  2454353.608179          1.009101          1  
+  2454353.610263          0.989738          1  
+  2454353.612346          0.985012          1  
+  2454353.614430          0.994103          1  
+  2454353.616513          0.988035          1  
+  2454353.618596          0.983100          1  
+  2454353.620680          1.015554          1  
+  2454353.622764          0.974455          1  
+  2454353.624848          0.983613          1  
+  2454353.626931          1.002488          1  
+  2454353.629014          0.987509          1  
+  2454353.631098          0.981266          1  
+  2454353.633528          0.989412          1  
+  2454353.635959          0.991026          1  
+  2454353.638043          1.010711          1  

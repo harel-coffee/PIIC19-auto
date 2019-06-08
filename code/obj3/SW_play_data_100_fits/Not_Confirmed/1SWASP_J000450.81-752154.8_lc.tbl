@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000450.81-752154.8'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569518
+\TSTOP = 124572975
+\JD_REF = 2453005.5
+\RA_OBJ = '1.211714'
+\DEC_OBJ = '-75.365228'
+\WASP_MAG = 10.3698
+\HJD_START = 2454447.276829
+\HJD_STOP = 2454447.316840
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Sat Sep 14, 17:43:52 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569518   6.925886e+01   3.440199e-01   6.925886e+01   3.440199e-01 221200712121841060      22659       4980     0 2454447.276829  1.039881e+01  5.393045e-03  1.039881e+01  5.393045e-03 
+  124571640   6.941869e+01   1.865604e-01   6.941869e+01   1.865604e-01 221200712121916280      22610       5115     0 2454447.301389  1.039631e+01  2.917890e-03  1.039631e+01  2.917890e-03 
+  124572784   7.533665e+01   2.180454e-01   7.533665e+01   2.180454e-01 222200712121935320        596      19903     0 2454447.314630  1.030748e+01  3.142436e-03  1.030748e+01  3.142436e-03 
+  124572975   7.052369e+01   1.884138e-01   7.052369e+01   1.884138e-01 221200712121938430      22650       5188     0 2454447.316840  1.037916e+01  2.900705e-03  1.037916e+01  2.900705e-03 
