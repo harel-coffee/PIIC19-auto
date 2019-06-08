@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000312.69-752322.7'
+\OBSSTART = '2007-12-12T18:56:32'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124570444
+\TSTOP = 124572975
+\JD_REF = 2453005.5
+\RA_OBJ = '0.8029  '
+\DEC_OBJ = '-75.389656'
+\WASP_MAG = 13.36409
+\HJD_START = 2454447.287546
+\HJD_STOP = 2454447.316840
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Thu Sep 12, 23:41:15 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124570444   4.528295e+00   1.564804e-01   4.528295e+00   1.564804e-01 222200712121856320        296      20252     0 2454447.287546  1.336016e+01  3.751898e-02  1.336016e+01  3.751898e-02 
+  124571576   4.705299e+00   1.155443e-01   4.705299e+00   1.155443e-01 222200712121915250        316      20198     0 2454447.300648  1.331853e+01  2.666165e-02  1.331853e+01  2.666165e-02 
+  124572784   4.637681e+00   1.131671e-01   4.637681e+00   1.131671e-01 222200712121935320        296      20208     0 2454447.314630  1.333425e+01  2.649385e-02  1.333425e+01  2.649385e-02 
+  124572975   4.176586e+00   9.424290e-02   4.176586e+00   9.424290e-02 221200712121938430      22808       4791     0 2454447.316840  1.344795e+01  2.449926e-02  1.344795e+01  2.449926e-02 

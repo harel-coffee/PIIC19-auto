@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000519.39-752227.0'
+\OBSSTART = '2007-12-12T19:15:25'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124571577
+\TSTOP = 124572976
+\JD_REF = 2453005.5
+\RA_OBJ = '1.3308  '
+\DEC_OBJ = '-75.374167'
+\WASP_MAG = 17.18444
+\HJD_START = 2454447.300660
+\HJD_STOP = 2454447.316852
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Tue Sep 17, 15:13:28 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124571577   1.071335e-01   1.046149e-01   1.071335e-01   1.046149e-01 222200712121915250        646      19770     0 2454447.300660  1.742519e+01  1.060215e+00  1.742519e+01  1.060215e+00 
+  124571641   8.530258e-02   8.667074e-02   8.530258e-02   8.667074e-02 221200712121916280      22628       5240     0 2454447.301400  1.767259e+01  1.103154e+00  1.767259e+01  1.103154e+00 
+  124572785   1.373829e-01   1.017547e-01   1.373829e-01   1.017547e-01 222200712121935320        627      19780     0 2454447.314641  1.715517e+01  8.041697e-01  1.715517e+01  8.041697e-01 
+  124572976   2.050950e-01   8.402669e-02   2.050950e-01   8.402669e-02 221200712121938430      22668       5313     0 2454447.316852  1.672011e+01  4.448238e-01  1.672011e+01  4.448238e-01 

@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J001529.40-753314.1'
+\OBSSTART = '2007-12-12T18:56:32'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124570449
+\TSTOP = 124572980
+\JD_REF = 2453005.5
+\RA_OBJ = '3.872503'
+\DEC_OBJ = '-75.553931'
+\WASP_MAG = 12.61621
+\HJD_START = 2454447.287604
+\HJD_STOP = 2454447.316898
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Wed Sep 11, 16:06:31 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124570449   8.937686e+00   1.539850e-01   8.937686e+00   1.539850e-01 222200712121856320       1264      17230     0 2454447.287604  1.262194e+01  1.870592e-02  1.262194e+01  1.870592e-02 
+  124571581   9.289728e+00   1.202528e-01   9.289728e+00   1.202528e-01 222200712121915250       1285      17176     0 2454447.300706  1.257999e+01  1.405458e-02  1.257999e+01  1.405458e-02 
+  124572789   9.268939e+00   1.185618e-01   9.268939e+00   1.185618e-01 222200712121935320       1269      17188     0 2454447.314687  1.258243e+01  1.388802e-02  1.258243e+01  1.388802e-02 
+  124572980   8.443336e+00   9.837002e-02   8.443336e+00   9.837002e-02 221200712121938430      23077       7953     0 2454447.316898  1.268371e+01  1.264953e-02  1.268371e+01  1.264953e-02 

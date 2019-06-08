@@ -1,0 +1,456 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                           = "HD 149026"
+\STAR_ID_DEFINED                   = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                  = "HIP 80838"
+\NSTED_DEFAULT_ID_DEFINED          = "NStED default name"
+\DATA_CATEGORY                     = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED             = "Category of time series data"
+\TRANSIT_TYPE                      = "Primary"
+\TRANSIT_TYPE_DEFINED              = "Type of transit (Primary, Secondary, Both)"
+\PUBLIC                            = "Y"
+\PUBLIC_DEFINED                    = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                  = "325"
+\NUMBER_OF_POINTS_DEFINED          = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME              = "HJD"
+\TIME_REFERENCE_FRAME_DEFINED      = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED        = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                      = "2453506.6913"
+\MINIMUM_DATE_DEFINED              = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                = "days"
+\MAXIMUM_DATE                      = "2453527.9556"
+\MAXIMUM_DATE_DEFINED              = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                = "days"
+\MINIMUM_VALUE                     = "1.6105"
+\MINIMUM_VALUE_DEFINED             = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS               = "mag"
+\MAXIMUM_VALUE                     = "1.5972"
+\MAXIMUM_VALUE_DEFINED             = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS               = "mag"
+\PERIOD                            = "2.8766"
+\PERIOD_DEFINED                    = "Published orbital period"
+\PERIOD_UNITS                      = "days"
+\PERIOD_UNCERTAINTY                = "0.001"
+\PERIOD_UNCERTAINTY_DEFINED        = "Published orbital period uncertainty"
+\PERIOD_UNCERTAINTY_UNITS          = "days"
+\TRANSIT_MIDPOINT                  = "2453527.864"
+\TRANSIT_MIDPOINT_DEFINED          = "Published value of the transit center (midpoint) used to phase data"
+\TRANSIT_MIDPOINT_UNITS            = "days"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                      = "1.6038"
+\MEDIAN_VALUE_DEFINED              = "Median value of data points"
+\MEDIAN_VALUE_UNITS                = "mag"
+\MEAN_VALUE                        = "1.60400"
+\MEAN_VALUE_DEFINED                = "Mean value of data points"
+\MEAN_VALUE_UNITS                  = "mag"
+\MEDIAN_UNCERTAINTY                = ""
+\MEDIAN_UNCERTAINTY_DEFINED        = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS          = "mag"
+\MEDIAN_ABSOLUTE_DEVIATION         = "0.0019"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS   = "mag"
+\DISPERSION                        = "0.00260537"
+\DISPERSION_DEFINED                = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                  = "mag"
+\DISPERSION_MEAN                   = "0.00259791"
+\DISPERSION_MEAN_DEFINED           = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS             = "mag"
+\CHISQUARED                        = ""
+\CHISQUARED_DEFINED                = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                    = "0"
+\NUMBER_5_SIGMA_DEFINED            = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                  = "0"
+\FRACTION_5_SIGMA_DEFINED          = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                        = "Sato et al. 2005 (ApJ, 633, 465)"
+\REFERENCES_DEFINED                = "Literature or other references for data"
+\BIBCODES                          = "2005ApJ...633..465S"
+\BIBCODES_DEFINED                  = "ADS bibcodes for REFERENCES"
+\TELESCOPE                         = "T11 0.8m APT"
+\TELESCOPE_DEFINED                 = "Telescope used for data acquisition"
+\INSTRUMENT                        = "CCD camera"
+\INSTRUMENT_DEFINED                = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER           = "(b+y)/2 (Stromgren)"
+\TIME_SERIES_DATA_FILTER_DEFINED   = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                  = "Fairborn Observatory, Arizona"
+\OBSERVATORY_SITE_DEFINED          = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                             = "This light curve file contains 325 measurements and is plotted by the NStED visualizer as Differential_Magnitude (mag) vs. HJD (days)."
+\NOTE2                             = "This data set covers HJD between 2453506.6913 and 2453527.9556 days HJD, and the range of Differential_Magnitude is between 1.6105 and 1.5972 mag."
+\NOTE3                             = "The time at the center of the transit was quoted by the authors to be 2453527.864 days HJD, with best fit orbital period of 2.8766 days."
+\NOTE4                             = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE          = "Tue Jun  7 02:52:26 2011 UTC"
+\CONTACT_LINK                      = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                            = "HJD"
+\X_AXIS_UNITS                      = "days"
+\Y_AXIS                            = "Differential_Magnitude"
+\Y_AXIS_UNITS                      = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_HJD                        = "Heliocentric Julian date of observation"
+\COLUMN_DIFFERENTIAL_MAGNITUDE     = "Difference between measured magnitude and another (single or group of) reference magnitudes"
+\COLUMN_ACCEPTED                   = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|          HJD | Differential_Magnitude | Accepted |
+|       double |                 double |      int |
+|         days |                    mag |          |
+  2453506.6913                   1.6030          1  
+  2453509.6866                   1.6021          1  
+  2453509.7342                   1.6016          1  
+  2453509.8189                   1.6030          1  
+  2453509.9107                   1.6042          1  
+  2453510.7342                   1.6016          1  
+  2453510.8118                   1.6047          1  
+  2453510.8968                   1.6016          1  
+  2453511.7251                   1.6030          1  
+  2453511.8124                   1.6009          1  
+  2453511.8961                   1.6039          1  
+  2453512.6721                   1.6049          1  
+  2453512.7260                   1.6031          1  
+  2453512.8112                   1.6025          1  
+  2453512.8877                   1.6033          1  
+  2453512.9723                   1.6040          1  
+  2453514.8865                   1.6012          1  
+  2453520.7095                   1.6024          1  
+  2453520.7861                   1.6040          1  
+  2453520.8693                   1.6040          1  
+  2453520.9543                   1.6049          1  
+  2453521.8683                   1.6035          1  
+  2453522.7768                   1.6035          1  
+  2453524.6953                   1.6030          1  
+  2453524.7716                   1.6033          1  
+  2453524.8543                   1.6024          1  
+  2453524.9404                   1.6044          1  
+  2453525.7720                   1.6050          1  
+  2453525.8546                   1.6042          1  
+  2453525.9396                   1.6007          1  
+  2453526.6876                   1.6042          1  
+  2453526.7722                   1.6037          1  
+  2453526.8548                   1.6043          1  
+  2453526.9330                   1.6035          1  
+  2453527.6556                   1.6081          1  
+  2453527.6565                   1.6042          1  
+  2453527.6574                   1.5998          1  
+  2453527.6584                   1.6040          1  
+  2453527.6594                   1.6016          1  
+  2453527.6603                   1.6045          1  
+  2453527.6612                   1.6054          1  
+  2453527.6622                   1.6045          1  
+  2453527.6631                   1.6014          1  
+  2453527.6641                   1.6051          1  
+  2453527.6656                   1.6039          1  
+  2453527.6665                   1.6039          1  
+  2453527.6675                   1.6018          1  
+  2453527.6684                   1.6017          1  
+  2453527.6694                   1.6039          1  
+  2453527.6703                   1.6016          1  
+  2453527.6713                   1.6040          1  
+  2453527.6722                   1.6015          1  
+  2453527.6732                   1.6047          1  
+  2453527.6741                   1.6036          1  
+  2453527.6756                   1.6053          1  
+  2453527.6766                   1.6029          1  
+  2453527.6775                   1.6010          1  
+  2453527.6785                   1.5988          1  
+  2453527.6794                   1.6079          1  
+  2453527.6803                   1.6038          1  
+  2453527.6813                   1.6056          1  
+  2453527.6822                   1.6039          1  
+  2453527.6832                   1.6025          1  
+  2453527.6841                   1.6019          1  
+  2453527.6856                   1.6047          1  
+  2453527.6866                   1.6022          1  
+  2453527.6875                   1.6048          1  
+  2453527.6885                   1.6034          1  
+  2453527.6894                   1.6012          1  
+  2453527.6904                   1.6002          1  
+  2453527.6913                   1.6081          1  
+  2453527.6923                   1.6048          1  
+  2453527.6933                   1.6028          1  
+  2453527.6942                   1.6003          1  
+  2453527.6957                   1.6031          1  
+  2453527.6967                   1.6000          1  
+  2453527.6976                   1.6017          1  
+  2453527.6986                   1.6021          1  
+  2453527.6995                   1.6052          1  
+  2453527.7004                   1.6057          1  
+  2453527.7014                   1.6050          1  
+  2453527.7024                   1.6013          1  
+  2453527.7033                   1.5972          1  
+  2453527.7042                   1.6053          1  
+  2453527.7057                   1.6025          1  
+  2453527.7067                   1.6005          1  
+  2453527.7076                   1.6029          1  
+  2453527.7086                   1.6023          1  
+  2453527.7105                   1.5979          1  
+  2453527.7114                   1.6019          1  
+  2453527.7123                   1.6102          1  
+  2453527.7133                   1.6037          1  
+  2453527.7143                   1.6078          1  
+  2453527.7158                   1.6020          1  
+  2453527.7167                   1.6060          1  
+  2453527.7177                   1.6003          1  
+  2453527.7186                   1.6041          1  
+  2453527.7196                   1.6018          1  
+  2453527.7215                   1.6008          1  
+  2453527.7224                   1.6003          1  
+  2453527.7234                   1.6007          1  
+  2453527.7243                   1.6050          1  
+  2453527.7258                   1.6032          1  
+  2453527.7268                   1.6070          1  
+  2453527.7277                   1.6054          1  
+  2453527.7297                   1.6011          1  
+  2453527.7306                   1.6005          1  
+  2453527.7315                   1.6088          1  
+  2453527.7325                   1.5995          1  
+  2453527.7334                   1.6016          1  
+  2453527.7344                   1.6034          1  
+  2453527.7359                   1.6030          1  
+  2453527.7368                   1.6032          1  
+  2453527.7377                   1.6026          1  
+  2453527.7387                   1.6023          1  
+  2453527.7396                   1.6068          1  
+  2453527.7406                   1.6038          1  
+  2453527.7415                   1.6016          1  
+  2453527.7425                   1.6017          1  
+  2453527.7434                   1.6029          1  
+  2453527.7443                   1.6061          1  
+  2453527.7458                   1.6014          1  
+  2453527.7468                   1.6035          1  
+  2453527.7477                   1.6012          1  
+  2453527.7487                   1.6023          1  
+  2453527.7496                   1.6020          1  
+  2453527.7505                   1.6007          1  
+  2453527.7515                   1.6037          1  
+  2453527.7524                   1.6030          1  
+  2453527.7534                   1.6033          1  
+  2453527.7543                   1.6049          1  
+  2453527.7558                   1.6052          1  
+  2453527.7568                   1.6062          1  
+  2453527.7577                   1.6065          1  
+  2453527.7587                   1.6032          1  
+  2453527.7596                   1.6072          1  
+  2453527.7606                   1.6027          1  
+  2453527.7615                   1.6032          1  
+  2453527.7624                   1.6012          1  
+  2453527.7634                   1.6033          1  
+  2453527.7643                   1.6057          1  
+  2453527.7658                   1.6005          1  
+  2453527.7667                   1.6016          1  
+  2453527.7677                   1.6017          1  
+  2453527.7686                   1.6061          1  
+  2453527.7696                   1.6072          1  
+  2453527.7705                   1.6012          1  
+  2453527.7715                   1.6007          1  
+  2453527.7724                   1.6031          1  
+  2453527.7734                   1.6007          1  
+  2453527.7743                   1.6033          1  
+  2453527.7758                   1.6016          1  
+  2453527.7768                   1.6034          1  
+  2453527.7777                   1.6018          1  
+  2453527.7787                   1.6033          1  
+  2453527.7796                   1.5997          1  
+  2453527.7806                   1.6006          1  
+  2453527.7815                   1.6054          1  
+  2453527.7825                   1.6030          1  
+  2453527.7834                   1.6048          1  
+  2453527.7843                   1.6019          1  
+  2453527.7859                   1.6006          1  
+  2453527.7868                   1.6035          1  
+  2453527.7878                   1.6029          1  
+  2453527.7887                   1.6018          1  
+  2453527.7896                   1.6010          1  
+  2453527.7906                   1.6026          1  
+  2453527.7915                   1.6040          1  
+  2453527.7925                   1.6030          1  
+  2453527.7934                   1.6009          1  
+  2453527.7944                   1.6055          1  
+  2453527.7959                   1.6025          1  
+  2453527.7968                   1.6028          1  
+  2453527.7978                   1.6059          1  
+  2453527.7987                   1.6065          1  
+  2453527.7997                   1.6002          1  
+  2453527.8006                   1.5995          1  
+  2453527.8016                   1.6007          1  
+  2453527.8026                   1.6043          1  
+  2453527.8035                   1.6019          1  
+  2453527.8044                   1.6029          1  
+  2453527.8059                   1.6053          1  
+  2453527.8069                   1.6013          1  
+  2453527.8078                   1.6003          1  
+  2453527.8088                   1.6020          1  
+  2453527.8097                   1.6010          1  
+  2453527.8107                   1.6061          1  
+  2453527.8116                   1.6024          1  
+  2453527.8126                   1.6070          1  
+  2453527.8136                   1.6053          1  
+  2453527.8145                   1.6036          1  
+  2453527.8160                   1.6060          1  
+  2453527.8170                   1.6069          1  
+  2453527.8179                   1.6086          1  
+  2453527.8189                   1.6082          1  
+  2453527.8198                   1.6085          1  
+  2453527.8208                   1.6048          1  
+  2453527.8217                   1.6038          1  
+  2453527.8227                   1.6034          1  
+  2453527.8236                   1.6071          1  
+  2453527.8246                   1.6086          1  
+  2453527.8270                   1.6053          1  
+  2453527.8279                   1.6037          1  
+  2453527.8289                   1.6045          1  
+  2453527.8299                   1.6046          1  
+  2453527.8308                   1.6065          1  
+  2453527.8318                   1.6047          1  
+  2453527.8327                   1.6021          1  
+  2453527.8337                   1.6050          1  
+  2453527.8346                   1.6079          1  
+  2453527.8370                   1.6073          1  
+  2453527.8380                   1.6103          1  
+  2453527.8389                   1.6037          1  
+  2453527.8399                   1.6059          1  
+  2453527.8408                   1.6068          1  
+  2453527.8418                   1.6044          1  
+  2453527.8428                   1.6049          1  
+  2453527.8437                   1.6089          1  
+  2453527.8447                   1.6105          1  
+  2453527.8461                   1.6077          1  
+  2453527.8471                   1.6063          1  
+  2453527.8480                   1.6088          1  
+  2453527.8490                   1.6081          1  
+  2453527.8500                   1.6058          1  
+  2453527.8509                   1.6032          1  
+  2453527.8519                   1.6044          1  
+  2453527.8529                   1.6076          1  
+  2453527.8538                   1.6088          1  
+  2453527.8548                   1.6069          1  
+  2453527.8572                   1.6038          1  
+  2453527.8582                   1.6073          1  
+  2453527.8591                   1.6086          1  
+  2453527.8601                   1.6060          1  
+  2453527.8610                   1.6032          1  
+  2453527.8620                   1.6082          1  
+  2453527.8629                   1.6067          1  
+  2453527.8639                   1.6072          1  
+  2453527.8648                   1.6056          1  
+  2453527.8663                   1.6043          1  
+  2453527.8682                   1.6103          1  
+  2453527.8692                   1.6056          1  
+  2453527.8701                   1.6046          1  
+  2453527.8711                   1.6069          1  
+  2453527.8721                   1.6053          1  
+  2453527.8730                   1.6096          1  
+  2453527.8740                   1.6056          1  
+  2453527.8764                   1.6093          1  
+  2453527.8773                   1.6077          1  
+  2453527.8783                   1.6067          1  
+  2453527.8793                   1.6092          1  
+  2453527.8802                   1.6063          1  
+  2453527.8812                   1.6077          1  
+  2453527.8821                   1.6029          1  
+  2453527.8831                   1.6071          1  
+  2453527.8840                   1.6044          1  
+  2453527.8850                   1.6090          1  
+  2453527.8865                   1.6075          1  
+  2453527.8874                   1.6034          1  
+  2453527.8884                   1.6058          1  
+  2453527.8893                   1.6057          1  
+  2453527.8903                   1.6050          1  
+  2453527.8913                   1.6054          1  
+  2453527.8922                   1.6050          1  
+  2453527.8932                   1.6053          1  
+  2453527.8941                   1.6080          1  
+  2453527.8951                   1.6066          1  
+  2453527.8966                   1.6057          1  
+  2453527.8976                   1.6012          1  
+  2453527.8985                   1.6027          1  
+  2453527.8995                   1.6101          1  
+  2453527.9004                   1.6070          1  
+  2453527.9014                   1.6082          1  
+  2453527.9023                   1.6030          1  
+  2453527.9033                   1.6069          1  
+  2453527.9043                   1.6093          1  
+  2453527.9052                   1.6093          1  
+  2453527.9067                   1.6019          1  
+  2453527.9076                   1.6039          1  
+  2453527.9086                   1.6034          1  
+  2453527.9095                   1.6022          1  
+  2453527.9105                   1.6074          1  
+  2453527.9114                   1.6075          1  
+  2453527.9124                   1.6018          1  
+  2453527.9133                   1.6022          1  
+  2453527.9143                   1.6054          1  
+  2453527.9152                   1.6024          1  
+  2453527.9168                   1.6063          1  
+  2453527.9177                   1.6068          1  
+  2453527.9187                   1.6019          1  
+  2453527.9196                   1.6037          1  
+  2453527.9206                   1.6026          1  
+  2453527.9216                   1.6055          1  
+  2453527.9225                   1.5998          1  
+  2453527.9235                   1.6016          1  
+  2453527.9244                   1.6029          1  
+  2453527.9254                   1.6089          1  
+  2453527.9269                   1.6041          1  
+  2453527.9279                   1.6053          1  
+  2453527.9288                   1.6060          1  
+  2453527.9298                   1.6048          1  
+  2453527.9307                   1.6036          1  
+  2453527.9317                   1.6075          1  
+  2453527.9326                   1.6070          1  
+  2453527.9336                   1.6014          1  
+  2453527.9345                   1.6051          1  
+  2453527.9355                   1.6067          1  
+  2453527.9370                   1.6044          1  
+  2453527.9379                   1.6020          1  
+  2453527.9389                   1.6005          1  
+  2453527.9398                   1.6021          1  
+  2453527.9408                   1.6015          1  
+  2453527.9417                   1.5999          1  
+  2453527.9427                   1.6040          1  
+  2453527.9436                   1.5994          1  
+  2453527.9445                   1.6009          1  
+  2453527.9455                   1.6022          1  
+  2453527.9480                   1.6038          1  
+  2453527.9489                   1.6041          1  
+  2453527.9499                   1.5993          1  
+  2453527.9508                   1.6002          1  
+  2453527.9518                   1.5985          1  
+  2453527.9527                   1.6018          1  
+  2453527.9537                   1.6044          1  
+  2453527.9546                   1.6058          1  
+  2453527.9556                   1.5978          1  

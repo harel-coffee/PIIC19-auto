@@ -1,0 +1,28 @@
+\OBJNAME = '1SWASP J001237.37-753700.6'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569521
+\TSTOP = 124572979
+\JD_REF = 2453005.5
+\RA_OBJ = '3.155717'
+\DEC_OBJ = '-75.616847'
+\WASP_MAG = 12.35996
+\HJD_START = 2454447.276863
+\HJD_STOP = 2454447.316887
+\fixlen = T
+\NUMRECORDS = 6
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Tue Sep 17, 10:04:16 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569521   1.111336e+01   3.006374e-01   1.111336e+01   3.006374e-01 221200712121841060      23416       7056     0 2454447.276863  1.238539e+01  2.937131e-02  1.238539e+01  2.937131e-02 
+  124570448   1.168460e+01   1.634518e-01   1.168460e+01   1.634518e-01 222200712121856320        697      17740     0 2454447.287593  1.233097e+01  1.518804e-02  1.233097e+01  1.518804e-02 
+  124571580   1.155311e+01   1.264170e-01   1.155311e+01   1.264170e-01 222200712121915250        717      17686     0 2454447.300694  1.234325e+01  1.188043e-02  1.234325e+01  1.188043e-02 
+  124571644   1.104053e+01   1.055988e-01   1.104053e+01   1.055988e-01 221200712121916280      23366       7191     0 2454447.301435  1.239253e+01  1.038472e-02  1.239253e+01  1.038472e-02 
+  124572788   1.180724e+01   1.243201e-01   1.180724e+01   1.243201e-01 222200712121935320        701      17697     0 2454447.314676  1.231963e+01  1.143192e-02  1.231963e+01  1.143192e-02 
+  124572979   1.106137e+01   1.039719e-01   1.106137e+01   1.039719e-01 221200712121938430      23405       7265     0 2454447.316887  1.239048e+01  1.020547e-02  1.239048e+01  1.020547e-02 

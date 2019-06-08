@@ -1,0 +1,143 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                               = "GJ 674"
+\STAR_ID_DEFINED                       = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                      = "HIP 85523"
+\NSTED_DEFAULT_ID_DEFINED              = "NStED default name"
+\DATA_CATEGORY                         = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED                 = "Category of time series data"
+\PUBLIC                                = "Y"
+\PUBLIC_DEFINED                        = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                      = "21"
+\NUMBER_OF_POINTS_DEFINED              = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME                  = "BJD"
+\TIME_REFERENCE_FRAME_DEFINED          = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                    = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED            = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                          = "2453981.55615"
+\MINIMUM_DATE_DEFINED                  = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                    = "days"
+\MAXIMUM_DATE                          = "2454028.49512"
+\MAXIMUM_DATE_DEFINED                  = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                    = "days"
+\MINIMUM_VALUE                         = "0.32956"
+\MINIMUM_VALUE_DEFINED                 = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS                   = "mag"
+\MAXIMUM_VALUE                         = "0.31909"
+\MAXIMUM_VALUE_DEFINED                 = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS                   = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                          = "0.32320"
+\MEDIAN_VALUE_DEFINED                  = "Median value of data points"
+\MEDIAN_VALUE_UNITS                    = "mag"
+\MEAN_VALUE                            = "0.323632"
+\MEAN_VALUE_DEFINED                    = "Mean value of data points"
+\MEAN_VALUE_UNITS                      = "mag"
+\MEDIAN_UNCERTAINTY                    = "0.00056"
+\MEDIAN_UNCERTAINTY_DEFINED            = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS              = "mag"
+\MEDIAN_ABSOLUTE_DEVIATION             = "0.00288"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED     = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS       = "mag"
+\DISPERSION                            = "0.00324132"
+\DISPERSION_DEFINED                    = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                      = "mag"
+\DISPERSION_MEAN                       = "0.00321096"
+\DISPERSION_MEAN_DEFINED               = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS                 = "mag"
+\CHISQUARED                            = "41.7"
+\CHISQUARED_DEFINED                    = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                        = "0"
+\NUMBER_5_SIGMA_DEFINED                = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                      = "0"
+\FRACTION_5_SIGMA_DEFINED              = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                            = "Bonfils et al. 2007 (A&A, 474, 293)"
+\REFERENCES_DEFINED                    = "Literature or other references for data"
+\BIBCODES                              = "2007A&A...474..293B"
+\BIBCODES_DEFINED                      = "ADS bibcodes for REFERENCES"
+\TELESCOPE                             = "1.2m Euler Swiss telescope"
+\TELESCOPE_DEFINED                     = "Telescope used for data acquisition"
+\INSTRUMENT                            = "CCD camera"
+\INSTRUMENT_DEFINED                    = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER               = "Unknown"
+\TIME_SERIES_DATA_FILTER_DEFINED       = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                      = "ESO La Silla, Chile"
+\OBSERVATORY_SITE_DEFINED              = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                                 = "This light curve file contains 21 measurements and is plotted by the NStED visualizer as Relative_Magnitude (mag) vs. BJD (days)."
+\NOTE2                                 = "This data set covers BJD between 2453981.55615 and 2454028.49512 days BJD, and the range of Relative_Magnitude is between 0.32956 and 0.31909 mag."
+\NOTE3                                 = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE              = "Tue Jun  7 01:24:12 2011 UTC"
+\CONTACT_LINK                          = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                                = "BJD"
+\X_AXIS_UNITS                          = "days"
+\Y_AXIS                                = "Relative_Magnitude"
+\Y_AXIS_UNITS                          = "mag"
+\Y_AXIS_UNCERTAINTY                    = "Relative_Magnitude_Uncertainty"
+\Y_AXIS_UNCERTAINTY_UNITS              = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_BJD                            = "Barycentric Julian date of observation"
+\COLUMN_RELATIVE_MAGNITUDE             = "Magnitude relative to an arbitrary point of reference"
+\COLUMN_RELATIVE_MAGNITUDE_UNCERTAINTY = "Uncertainty in RELATIVE_MAGNITUDE"
+\COLUMN_ACCEPTED                       = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|           BJD | Relative_Magnitude | Relative_Magnitude_Uncertainty | Accepted |
+|        double |             double |                         double |      int |
+|          days |                mag |                            mag |          |
+  2453981.55615              0.32510                          0.00025          1  
+  2453982.49414              0.32611                          0.00039          1  
+  2453993.50684              0.32687                          0.00050          1  
+  2453994.50439              0.32320                          0.00067          1  
+  2453995.50073              0.32503                          0.00036          1  
+  2453996.49243              0.32482                          0.00035          1  
+  2453998.50488              0.32204                          0.00047          1  
+  2453999.50806              0.32229                          0.00057          1  
+  2454001.50879              0.32156                          0.00060          1  
+  2454002.50464              0.32121                          0.00056          1  
+  2454003.53174              0.32036                          0.00034          1  
+  2454004.50635              0.31909                          0.00059          1  
+  2454005.50586              0.31949                          0.00030          1  
+  2454008.60669              0.31995                          0.00117          1  
+  2454009.61133              0.32079                          0.00130          1  
+  2454011.50684              0.32021                          0.00072          1  
+  2454024.51636              0.32956                          0.00052          1  
+  2454025.55469              0.32842                          0.00149          1  
+  2454026.49341              0.32735                          0.00056          1  
+  2454027.49731              0.32674                          0.00065          1  
+  2454028.49512              0.32608                          0.00043          1  

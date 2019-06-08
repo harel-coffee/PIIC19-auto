@@ -1,0 +1,332 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                           = "HW Vir"
+\STAR_ID_DEFINED                   = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                  = "HIP 62157"
+\NSTED_DEFAULT_ID_DEFINED          = "NStED default name"
+\DATA_CATEGORY                     = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED             = "Category of time series data"
+\PUBLIC                            = "Y"
+\PUBLIC_DEFINED                    = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                  = "210"
+\NUMBER_OF_POINTS_DEFINED          = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME              = "HJD"
+\TIME_REFERENCE_FRAME_DEFINED      = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED        = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                      = "2451630.13244"
+\MINIMUM_DATE_DEFINED              = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                = "days"
+\MAXIMUM_DATE                      = "2451689.10415"
+\MAXIMUM_DATE_DEFINED              = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                = "days"
+\MINIMUM_VALUE                     = "1.978"
+\MINIMUM_VALUE_DEFINED             = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS               = "mag"
+\MAXIMUM_VALUE                     = "1.018"
+\MAXIMUM_VALUE_DEFINED             = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS               = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                      = "1.159"
+\MEDIAN_VALUE_DEFINED              = "Median value of data points"
+\MEDIAN_VALUE_UNITS                = "mag"
+\MEAN_VALUE                        = "1.1922"
+\MEAN_VALUE_DEFINED                = "Mean value of data points"
+\MEAN_VALUE_UNITS                  = "mag"
+\MEDIAN_UNCERTAINTY                = ""
+\MEDIAN_UNCERTAINTY_DEFINED        = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS          = "mag"
+\MEDIAN_ABSOLUTE_DEVIATION         = "0.052"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS   = "mag"
+\DISPERSION                        = "0.18157"
+\DISPERSION_DEFINED                = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                  = "mag"
+\DISPERSION_MEAN                   = "0.17850"
+\DISPERSION_MEAN_DEFINED           = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS             = "mag"
+\CHISQUARED                        = ""
+\CHISQUARED_DEFINED                = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                    = "0"
+\NUMBER_5_SIGMA_DEFINED            = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                  = "0"
+\FRACTION_5_SIGMA_DEFINED          = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                        = "Lee et al. 2009 (AJ, 137, 3181)"
+\REFERENCES_DEFINED                = "Literature or other references for data"
+\BIBCODES                          = "2009AJ....137.3181L"
+\BIBCODES_DEFINED                  = "ADS bibcodes for REFERENCES"
+\TELESCOPE                         = "61-cm reflector"
+\TELESCOPE_DEFINED                 = "Telescope used for data acquisition"
+\INSTRUMENT                        = "PM512 CCD camera"
+\INSTRUMENT_DEFINED                = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER           = "V (Generic)"
+\TIME_SERIES_DATA_FILTER_DEFINED   = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                  = "Sobaeksan Optical Astronomy Observatory (SOAO), Korea"
+\OBSERVATORY_SITE_DEFINED          = "Name or location of observatory"
+\TELESCOPE_APERTURE                = "0.61"
+\TELESCOPE_APERTURE_DEFINED        = "Diameter of telescope aperture"
+\TELESCOPE_APERTURE_UNITS          = "meters"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                             = "This light curve file contains 210 measurements and is plotted by the NStED visualizer as Differential_Magnitude (mag) vs. HJD (days)."
+\NOTE2                             = "This data set covers HJD between 2451630.13244 and 2451689.10415 days HJD, and the range of Differential_Magnitude is between 1.978 and 1.018 mag."
+\NOTE3                             = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE          = "Tue Jun  7 02:37:47 2011 UTC"
+\CONTACT_LINK                      = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                            = "HJD"
+\X_AXIS_UNITS                      = "days"
+\Y_AXIS                            = "Differential_Magnitude"
+\Y_AXIS_UNITS                      = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_HJD                        = "Heliocentric Julian date of observation"
+\COLUMN_DIFFERENTIAL_MAGNITUDE     = "Difference between measured magnitude and another (single or group of) reference magnitudes"
+\COLUMN_ACCEPTED                   = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|           HJD | Differential_Magnitude | Accepted |
+|        double |                 double |      int |
+|          days |                    mag |          |
+  2451630.13244                    1.197          1  
+  2451630.13447                    1.197          1  
+  2451630.13649                    1.209          1  
+  2451630.13850                    1.248          1  
+  2451630.14054                    1.429          1  
+  2451630.14257                    1.728          1  
+  2451630.14458                    1.944          1  
+  2451630.14660                    1.817          1  
+  2451630.14862                    1.543          1  
+  2451630.15065                    1.295          1  
+  2451630.15266                    1.201          1  
+  2451630.15469                    1.202          1  
+  2451630.15670                    1.193          1  
+  2451630.15873                    1.209          1  
+  2451630.16075                    1.189          1  
+  2451630.16278                    1.173          1  
+  2451630.16480                    1.173          1  
+  2451630.16684                    1.176          1  
+  2451630.16887                    1.175          1  
+  2451630.17089                    1.159          1  
+  2451630.17292                    1.133          1  
+  2451630.17494                    1.135          1  
+  2451630.17699                    1.119          1  
+  2451630.17901                    1.121          1  
+  2451630.18104                    1.100          1  
+  2451630.18308                    1.085          1  
+  2451630.18511                    1.076          1  
+  2451630.18714                    1.081          1  
+  2451630.18918                    1.057          1  
+  2451630.19121                    1.052          1  
+  2451630.19325                    1.049          1  
+  2451630.19528                    1.018          1  
+  2451630.19731                    1.024          1  
+  2451630.19934                    1.103          1  
+  2451630.20138                    1.125          1  
+  2451630.20341                    1.167          1  
+  2451630.20544                    1.127          1  
+  2451630.20746                    1.078          1  
+  2451630.20949                    1.040          1  
+  2451630.21153                    1.039          1  
+  2451630.21356                    1.056          1  
+  2451630.21558                    1.060          1  
+  2451630.21762                    1.062          1  
+  2451630.21964                    1.076          1  
+  2451630.22168                    1.103          1  
+  2451630.22371                    1.110          1  
+  2451630.22575                    1.115          1  
+  2451630.22779                    1.115          1  
+  2451630.22981                    1.142          1  
+  2451630.23185                    1.162          1  
+  2451630.23389                    1.155          1  
+  2451630.23621                    1.154          1  
+  2451630.23824                    1.184          1  
+  2451630.24028                    1.173          1  
+  2451630.24231                    1.177          1  
+  2451630.24434                    1.198          1  
+  2451630.24638                    1.213          1  
+  2451630.24841                    1.226          1  
+  2451630.25044                    1.205          1  
+  2451630.25248                    1.215          1  
+  2451630.25451                    1.214          1  
+  2451630.25656                    1.356          1  
+  2451630.25859                    1.635          1  
+  2451630.26063                    1.903          1  
+  2451630.26266                    1.899          1  
+  2451630.26470                    1.619          1  
+  2451630.26674                    1.361          1  
+  2451630.26877                    1.222          1  
+  2451630.27081                    1.215          1  
+  2451630.27285                    1.231          1  
+  2451630.27489                    1.228          1  
+  2451630.27692                    1.216          1  
+  2451630.27896                    1.219          1  
+  2451630.28100                    1.205          1  
+  2451687.97903                    1.146          1  
+  2451687.98106                    1.133          1  
+  2451687.98308                    1.075          1  
+  2451687.98511                    1.040          1  
+  2451687.98714                    1.030          1  
+  2451687.98917                    1.050          1  
+  2451687.99120                    1.052          1  
+  2451687.99322                    1.059          1  
+  2451687.99525                    1.050          1  
+  2451687.99726                    1.078          1  
+  2451687.99928                    1.099          1  
+  2451688.00130                    1.112          1  
+  2451688.00333                    1.121          1  
+  2451688.00738                    1.117          1  
+  2451688.00940                    1.185          1  
+  2451688.01345                    1.168          1  
+  2451688.01547                    1.181          1  
+  2451688.01750                    1.186          1  
+  2451688.01954                    1.192          1  
+  2451688.02157                    1.183          1  
+  2451688.02360                    1.203          1  
+  2451688.02563                    1.205          1  
+  2451688.02766                    1.211          1  
+  2451688.02969                    1.207          1  
+  2451688.03172                    1.277          1  
+  2451688.03375                    1.464          1  
+  2451688.03578                    1.780          1  
+  2451688.03781                    1.927          1  
+  2451688.03984                    1.770          1  
+  2451688.04186                    1.474          1  
+  2451688.04389                    1.260          1  
+  2451688.04591                    1.193          1  
+  2451688.04795                    1.219          1  
+  2451688.04998                    1.211          1  
+  2451688.05200                    1.202          1  
+  2451688.05404                    1.181          1  
+  2451688.05606                    1.176          1  
+  2451688.05861                    1.180          1  
+  2451688.06065                    1.184          1  
+  2451688.06268                    1.165          1  
+  2451688.06472                    1.153          1  
+  2451688.06675                    1.152          1  
+  2451688.06878                    1.120          1  
+  2451688.07081                    1.110          1  
+  2451688.07285                    1.115          1  
+  2451688.07488                    1.114          1  
+  2451688.07691                    1.093          1  
+  2451688.07895                    1.090          1  
+  2451688.08099                    1.058          1  
+  2451688.08302                    1.071          1  
+  2451688.08505                    1.052          1  
+  2451688.08709                    1.029          1  
+  2451688.08913                    1.032          1  
+  2451688.09117                    1.055          1  
+  2451688.09320                    1.112          1  
+  2451688.09524                    1.143          1  
+  2451688.09728                    1.141          1  
+  2451688.09931                    1.098          1  
+  2451688.10135                    1.056          1  
+  2451688.10339                    1.036          1  
+  2451688.10542                    1.040          1  
+  2451688.10746                    1.045          1  
+  2451688.10950                    1.053          1  
+  2451688.11153                    1.077          1  
+  2451688.11356                    1.077          1  
+  2451688.11560                    1.111          1  
+  2451688.11763                    1.108          1  
+  2451688.11967                    1.125          1  
+  2451688.12171                    1.133          1  
+  2451688.12375                    1.166          1  
+  2451688.12578                    1.156          1  
+  2451688.12782                    1.158          1  
+  2451688.12986                    1.159          1  
+  2451688.13189                    1.170          1  
+  2451688.13393                    1.209          1  
+  2451688.13597                    1.191          1  
+  2451688.13801                    1.195          1  
+  2451688.14004                    1.200          1  
+  2451688.14208                    1.220          1  
+  2451688.97863                    1.201          1  
+  2451688.98042                    1.205          1  
+  2451688.98222                    1.178          1  
+  2451688.98401                    1.213          1  
+  2451688.98580                    1.171          1  
+  2451688.98760                    1.179          1  
+  2451688.98938                    1.196          1  
+  2451688.99116                    1.189          1  
+  2451688.99296                    1.166          1  
+  2451688.99475                    1.175          1  
+  2451688.99653                    1.165          1  
+  2451688.99833                    1.152          1  
+  2451689.00011                    1.158          1  
+  2451689.00189                    1.131          1  
+  2451689.00547                    1.124          1  
+  2451689.00726                    1.119          1  
+  2451689.00904                    1.114          1  
+  2451689.01083                    1.076          1  
+  2451689.01261                    1.083          1  
+  2451689.01618                    1.068          1  
+  2451689.01798                    1.075          1  
+  2451689.01977                    1.036          1  
+  2451689.02335                    1.037          1  
+  2451689.02513                    1.049          1  
+  2451689.02693                    1.085          1  
+  2451689.03051                    1.151          1  
+  2451689.03230                    1.135          1  
+  2451689.03410                    1.096          1  
+  2451689.03588                    1.035          1  
+  2451689.03767                    1.040          1  
+  2451689.03947                    1.054          1  
+  2451689.04124                    1.061          1  
+  2451689.04303                    1.061          1  
+  2451689.04482                    1.088          1  
+  2451689.04661                    1.108          1  
+  2451689.04840                    1.108          1  
+  2451689.05199                    1.130          1  
+  2451689.05379                    1.121          1  
+  2451689.05558                    1.123          1  
+  2451689.06274                    1.139          1  
+  2451689.06833                    1.175          1  
+  2451689.07011                    1.212          1  
+  2451689.07547                    1.206          1  
+  2451689.07727                    1.221          1  
+  2451689.08085                    1.230          1  
+  2451689.08265                    1.409          1  
+  2451689.08444                    1.482          1  
+  2451689.08623                    1.725          1  
+  2451689.08802                    1.978          1  
+  2451689.09161                    1.528          1  
+  2451689.09340                    1.327          1  
+  2451689.09520                    1.239          1  
+  2451689.09699                    1.190          1  
+  2451689.09878                    1.200          1  
+  2451689.10057                    1.229          1  
+  2451689.10236                    1.211          1  
+  2451689.10415                    1.222          1  

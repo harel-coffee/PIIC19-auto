@@ -1,0 +1,249 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                              = "HD 17156"
+\STAR_ID_DEFINED                      = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                     = "HIP 13192"
+\NSTED_DEFAULT_ID_DEFINED             = "NStED default name"
+\DATA_CATEGORY                        = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED                = "Category of time series data"
+\TRANSIT_TYPE                         = "Primary"
+\TRANSIT_TYPE_DEFINED                 = "Type of transit (Primary, Secondary, Both)"
+\PUBLIC                               = "Y"
+\PUBLIC_DEFINED                       = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                     = "115"
+\NUMBER_OF_POINTS_DEFINED             = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME                 = "BJD"
+\TIME_REFERENCE_FRAME_DEFINED         = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                   = "Unknown"
+\EXPOSURE_TIMESTAMP_DEFINED           = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                         = "2454438.399305"
+\MINIMUM_DATE_DEFINED                 = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                   = "days"
+\MAXIMUM_DATE                         = "2454438.552974"
+\MAXIMUM_DATE_DEFINED                 = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                   = "days"
+\MINIMUM_VALUE                        = "0.986911"
+\MINIMUM_VALUE_DEFINED                = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS                  = ""
+\MAXIMUM_VALUE                        = "1.004075"
+\MAXIMUM_VALUE_DEFINED                = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS                  = ""
+\PERIOD                               = "21.21663"
+\PERIOD_DEFINED                       = "Published orbital period"
+\PERIOD_UNITS                         = "days"
+\PERIOD_UNCERTAINTY                   = "0.00045"
+\PERIOD_UNCERTAINTY_DEFINED           = "Published orbital period uncertainty"
+\PERIOD_UNCERTAINTY_UNITS             = "days"
+\TRANSIT_MIDPOINT                     = "2454756.73134"
+\TRANSIT_MIDPOINT_DEFINED             = "Published value of the transit center (midpoint) used to phase data"
+\TRANSIT_MIDPOINT_UNITS               = "days"
+\TRANSIT_MIDPOINT_UNCERTAINTY         = "0.00205"
+\TRANSIT_MIDPOINT_UNCERTAINTY_DEFINED = "Uncertainty in TRANSIT_MIDPOINT"
+\TRANSIT_MIDPOINT_UNCERTAINTY_UNITS   = "days"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                         = "0.992395"
+\MEDIAN_VALUE_DEFINED                 = "Median value of data points"
+\MEDIAN_VALUE_UNITS                   = ""
+\MEAN_VALUE                           = "0.9935441"
+\MEAN_VALUE_DEFINED                   = "Mean value of data points"
+\MEAN_VALUE_UNITS                     = ""
+\MEDIAN_UNCERTAINTY                   = ""
+\MEDIAN_UNCERTAINTY_DEFINED           = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS             = ""
+\MEDIAN_ABSOLUTE_DEVIATION            = "0.002369"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED    = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS      = ""
+\DISPERSION                           = "0.004121331"
+\DISPERSION_DEFINED                   = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                     = ""
+\DISPERSION_MEAN                      = "0.003956439"
+\DISPERSION_MEAN_DEFINED              = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS                = ""
+\CHISQUARED                           = ""
+\CHISQUARED_DEFINED                   = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                       = "0"
+\NUMBER_5_SIGMA_DEFINED               = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                     = "0"
+\FRACTION_5_SIGMA_DEFINED             = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                           = "Barbieri et al. 2009 (A&A, 503, 601)"
+\REFERENCES_DEFINED                   = "Literature or other references for data"
+\BIBCODES                             = "2009A&A...503..601B"
+\BIBCODES_DEFINED                     = "ADS bibcodes for REFERENCES"
+\TELESCOPE                            = "1.2m"
+\TELESCOPE_DEFINED                    = "Telescope used for data acquisition"
+\INSTRUMENT                           = "CCD camera"
+\INSTRUMENT_DEFINED                   = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER              = "R (Generic)"
+\TIME_SERIES_DATA_FILTER_DEFINED      = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                     = "Observatoire de Haute Provence (OHP), France"
+\OBSERVATORY_SITE_DEFINED             = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                                = "This light curve file contains 115 measurements and is plotted by the NStED visualizer as Normalized_Flux () vs. BJD (days)."
+\NOTE2                                = "This data set covers BJD between 2454438.399305 and 2454438.552974 days BJD, and the range of Normalized_Flux is between 0.986911 and 1.004075 ."
+\NOTE3                                = "The time at the center of the transit was quoted by the authors to be 2454756.73134 days BJD, with best fit orbital period of 21.21663 days."
+\NOTE4                                = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE             = "Tue Jun  7 01:23:42 2011 UTC"
+\CONTACT_LINK                         = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                               = "BJD"
+\X_AXIS_UNITS                         = "days"
+\Y_AXIS                               = "Normalized_Flux"
+\Y_AXIS_UNITS                         = ""
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_BJD                           = "Barycentric Julian date of observation"
+\COLUMN_NORMALIZED_FLUX               = "Flux relative to baseline flux (F-F_0)/F_0"
+\COLUMN_ACCEPTED                      = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|            BJD | Normalized_Flux | Accepted |
+|         double |          double |      int |
+|           days |                 |          |
+  2454438.399305          1.000186          1  
+  2454438.400566          1.000195          1  
+  2454438.401825          0.998119          1  
+  2454438.403085          0.999814          1  
+  2454438.404338          1.001750          1  
+  2454438.406843          1.000633          1  
+  2454438.408095          0.997992          1  
+  2454438.409354          0.999598          1  
+  2454438.410615          1.000014          1  
+  2454438.411869          1.000362          1  
+  2454438.413128          1.000341          1  
+  2454438.414381          0.998595          1  
+  2454438.415643          0.997201          1  
+  2454438.416894          0.997898          1  
+  2454438.418156          0.998455          1  
+  2454438.419417          0.999043          1  
+  2454438.420679          0.995172          1  
+  2454438.421938          0.997420          1  
+  2454438.423191          0.996537          1  
+  2454438.424451          0.995522          1  
+  2454438.425704          0.993134          1  
+  2454438.426961          0.992964          1  
+  2454438.428222          0.993216          1  
+  2454438.429483          0.994368          1  
+  2454438.430735          0.994082          1  
+  2454438.431996          0.992914          1  
+  2454438.435757          0.992065          1  
+  2454438.437019          0.992740          1  
+  2454438.438281          0.990471          1  
+  2454438.439538          0.992457          1  
+  2454438.440793          0.992267          1  
+  2454438.442054          0.989990          1  
+  2454438.443315          0.992143          1  
+  2454438.444566          0.990810          1  
+  2454438.445820          0.989359          1  
+  2454438.447082          0.992896          1  
+  2454438.448339          0.991474          1  
+  2454438.449591          0.993054          1  
+  2454438.450853          0.991602          1  
+  2454438.452106          0.989595          1  
+  2454438.453366          0.989358          1  
+  2454438.454621          0.992118          1  
+  2454438.455874          0.987513          1  
+  2454438.457126          0.989354          1  
+  2454438.458378          0.988239          1  
+  2454438.459639          0.991024          1  
+  2454438.462154          0.990394          1  
+  2454438.463404          0.987910          1  
+  2454438.464664          0.991504          1  
+  2454438.465916          0.991509          1  
+  2454438.467170          0.990405          1  
+  2454438.468422          0.991989          1  
+  2454438.469674          0.990220          1  
+  2454438.470927          0.992697          1  
+  2454438.472179          0.990701          1  
+  2454438.473432          0.993748          1  
+  2454438.474688          0.989218          1  
+  2454438.475943          0.989618          1  
+  2454438.477201          0.988682          1  
+  2454438.481306          0.993290          1  
+  2454438.482564          0.993133          1  
+  2454438.483825          0.992188          1  
+  2454438.485082          0.991596          1  
+  2454438.486334          0.990657          1  
+  2454438.487597          0.990965          1  
+  2454438.488849          0.993375          1  
+  2454438.490102          0.990352          1  
+  2454438.491355          0.989694          1  
+  2454438.492612          0.989398          1  
+  2454438.493873          0.989570          1  
+  2454438.495134          0.990276          1  
+  2454438.496395          0.988426          1  
+  2454438.497647          0.991007          1  
+  2454438.498901          0.991289          1  
+  2454438.500155          0.993443          1  
+  2454438.501407          0.986911          1  
+  2454438.502667          0.989703          1  
+  2454438.503928          0.989544          1  
+  2454438.505182          0.991960          1  
+  2454438.507704          0.989475          1  
+  2454438.508966          0.988142          1  
+  2454438.510218          0.992272          1  
+  2454438.511476          0.993116          1  
+  2454438.512729          0.991048          1  
+  2454438.513990          0.991717          1  
+  2454438.515250          0.989385          1  
+  2454438.516508          0.994982          1  
+  2454438.517769          0.992047          1  
+  2454438.519020          0.991180          1  
+  2454438.520281          0.991801          1  
+  2454438.521535          0.992542          1  
+  2454438.522788          0.995914          1  
+  2454438.524041          0.991249          1  
+  2454438.525303          0.988981          1  
+  2454438.526557          0.991618          1  
+  2454438.527819          0.993207          1  
+  2454438.529071          0.994764          1  
+  2454438.530324          0.992010          1  
+  2454438.531586          0.992395          1  
+  2454438.532846          0.991018          1  
+  2454438.534107          0.998557          1  
+  2454438.535367          0.995838          1  
+  2454438.536629          0.997957          1  
+  2454438.537881          0.997290          1  
+  2454438.539134          0.994420          1  
+  2454438.540395          0.997534          1  
+  2454438.541653          0.996022          1  
+  2454438.542907          0.994708          1  
+  2454438.544168          0.996671          1  
+  2454438.545429          0.999848          1  
+  2454438.547952          1.003402          1  
+  2454438.549209          1.001720          1  
+  2454438.550466          0.999365          1  
+  2454438.551720          1.004075          1  
+  2454438.552974          1.001873          1  

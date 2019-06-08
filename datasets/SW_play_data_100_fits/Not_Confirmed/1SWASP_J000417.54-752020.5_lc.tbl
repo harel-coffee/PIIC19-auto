@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000417.54-752020.5'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569517
+\TSTOP = 124572975
+\JD_REF = 2453005.5
+\RA_OBJ = '1.073089'
+\DEC_OBJ = '-75.339028'
+\WASP_MAG = 16.55151
+\HJD_START = 2454447.276817
+\HJD_STOP = 2454447.316840
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Sun Sep 15, 09:25:48 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569517   1.287848e-01   3.045608e-01   1.287848e-01   3.045608e-01 221200712121841060      22574       4825     0 2454447.276817  1.722534e+01  2.567646e+00  1.722534e+01  2.567646e+00 
+  124570444   2.527977e-01   1.497188e-01   2.527977e-01   1.497188e-01 222200712121856320        613      20121     0 2454447.287546  1.649307e+01  6.430270e-01  1.649307e+01  6.430270e-01 
+  124572784   2.216268e-01   1.029422e-01   2.216268e-01   1.029422e-01 222200712121935320        614      20078     0 2454447.314630  1.663594e+01  5.043092e-01  1.663594e+01  5.043092e-01 
+  124572975   3.549879e-01   8.625565e-02   3.549879e-01   8.625565e-02 221200712121938430      22565       5033     0 2454447.316840  1.612447e+01  2.638152e-01  1.612447e+01  2.638152e-01 

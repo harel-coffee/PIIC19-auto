@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J000456.73-752605.2'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569517
+\TSTOP = 124572975
+\JD_REF = 2453005.5
+\RA_OBJ = '1.236386'
+\DEC_OBJ = '-75.434792'
+\WASP_MAG = 13.90246
+\HJD_START = 2454447.276817
+\HJD_STOP = 2454447.316840
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Sat Sep 14, 23:34:13 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569517   2.612777e+00   3.058926e-01   2.612777e+00   3.058926e-01 221200712121841060      22933       5045     0 2454447.276817  1.395724e+01  1.271137e-01  1.395724e+01  1.271137e-01 
+  124570444   2.896879e+00   1.527802e-01   2.896879e+00   1.527802e-01 222200712121856320        368      19781     0 2454447.287546  1.384517e+01  5.726147e-02  1.384517e+01  5.726147e-02 
+  124571640   2.672339e+00   9.253073e-02   2.672339e+00   9.253073e-02 221200712121916280      22884       5180     0 2454447.301389  1.393277e+01  3.759415e-02  1.393277e+01  3.759415e-02 
+  124572975   2.810005e+00   9.122728e-02   2.810005e+00   9.122728e-02 221200712121938430      22923       5253     0 2454447.316840  1.387823e+01  3.524873e-02  1.387823e+01  3.524873e-02 

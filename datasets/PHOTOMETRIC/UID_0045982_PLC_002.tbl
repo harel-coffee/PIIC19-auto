@@ -1,0 +1,124 @@
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ GLOBAL PROPERTIES                                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\STAR_ID                           = "HD 80606"
+\STAR_ID_DEFINED                   = "Published star name or ID number of star assigned by survey"
+\NSTED_DEFAULT_ID                  = "HIP 45982"
+\NSTED_DEFAULT_ID_DEFINED          = "NStED default name"
+\DATA_CATEGORY                     = "Photometric Light Curve"
+\DATA_CATEGORY_DEFINED             = "Category of time series data"
+\PUBLIC                            = "Y"
+\PUBLIC_DEFINED                    = "Y if data are public; N if data are proprietary"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA BASIC PROPERTIES                           \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NUMBER_OF_POINTS                  = "5"
+\NUMBER_OF_POINTS_DEFINED          = "Total number of data points in time series"
+\TIME_REFERENCE_FRAME              = "HJD"
+\TIME_REFERENCE_FRAME_DEFINED      = "Frame of reference of time series"
+\EXPOSURE_TIMESTAMP                = "Midpoint"
+\EXPOSURE_TIMESTAMP_DEFINED        = "Timestamp relative to exposure (Beginning, Midpoint, End, Unknown)"
+\MINIMUM_DATE                      = "2454876.333779"
+\MINIMUM_DATE_DEFINED              = "Minimum value of date in time series data"
+\MINIMUM_DATE_UNITS                = "days"
+\MAXIMUM_DATE                      = "2454876.334357"
+\MAXIMUM_DATE_DEFINED              = "Maximum value of date in time series data"
+\MAXIMUM_DATE_UNITS                = "days"
+\MINIMUM_VALUE                     = "13.4154"
+\MINIMUM_VALUE_DEFINED             = "Minimum value of time series data"
+\MINIMUM_VALUE_UNITS               = "mag"
+\MAXIMUM_VALUE                     = "13.4009"
+\MAXIMUM_VALUE_DEFINED             = "Maximum value of time series data"
+\MAXIMUM_VALUE_UNITS               = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ TIME SERIES DATA CHARACTERISTICS COMPUTED BY NSTED          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\MEDIAN_VALUE                      = "13.4095"
+\MEDIAN_VALUE_DEFINED              = "Median value of data points"
+\MEDIAN_VALUE_UNITS                = "mag"
+\MEAN_VALUE                        = "13.40866"
+\MEAN_VALUE_DEFINED                = "Mean value of data points"
+\MEAN_VALUE_UNITS                  = "mag"
+\MEDIAN_UNCERTAINTY                = ""
+\MEDIAN_UNCERTAINTY_DEFINED        = "Median of uncertainty values"
+\MEDIAN_UNCERTAINTY_UNITS          = "mag"
+\MEDIAN_ABSOLUTE_DEVIATION         = "0.0059"
+\MEDIAN_ABSOLUTE_DEVIATION_DEFINED = "Value of median absolute deviation statistic"
+\MEDIAN_ABSOLUTE_DEVIATION_UNITS   = "mag"
+\DISPERSION                        = "0.006856019"
+\DISPERSION_DEFINED                = "Standard deviation with respect to MEDIAN_VALUE"
+\DISPERSION_UNITS                  = "mag"
+\DISPERSION_MEAN                   = "0.006791392"
+\DISPERSION_MEAN_DEFINED           = "Standard deviation with respect to MEAN_VALUE"
+\DISPERSION_MEAN_UNITS             = "mag"
+\CHISQUARED                        = ""
+\CHISQUARED_DEFINED                = "Value of reduced chi-squared statistic with respect to MEDIAN_VALUE"
+\NUMBER_5_SIGMA                    = "0"
+\NUMBER_5_SIGMA_DEFINED            = "Number of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\FRACTION_5_SIGMA                  = "0"
+\FRACTION_5_SIGMA_DEFINED          = "Fraction of data points beyond 5 times DISPERSION from MEDIAN_VALUE"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ REFERENCES AND INFORMATION ABOUT OBSERVING SETUP            \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\REFERENCES                        = "Garcia-Melendo & McCullough 2009 (ApJ, 698, 558)"
+\REFERENCES_DEFINED                = "Literature or other references for data"
+\BIBCODES                          = "2009ApJ...698..558G"
+\BIBCODES_DEFINED                  = "ADS bibcodes for REFERENCES"
+\TELESCOPE                         = "0.6m"
+\TELESCOPE_DEFINED                 = "Telescope used for data acquisition"
+\INSTRUMENT                        = "CCD camera"
+\INSTRUMENT_DEFINED                = "Instrument used for data acquisition"
+\TIME_SERIES_DATA_FILTER           = "B (Generic)"
+\TIME_SERIES_DATA_FILTER_DEFINED   = "Filter in which time series monitoring was performed"
+\OBSERVATORY_SITE                  = "Esteve Duran Observatory, Spain"
+\OBSERVATORY_SITE_DEFINED          = "Name or location of observatory"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ COMMENTS AND NOTES                                          \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NOTE1                             = "This light curve file contains 5 measurements and is plotted by the NStED visualizer as Magnitude (mag) vs. HJD (days)."
+\NOTE2                             = "This data set covers HJD between 2454876.333779 and 2454876.334357 days HJD, and the range of Magnitude is between 13.4154 and 13.4009 mag."
+\NOTE3                             = "NStED serves the data contained in this file as they were reported in the literature or as they were delivered to the archive.  Data were not altered unless an error was discovered.  Any data corrections are listed in the header comments and have been confirmed with the original authors."
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED ARCHIVE FILE INFORMATION                              \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\NSTED_FILE_CREATION_DATE          = "Tue Jun  7 02:09:21 2011 UTC"
+\CONTACT_LINK                      = "http://nsted.ipac.caltech.edu/applications/Helpdesk"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ NSTED INTERNAL KEYWORDS (NEEDED FOR TIME SERIES VIEWER)     \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\X_AXIS                            = "HJD"
+\X_AXIS_UNITS                      = "days"
+\Y_AXIS                            = "Magnitude"
+\Y_AXIS_UNITS                      = "mag"
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\                                                             \
+\ DESCRIPTION OF COLUMN HEADERS                               \
+\                                                             \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\COLUMN_HJD                        = "Heliocentric Julian date of observation"
+\COLUMN_MAGNITUDE                  = "Magnitude in TIME_SERIES_DATA_FILTER"
+\COLUMN_ACCEPTED                   = "1 if value was used by NStED in computing statistics; 0 otherwise"
+\ 
+\ 
+|            HJD | Magnitude | Accepted |
+|         double |    double |      int |
+|           days |       mag |          |
+  2454876.333779     13.4154          1  
+  2454876.333924     13.4150          1  
+  2454876.334068     13.4095          1  
+  2454876.334213     13.4025          1  
+  2454876.334357     13.4009          1  

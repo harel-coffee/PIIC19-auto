@@ -1,0 +1,26 @@
+\OBJNAME = '1SWASP J001959.77-755202.8'
+\OBSSTART = '2007-12-12T19:15:25'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124571582
+\TSTOP = 124572981
+\JD_REF = 2453005.5
+\RA_OBJ = '4.999042'
+\DEC_OBJ = '-75.86745'
+\WASP_MAG = 13.92514
+\HJD_START = 2454447.300718
+\HJD_STOP = 2454447.316910
+\fixlen = T
+\NUMRECORDS = 4
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Thu Sep 12, 22:31:42 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124571582   2.558880e+00   1.051390e-01   2.558880e+00   1.051390e-01 222200712121915250        690      15597     0 2454447.300718  1.397987e+01  4.461075e-02  1.397987e+01  4.461075e-02 
+  124571646   2.751392e+00   8.823384e-02   2.751392e+00   8.823384e-02 221200712121916280      24197       9109     0 2454447.301458  1.390112e+01  3.481837e-02  1.390112e+01  3.481837e-02 
+  124572790   2.540313e+00   1.044886e-01   2.540313e+00   1.044886e-01 222200712121935320        676      15609     0 2454447.314699  1.398778e+01  4.465885e-02  1.398778e+01  4.465885e-02 
+  124572981   2.914150e+00   8.626107e-02   2.914150e+00   8.626107e-02 221200712121938430      24235       9183     0 2454447.316910  1.383872e+01  3.213874e-02  1.383872e+01  3.213874e-02 

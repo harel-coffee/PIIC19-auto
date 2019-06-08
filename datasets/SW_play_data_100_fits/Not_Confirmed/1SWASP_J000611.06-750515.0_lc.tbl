@@ -1,0 +1,27 @@
+\OBJNAME = '1SWASP J000611.06-750515.0'
+\OBSSTART = '2007-12-12T18:41:06'
+\OBSSTOP = '2007-12-12T19:38:43'
+\TSTART = 124569519
+\TSTOP = 124572977
+\JD_REF = 2453005.5
+\RA_OBJ = '1.5461  '
+\DEC_OBJ = '-75.087522'
+\WASP_MAG = 14.52695
+\HJD_START = 2454447.276840
+\HJD_STOP = 2454447.316863
+\fixlen = T
+\NUMRECORDS = 5
+\
+\ This file was produced by the NASA Exoplanet Archive  http://exoplanetarchive.ipac.caltech.edu 
+\ Fri Sep 13, 02:14:18 2013
+\ Documentation for the SuperWASP dataset can be found at http://exoplanetarchive.ipac.caltech.edu/docs/SuperWASPMission.html
+\
+|TMID      |FLUX2         |FLUX2_ERR     |TAMFLUX2      |TAMFLUX2_ERR  |IMAGEID           |CCDX      |CCDY      |FLAG |           HJD|         MAG2|     MAG2_ERR|      TAMMAG2|  TAMMAG2_ERR|
+|int       |float         |float         |float         |float         |char              |int       |int       |int  |        double|        float|        float|        float|        float|
+|sec       |micro Vega    |micro Vega    |micro Vega    |micro Vega    |                  |1/16 pixel|1/16 pixel|     |           day|          mag|          mag|          mag|          mag|
+|null      |null          |null          |null          |null          |null              |null      |null      |null |          null|         null|         null|         null|         null|
+  124569519   1.118545e+00   2.946207e-01   1.118545e+00   2.946207e-01 221200712121841060      21502       5164     0 2454447.276840  1.487837e+01  2.859800e-01  1.487837e+01  2.859800e-01 
+  124571578   1.817263e+00   1.058592e-01   1.817263e+00   1.058592e-01 222200712121915250       1752      20168     0 2454447.300671  1.435146e+01  6.324651e-02  1.435146e+01  6.324651e-02 
+  124571642   1.551070e+00   8.731329e-02   1.551070e+00   8.731329e-02 221200712121916280      21453       5298     0 2454447.301412  1.452342e+01  6.111880e-02  1.452342e+01  6.111880e-02 
+  124572786   1.808090e+00   1.037697e-01   1.808090e+00   1.037697e-01 222200712121935320       1733      20179     0 2454447.314653  1.435695e+01  6.231269e-02  1.435695e+01  6.231269e-02 
+  124572977   1.435223e+00   8.645114e-02   1.435223e+00   8.645114e-02 221200712121938430      21493       5371     0 2454447.316863  1.460770e+01  6.539994e-02  1.460770e+01  6.539994e-02 

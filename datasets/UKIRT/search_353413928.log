@@ -1,0 +1,97 @@
+--2019-05-24 21:57:45--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/802/74/ukirt_c_2015_n_05_1_0000001_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/802/74/ukirt_c_2015_n_05_1_0000001_h_lc.tbl [following]
+--2019-05-24 21:57:46--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/802/74/ukirt_c_2015_n_05_1_0000001_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4243 (4.1K) [text/plain]
+Saving to: ‘ukirt_c_2015_n_05_1_0000001_h_lc.tbl’
+
+     0K ....                                                  100% 80.9M=0s
+
+2019-05-24 21:57:47 (80.9 MB/s) - ‘ukirt_c_2015_n_05_1_0000001_h_lc.tbl’ saved [4243/4243]
+
+--2019-05-24 21:57:47--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/843/35/ukirt_c_2015_n_05_1_0000002_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/843/35/ukirt_c_2015_n_05_1_0000002_h_lc.tbl [following]
+--2019-05-24 21:57:47--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/843/35/ukirt_c_2015_n_05_1_0000002_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4243 (4.1K) [text/plain]
+Saving to: ‘ukirt_c_2015_n_05_1_0000002_h_lc.tbl’
+
+     0K ....                                                  100% 74.9M=0s
+
+2019-05-24 21:57:49 (74.9 MB/s) - ‘ukirt_c_2015_n_05_1_0000002_h_lc.tbl’ saved [4243/4243]
+
+--2019-05-24 21:57:49--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/006/066/63/ukirt_c_2015_n_05_1_0000003_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/006/066/63/ukirt_c_2015_n_05_1_0000003_h_lc.tbl [following]
+--2019-05-24 21:57:49--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/006/066/63/ukirt_c_2015_n_05_1_0000003_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4243 (4.1K) [text/plain]
+Saving to: ‘ukirt_c_2015_n_05_1_0000003_h_lc.tbl’
+
+     0K ....                                                  100%  104M=0s
+
+2019-05-24 21:57:50 (104 MB/s) - ‘ukirt_c_2015_n_05_1_0000003_h_lc.tbl’ saved [4243/4243]
+
+--2019-05-24 21:57:50--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/006/066/63/ukirt_c_2015_n_05_1_0000004_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/006/066/63/ukirt_c_2015_n_05_1_0000004_h_lc.tbl [following]
+--2019-05-24 21:57:51--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/006/066/63/ukirt_c_2015_n_05_1_0000004_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4243 (4.1K) [text/plain]
+Saving to: ‘ukirt_c_2015_n_05_1_0000004_h_lc.tbl’
+
+     0K ....                                                  100%  126M=0s
+
+2019-05-24 21:57:52 (126 MB/s) - ‘ukirt_c_2015_n_05_1_0000004_h_lc.tbl’ saved [4243/4243]
+
+--2019-05-24 21:57:52--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000005_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000005_h_lc.tbl [following]
+--2019-05-24 21:57:52--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000005_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4243 (4.1K) [text/plain]
+Saving to: ‘ukirt_c_2015_n_05_1_0000005_h_lc.tbl’
+
+     0K ....                                                  100% 92.0M=0s
+
+2019-05-24 21:57:53 (92.0 MB/s) - ‘ukirt_c_2015_n_05_1_0000005_h_lc.tbl’ saved [4243/4243]
+
+--2019-05-24 21:57:53--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000006_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000006_h_lc.tbl [following]
+--2019-05-24 21:57:54--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000006_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4243 (4.1K) [text/plain]
+Saving to: ‘ukirt_c_2015_n_05_1_0000006_h_lc.tbl’
+
+     0K ....                                                  100%  109M=0s
+
+2019-05-24 21:57:55 (109 MB/s) - ‘ukirt_c_2015_n_05_1_0000006_h_lc.tbl’ saved [4243/4243]
+
+--2019-05-24 21:57:55--  http://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000007_h_lc.tbl
+Resolving exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)... 134.4.54.147
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000007_h_lc.tbl [following]
+--2019-05-24 21:57:55--  https://exoplanetarchive.ipac.caltech.edu/data/ETSS//UKIRT/005/941/56/ukirt_c_2015_n_05_1_0000007_h_lc.tbl
+Connecting to exoplanetarchive.ipac.caltech.edu (exoplanetarchive.ipac.caltech.edu)|134.4.54.147|:443... connected.
