@@ -29,7 +29,7 @@ def median_filter(flux, width=25):
     return median_filter
     #return detrend_median(lc_SavGol, 25) 
     
-def SavGol(y, win=49, return_filter=False):
+def SavGol(y, win=151, return_filter=False):
     """
     Ajusta un filtro de polinomio de grado 2 sobre la curva y lo resta:
     sirve para quitar la tendencia
@@ -45,7 +45,7 @@ def SavGol(y, win=49, return_filter=False):
     
     """ APPLIED FILTER and get residual"""
     filter_savgol = savgol_filter(aux_y, win, 2)
-    aux_y = aux_y - filter_savgol + np.nanmedian(aux_y) #se la dejo o no??
+    aux_y = aux_y - filter_savgol #+ np.nanmedian(aux_y) #se la dejo o no??
       
     to_return[~mask_null] = aux_y#[~mask_null]
     to_return[mask_null] = np.nan
@@ -58,7 +58,7 @@ def SavGol(y, win=49, return_filter=False):
     return to_return
 
 
-def clean_LC(flux, kernel_median=25, kernel_pol=49, detrend_median=False ):
+def clean_LC(flux, kernel_median=25, kernel_pol=151, detrend_median=False ,plot=True):
     """
         1- Detrend light curve
         2- Remove outliers
@@ -70,37 +70,57 @@ def clean_LC(flux, kernel_median=25, kernel_pol=49, detrend_median=False ):
     if kernel_pol%2 == 0:
         kernel_pol +=1
     
-    
     if not detrend_median: #detrend encontrado
-        to_return = process_found(flux, kernel_median=kernel_median, kernel_pol=kernel_pol)
+        lc_process = process_found(flux, kernel_median=kernel_median, kernel_pol=kernel_pol, plot_show=plot)
     
     elif detrend_median: #detrend con mediana
-        to_return = flux - median_filter(flux, width=kernel_median)
+        lc_process = flux - median_filter(flux, width=kernel_median)
     
-    #remove outliers
+    return remove_outliers(lc_process)
     
-    return to_return
-
-
-    
-def process_found(flux, kernel_median=25, kernel_pol=49):
+def process_found(flux, kernel_median=25, kernel_pol=151, plot_show=True):
     """ Proceso que se realiza en kepler, segun: Kepler: A search for extraterrestral planets """
     lc_SavGol, filter_app = SavGol(flux, win=kernel_pol, return_filter=True)
-    plt.plot(flux[:1000], label= "Real LC")
-    plt.plot(filter_app[:1000], label= "SavGol Filter -fited")
-    plt.legend()
-    plt.plot()
-    plt.show()
-    
-    plt.plot(lc_SavGol[:1000])
-    plt.title("First step, remove polynomial fit (detrend)")
-    plt.plot()
-    plt.show()
-    
-    #falta eliminar outliers
-    
-    return lc_SavGol - median_filter(lc_SavGol,width=kernel_median)
+    if plot_show:
+        plt.plot(flux[:1000], label= "Real LC")
+        plt.plot(filter_app[:1000], label= "SavGol Filter -fited")
+        plt.legend()
+        plt.plot()
+        plt.show()
 
+        plt.plot(lc_SavGol[:1000])
+        plt.title("First step, remove polynomial fit (detrend)")
+        plt.plot()
+        plt.show()
+
+    return lc_SavGol - median_filter(lc_SavGol,width=kernel_median)
+    
+def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False):
+    '''
+        Performs iterative sigma clipping to get outliers.
+    '''
+    f_clean = np.asarray(f).copy() #is already the residuals (value-median filter)
+    
+    do_clean = True
+    values_cleaned = 0
+    while do_clean and values_cleaned <= len(f_clean)*0.6: #do not remove more than 60% of data..
+        if with_MAD:
+            med = np.nanmedian(f_clean)
+            MAD = 1.4826 * np.nanmedian(np.abs(f_clean - med)) 
+        else:
+            med = np.nanmean(f_clean)
+            MAD = np.nanstd(f_clean)
+
+        mask_nan = (f_clean - med < -sigm_low * MAD) | (f_clean - med > sigm_up * MAD)
+        inds = np.where( mask_nan )[0]
+        #remove outliers
+        f_clean[inds] = np.nan
+        
+        if len(inds) == 0:
+            do_clean = False #stop cleaning
+        values_cleaned += len(inds)
+    print("Clean done (remove outliers iterativetly), erase %d values"%(values_cleaned))
+    return f_clean
 
 def mask_values(time, flux, mask=np.nan):
     """"
