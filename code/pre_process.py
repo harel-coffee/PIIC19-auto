@@ -95,7 +95,7 @@ def process_found(flux, kernel_median=25, kernel_pol=151, plot_show=True):
 
     return lc_SavGol - median_filter(lc_SavGol,width=kernel_median)
     
-def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False):
+def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False, plot=True):
     '''
         Performs iterative sigma clipping to get outliers.
     '''
@@ -119,6 +119,7 @@ def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False):
         if len(inds) == 0:
             do_clean = False #stop cleaning
         values_cleaned += len(inds)
+    #if plot:
     print("Clean done (remove outliers iterativetly), erase %d values"%(values_cleaned))
     return f_clean
 
