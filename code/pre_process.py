@@ -139,7 +139,12 @@ def mask_values(time, flux, mask=np.nan):
     time = np.asarray(time).copy()
     sample_rate = [ time[i+1] -time[i] for i in range(time.shape[0]-1) if not np.isnan(time[i+1] -time[i]) ]
     
-    new_samp_ra = max(np.min(sample_rate), 1e-7) #quizas otra forma de calcular esto
+    idx_mins = np.argsort(sample_rate)
+    new_samp_ra = sample_rate[idx_mins[0]]
+    i = 1
+    while new_samp_ra == 0:
+        new_samp_ra = sample_rate[idx_mins[i]] #el mas pequeño
+        i+=1        
     print("New sampling rate: %f"%new_samp_ra)
     print("(in minutes): %f"%(TimeDelta(new_samp_ra, format='jd', scale='tai').sec/60))
     
@@ -222,3 +227,18 @@ def median_view(x, y, bin_width, num_bins=None, x_min=None, x_max=None):
         bin_min += bin_spacing
         bin_max += bin_spacing
     return result_x, result_y
+
+def generate_representation(time, flux, sample_time = 0, kepler_view = False): 
+    """
+        Transform light curve (time and flux) on a uniform sampling based on the lower value on delta time
+        sample time has to be on BJD/JD
+    """
+    #GET UNIFORM SAMPLING
+    new_time, new_flux = mask_values(time, flux)
+  
+    if kepler_view:
+        sample_time = 0.020433587455414834  #GET VIEW OF KEPLER (30 min sampling rate)
+        
+    if sample_time != 0:
+        new_time, new_flux = median_view(new_time, new_flux, bin_width=sample_time) # el de kepler
+    return new_time, new_flux
