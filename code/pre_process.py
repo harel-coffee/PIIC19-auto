@@ -45,7 +45,7 @@ def SavGol(y, win=151, return_filter=False):
     
     """ APPLIED FILTER and get residual"""
     filter_savgol = savgol_filter(aux_y, win, 2)
-    aux_y = aux_y - filter_savgol #+ np.nanmedian(aux_y) #se la dejo o no??
+    aux_y = aux_y - filter_savgol + np.nanmedian(aux_y) #se la dejo o no??
       
     to_return[~mask_null] = aux_y#[~mask_null]
     to_return[mask_null] = np.nan
@@ -58,7 +58,7 @@ def SavGol(y, win=151, return_filter=False):
     return to_return
 
 
-def clean_LC(flux, kernel_median=25, kernel_pol=151, detrend_median=False ,plot=True):
+def clean_LC(flux, kernel_median=25, kernel_pol=151, detrend_median=False ,plot=True, divided=False):
     """
         1- Detrend light curve
         2- Remove outliers
@@ -71,14 +71,17 @@ def clean_LC(flux, kernel_median=25, kernel_pol=151, detrend_median=False ,plot=
         kernel_pol +=1
     
     if not detrend_median: #detrend encontrado
-        lc_process = process_found(flux, kernel_median=kernel_median, kernel_pol=kernel_pol, plot_show=plot)
+        lc_process = process_found(flux, kernel_median=kernel_median, kernel_pol=kernel_pol, plot_show=plot, divided=divided)
     
     elif detrend_median: #detrend con mediana
-        lc_process = flux - median_filter(flux, width=kernel_median)
+        if not divided:
+            lc_process = flux - median_filter(flux, width=kernel_median)
+        else:
+            lc_process = flux/median_filter(flux, width=kernel_median)
     
     return remove_outliers(lc_process)
     
-def process_found(flux, kernel_median=25, kernel_pol=151, plot_show=True):
+def process_found(flux, kernel_median=25, kernel_pol=151, plot_show=True, divided=False):
     """ Proceso que se realiza en kepler, segun: Kepler: A search for extraterrestral planets """
     lc_SavGol, filter_app = SavGol(flux, win=kernel_pol, return_filter=True)
     if plot_show:
@@ -92,8 +95,11 @@ def process_found(flux, kernel_median=25, kernel_pol=151, plot_show=True):
         plt.title("First step, remove polynomial fit (detrend)")
         plt.plot()
         plt.show()
-
-    return lc_SavGol - median_filter(lc_SavGol,width=kernel_median)
+    if not divided:
+        lc_return = lc_SavGol - median_filter(lc_SavGol,width=kernel_median)
+    else:
+        lc_return = lc_SavGol/median_filter(lc_SavGol,width=kernel_median)
+    return lc_return
     
 def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False, plot=True):
     '''
