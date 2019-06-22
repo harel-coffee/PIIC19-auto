@@ -1,0 +1,183 @@
+\catalog = 'UKIRT'
+\phot = 'CASU'
+\year = 2016
+\bulge = 's'
+\field = 11
+\ccd = 1
+\lcid = 'ukirt_c_2016_s_11_1_0077224'
+\filter = 'H'
+\ UKIRT Microlensing Surveys
+\ Shvartzvald et al 2017, AJ 153, 61
+\ CASU photometry pipeline: 0.7'' aperture
+\ 2mass H band calibrated magnitude
+\ Irwin et al 2004, SPIE 5493, 411
+\ Hodgkin et al 2009, MNRAS 394, 675
+\ ..................................
+\ hjd = HJD-2450000
+\ ..................................
+|   hjd    | mag  | emag |
+|   real   | real | real |
+|    d     | mag  | mag  |
+|          | null | null |
+ 7487.06988   null   null
+ 7487.11495 18.457  0.380
+ 7488.04462   null   null
+ 7488.09038   null   null
+ 7489.04510   null   null
+ 7489.10259   null   null
+ 7490.05190   null   null
+ 7490.10377   null   null
+ 7491.05685   null   null
+ 7491.10734   null   null
+ 7492.05271   null   null
+ 7492.10341   null   null
+ 7493.04391   null   null
+ 7493.09400   null   null
+ 7494.03789   null   null
+ 7494.08453   null   null
+ 7495.04279   null   null
+ 7495.09225   null   null
+ 7496.03225   null   null
+ 7496.09040   null   null
+ 7497.04919   null   null
+ 7497.09512   null   null
+ 7498.01350   null   null
+ 7498.05915   null   null
+ 7499.04435   null   null
+ 7499.08873   null   null
+ 7500.02532   null   null
+ 7500.07202   null   null
+ 7501.00590   null   null
+ 7501.05264   null   null
+ 7502.01901   null   null
+ 7502.06336   null   null
+ 7503.01180   null   null
+ 7503.05801   null   null
+ 7507.01340   null   null
+ 7507.06425   null   null
+ 7508.02649   null   null
+ 7508.07036   null   null
+ 7509.01677   null   null
+ 7509.06933   null   null
+ 7509.98799   null   null
+ 7510.09449   null   null
+ 7510.99913   null   null
+ 7511.04752   null   null
+ 7512.00318   null   null
+ 7512.05516   null   null
+ 7512.98435   null   null
+ 7513.03192   null   null
+ 7514.05536   null   null
+ 7514.97722   null   null
+ 7515.02352   null   null
+ 7515.97345   null   null
+ 7516.01958   null   null
+ 7516.98615   null   null
+ 7517.02928   null   null
+ 7518.99920   null   null
+ 7519.04785   null   null
+ 7520.00422   null   null
+ 7520.04975   null   null
+ 7521.00544   null   null
+ 7521.04886   null   null
+ 7523.02145   null   null
+ 7523.08499   null   null
+ 7523.98951   null   null
+ 7524.05395   null   null
+ 7524.98088   null   null
+ 7525.02608   null   null
+ 7525.97329   null   null
+ 7526.01817   null   null
+ 7526.97789   null   null
+ 7527.02906   null   null
+ 7527.95341   null   null
+ 7527.99707   null   null
+ 7528.95512   null   null
+ 7529.00357   null   null
+ 7529.94448   null   null
+ 7530.00102   null   null
+ 7530.98097   null   null
+ 7531.02832   null   null
+ 7531.96164   null   null
+ 7532.01243   null   null
+ 7535.01054   null   null
+ 7535.06379   null   null
+ 7535.95610   null   null
+ 7536.03505   null   null
+ 7537.95213   null   null
+ 7537.99682   null   null
+ 7538.97109   null   null
+ 7539.01476   null   null
+ 7539.92137   null   null
+ 7539.96979   null   null
+ 7540.94595   null   null
+ 7540.99538   null   null
+ 7541.92300   null   null
+ 7541.96951   null   null
+ 7542.02077   null   null
+ 7542.89753   null   null
+ 7542.94514   null   null
+ 7542.99618   null   null
+ 7543.93024   null   null
+ 7543.97976   null   null
+ 7544.02670   null   null
+ 7544.89743   null   null
+ 7544.94783   null   null
+ 7544.99229   null   null
+ 7545.91241   null   null
+ 7545.96099   null   null
+ 7546.00555   null   null
+ 7546.88315   null   null
+ 7546.93049   null   null
+ 7546.97445   null   null
+ 7547.92367   null   null
+ 7547.96733   null   null
+ 7548.01441   null   null
+ 7548.92854   null   null
+ 7548.97334   null   null
+ 7549.03233   null   null
+ 7549.91761   null   null
+ 7549.97206   null   null
+ 7550.01744   null   null
+ 7550.90879   null   null
+ 7550.95304   null   null
+ 7551.00329   null   null
+ 7554.91909   null   null
+ 7554.96542   null   null
+ 7555.01010   null   null
+ 7555.88051   null   null
+ 7555.92447   null   null
+ 7555.97284   null   null
+ 7558.89322   null   null
+ 7558.93890   null   null
+ 7558.98359   null   null
+ 7561.88825   null   null
+ 7561.93324   null   null
+ 7561.98245   null   null
+ 7562.84046   null   null
+ 7562.88893   null   null
+ 7562.93556   null   null
+ 7563.87604   null   null
+ 7563.92058   null   null
+ 7563.96431   null   null
+ 7564.87199   null   null
+ 7564.91742   null   null
+ 7564.96746   null   null
+ 7565.98442   null   null
+ 7567.91503   null   null
+ 7568.87641   null   null
+ 7573.81477   null   null
+ 7573.86632   null   null
+ 7573.91384   null   null
+ 7574.82639   null   null
+ 7574.87424   null   null
+ 7574.92093   null   null
+ 7575.80421   null   null
+ 7575.85813   null   null
+ 7575.90717   null   null
+ 7576.82917   null   null
+ 7576.87581   null   null
+ 7576.92400   null   null
+ 7577.80493   null   null
+ 7577.85231   null   null
+ 7577.89861   null   null
