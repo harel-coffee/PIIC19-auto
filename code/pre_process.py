@@ -137,25 +137,32 @@ def mask_values(time, flux, mask=np.nan):
     print("***************Mask values to get uniform sampling rate is being done..")
     flux = np.asarray(flux).copy()
     time = np.asarray(time).copy()
-    sample_rate = [ time[i+1] -time[i] for i in range(time.shape[0]-1) if not np.isnan(time[i+1] -time[i]) ]
+    #sample_rate = [ time[i+1] -time[i] for i in range(time.shape[0]-1) if not np.isnan(time[i+1] -time[i]) ]
+    sample_rate = np.diff(time)
     
     idx_mins = np.argsort(sample_rate)
     new_samp_ra = sample_rate[idx_mins[0]]
     i = 1
     while new_samp_ra == 0:
         new_samp_ra = sample_rate[idx_mins[i]] #el mas pequeño
-        i+=1        
-    print("New sampling rate: %f"%new_samp_ra)
-    print("(in minutes): %f"%(TimeDelta(new_samp_ra, format='jd', scale='tai').sec/60))
+        i+=1   
+        
+    if sample_rate[idx_mins[-1]] - new_samp_ra < 0.000695: #menor que 1 min (60 sec)
+        new_samp_ra = (time[-1] - time[0])/len(time) #si la diferencia es minima considerar que viene uniforme
+    
+    print("New sampling rate: %f (JD) --- %f (mins)"%(new_samp_ra,new_samp_ra*24*60))
     
     print("Old length: %d"%len(time))
     new_time = np.arange(time[0], time[-1], new_samp_ra)
     print("New length: %d"%len(new_time))
+    if len(time) == len(new_time):
+        print("Assuming uniform sampling")
+        return new_time, flux
     
     #interpolar time
-    indices = np.arange(0,len(time))
-    not_nan = ~np.isnan(time)
-    time = np.interp(indices, indices[not_nan], time[not_nan])
+    #indices = np.arange(0,len(time))
+    #not_nan = ~np.isnan(time)
+    #time = np.interp(indices, indices[not_nan], time[not_nan])
     
     #definir cual sera al indice donde se colocara..
     new_flux = np.tile(mask, len(new_time))
@@ -237,7 +244,7 @@ def generate_representation(time, flux, sample_time = 0, kepler_view = False):
     new_time, new_flux = mask_values(time, flux)
   
     if kepler_view:
-        sample_time = 0.020433587455414834  #GET VIEW OF KEPLER (30 min sampling rate)
+        sample_time = 0.020433599999961416  #GET VIEW OF KEPLER (30 min sampling rate)
         
     if sample_time != 0:
         new_time, new_flux = median_view(new_time, new_flux, bin_width=sample_time) # el de kepler
