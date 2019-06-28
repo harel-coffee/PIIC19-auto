@@ -45,7 +45,7 @@ def SavGol(y, win=151, return_filter=False):
     
     """ APPLIED FILTER and get residual"""
     filter_savgol = savgol_filter(aux_y, win, 2)
-    aux_y = aux_y - filter_savgol + np.nanmedian(aux_y) #se la dejo o no??
+    aux_y = aux_y - filter_savgol + np.nanmedian(aux_y)
       
     to_return[~mask_null] = aux_y#[~mask_null]
     to_return[mask_null] = np.nan
