@@ -27,7 +27,6 @@ def median_filter(flux, width=25):
         if np.isnan(median_filter[i]):
             median_filter[i] = 0 #to not get nans
     return median_filter
-    #return detrend_median(lc_SavGol, 25) 
     
 def SavGol(y, win=151, return_filter=False):
     """
@@ -65,6 +64,12 @@ def clean_LC(flux, kernel_median=25, kernel_pol=151, detrend_median=False ,plot=
         
         width debe ser definido en base al sample rate (10=5 horas)
     """
+    med = np.nanmedian(flux)
+    if  np.abs(med - 1) < 0.1:
+        flux -= 1
+    elif med > 1:
+        flux = flux/med - 1 #revisar en otros dataset.. si hacerlo despues de lc_savgol se realice..
+        
     if kernel_median%2 ==0:
         kernel_median += 1
     if kernel_pol%2 == 0:
