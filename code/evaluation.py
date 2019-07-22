@@ -1,14 +1,19 @@
-from sklearn.metrics import f1_score, precision_score, recall_score
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import KFold
-from sklearn.metrics import accuracy_score,f1_score, confusion_matrix
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score,f1_score, confusion_matrix, mean_absolute_error,mean_squared_error, median_absolute_error
 from sklearn.preprocessing import normalize
 import time
 import matplotlib.pyplot as plt
 
-def plot_confusion_matrix(cm, target_names, title='Confusion matrix (f1-score)',cmap=None, normalize=True):
+def plot_df(df):
+    try:
+        from IPython.display import display
+        display(df)
+    except:
+        print(df)
     
+def plot_confusion_matrix(cm, target_names, title='Confusion matrix (f1-score)',cmap=None, normalize=True):
     import itertools
     accuracy = np.trace(cm) / float(np.sum(cm))
     misclass = 1 - accuracy
@@ -58,11 +63,66 @@ def calculate_metrics(y_true,y_pred,plot=True, title=""):
     if plot:
         df = pd.DataFrame(dic_return)
         df.index = ["False Positive","Confirmed"]
-        print(df)
+        plot_df(df)
         plot_confusion_matrix(normalize(matriz,axis=1,norm='l1'),["False Positive","Confirmed"],title)
     dic_return["Confusion Matrix"] = matriz
     return dic_return
 
+
+def calculate_median_abs_err(real, pred): 
+    if len(real.shape) > 1:
+        return np.mean([median_absolute_error(real[:,d],pred[:,d]) for d in range(real.shape[1])])   
+    else:
+        return median_absolute_error(real,pred)
+    
+def calculate_mean_abs_perce_err(real, pred):
+    diff = np.abs((real - pred) / np.clip(np.abs(real), 1e-7, None))
+    return 100. * np.mean(diff) #sin *100 es "fractional"
+
+def calculate_Rmean_squar_log_err(real, pred):
+    first_log = np.log(np.clip(pred, 1e-7, None) + 1.)
+    second_log = np.log(np.clip(real, 1e-7, None) + 1.)
+    return np.sqrt(np.mean(np.square(first_log - second_log)))
+
+def evaluate_metadata(real, pred, plot=False):
+    dic_res = {}
+    dic_res["MSE"] = mean_squared_error(real, pred)
+    dic_res["MAE"] = mean_absolute_error(real, pred)
+    dic_res["MeAE"] = calculate_median_abs_err(real, pred)
+    dic_res["MApE"] = calculate_mean_abs_perce_err(real,pred)
+    dic_res["RMSLE"] = calculate_Rmean_squar_log_err(real,pred)
+    if plot:
+        df = pd.DataFrame(dic_res)
+        df.index = ["Real"]
+        plot_df(df)
+    return dic_res
+
+def evaluate_metadata_raw(real, pred, plot=True, metadata_used=[""]):
+    mse_raw = []
+    mae_raw = []
+    mEae_raw = []
+    maPe_raw = []
+    rmsle_raw = []
+    for d in range(real.shape[1]):        
+        dic_aux = evaluate_metadata(real[:,d], pred[:,d], plot=False)
+        mse_raw.append(dic_aux["MSE"])
+        mae_raw.append(dic_aux["MAE"])
+        mEae_raw.append(dic_aux["MeAE"])
+        maPe_raw.append(dic_aux["MApE"])
+        rmsle_raw.append(dic_aux["RMSLE"])
+        
+    res_metadata = {}
+    res_metadata["MSE"] = mse_raw
+    res_metadata["MAE"] = mae_raw
+    res_metadata["MeAE"] = mEae_raw
+    res_metadata["MApE"] = maPe_raw
+    res_metadata["RMSLE"] = rmsle_raw
+    
+    if plot:
+        df = pd.DataFrame(res_metadata)
+        df.index = metadata_used
+        plot_df(df.transpose())
+    return res_metadata
 
 """
 import matplotlib.pyplot as plt
