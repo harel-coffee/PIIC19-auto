@@ -121,7 +121,13 @@ def evaluate_metadata_raw(real, pred, plot=True, metadata_used=[""]):
     if plot:
         df = pd.DataFrame(res_metadata)
         df.index = metadata_used
+        df.loc["Global"] = np.mean(df, axis=0)
         plot_df(df.transpose())
+    res_metadata["MSE"].append(np.mean(mse_raw))
+    res_metadata["MAE"].append(np.mean(mae_raw))
+    res_metadata["MeAE"].append(np.mean(mEae_raw))
+    res_metadata["MApE"].append(np.mean(maPe_raw))
+    res_metadata["RMSLE"].append(np.mean(rmsle_raw))
     return res_metadata
 
 """
