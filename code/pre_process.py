@@ -9,7 +9,9 @@ from astropy.time import TimeDelta
 import math, os,sys
 
 def median_filter(flux, width=25):
-    """        Calcula el "moving median filter" a traves de la ventana width, steps de a 1    """
+    """
+        Calcula el "moving median filter" a través de la ventana width, steps de a 1
+    """
     median_filter = np.zeros_like(flux)
     for i in range(flux.shape[0]):
         lim_inf = int(    i -(width/2))
@@ -132,12 +134,13 @@ def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False, plot=True):
     print("Clean done (remove outliers iterativetly), erase %d values"%(values_cleaned))
     return f_clean
 
-def mask_values(time, flux, mask=np.nan):
+def mask_values(time, flux, mask=np.nan, plot=True):
     """"
-        Toma una curva de luz sampleada a traves de distintos timesteps y genera una serie continua (con mascara de nans)
-        a traves de un suevo sampling rate constante para cada tiempo. Calculado actualmente como el minimo.
+        Toma una curva de luz sampleada a través de distintos timesteps y genera una serie continua (con máscara de nans)
+        a través de un suevo sampling rate constante para cada tiempo. Calculado actualmente como el mínimo.
     """
-    print("***************Mask values to get uniform sampling rate is being done..")
+    if plot:
+        print("***************Mask values to get uniform sampling rate is being done..")
     flux = np.asarray(flux).copy()
     time = np.asarray(time).copy()
     #sample_rate = [ time[i+1] -time[i] for i in range(time.shape[0]-1) if not np.isnan(time[i+1] -time[i]) ]
@@ -147,19 +150,21 @@ def mask_values(time, flux, mask=np.nan):
     new_samp_ra = sample_rate[idx_mins[0]]
     i = 1
     while new_samp_ra == 0:
-        new_samp_ra = sample_rate[idx_mins[i]] #el mas pequeno
+        new_samp_ra = sample_rate[idx_mins[i]] #el mas pequeño
         i+=1   
         
     if sample_rate[idx_mins[-1]] - new_samp_ra < 0.000695: #menor que 1 min (60 sec)
         new_samp_ra = (time[-1] - time[0])/len(time) #si la diferencia es minima considerar que viene uniforme
+    if plot:
+        print("New sampling rate: %f (JD) --- %f (mins)"%(new_samp_ra,new_samp_ra*24*60))
     
-    print("New sampling rate: %f (JD) --- %f (mins)"%(new_samp_ra,new_samp_ra*24*60))
-    
-    print("Old length: %d"%len(time))
+        print("Old length: %d"%len(time))
     new_time = np.arange(time[0], time[-1], new_samp_ra)
-    print("New length: %d"%len(new_time))
+    if plot:
+        print("New length: %d"%len(new_time))
     if len(time) == len(new_time):
-        print("Assuming uniform sampling")
+        if plot:
+            print("Assuming uniform sampling")
         return new_time, flux
     
     #interpolar time
@@ -174,16 +179,17 @@ def mask_values(time, flux, mask=np.nan):
     j = 0
     while j < len(time):
         value = new_time[i]
-        if  value - new_samp_ra < time[j] <= value + new_samp_ra: #quizas aca agregar el tema de la mediana..
+        if  value - new_samp_ra < time[j] <= value + new_samp_ra: #quizas acá agregar el tema de la mediana..
             indx_hold[j] = i
             j+=1
         i+=1
     new_flux[indx_hold] = flux
-    print("percentaje nulls/nans: %f"%( (len(new_flux) -len(flux))/len(new_flux) ))
+    if plot:
+        print("percentaje nulls/nans: %f"%( (len(new_flux) -len(flux))/len(new_flux) ))
     return new_time, new_flux
 
 
-def median_view(x, y, bin_width, num_bins=None, x_min=None, x_max=None):
+def median_view(x, y, bin_width, num_bins=None, x_min=None, x_max=None, plot=True):
     """Computes the median y-value in uniform intervals (bins) along the x-axis.
     The interval [x_min, x_max) is divided into num_bins uniformly spaced
     intervals of width bin_width. The value computed for each bin is the median
@@ -193,14 +199,17 @@ def median_view(x, y, bin_width, num_bins=None, x_min=None, x_max=None):
     x_min = x_min if x_min is not None else x[0]
     x_max = x_max if x_max is not None else x[-1]
     x_len = len(x)
-    print("Old length: %d"%x_len)
+    if plot:
+        print("Old length: %d"%x_len)
     
     num_bins = num_bins if num_bins is not None else int(round( (x_max - x_min) / bin_width))
     #bin_width = bin_width if bin_width is not None else (x_max - x_min) / num_bins
     bin_spacing = (x_max - x_min - bin_width) / (num_bins - 1)
-    print("New length: %d"%num_bins)
+    if plot:
+        print("New length: %d"%num_bins)
     if x_len - num_bins <= 1:
-        print("Nothing to be done") #que hacer en ese caso???? oversampling has to be done...
+        if plot:
+            print("Nothing to be done") #que hacer en ese caso???? oversampling has to be done...
         return x,y
 
     # Bins with no y-values will fall back to the global median.
@@ -238,17 +247,17 @@ def median_view(x, y, bin_width, num_bins=None, x_min=None, x_max=None):
         bin_max += bin_spacing
     return result_x, result_y
 
-def generate_representation(time, flux, sample_time = 0, kepler_view = False): 
+def generate_representation(time, flux, sample_time = 0, kepler_view = False, plot=True): 
     """
         Transform light curve (time and flux) on a uniform sampling based on the lower value on delta time
         sample time has to be on BJD/JD
     """
     #GET UNIFORM SAMPLING
-    new_time, new_flux = mask_values(time, flux)
+    new_time, new_flux = mask_values(time, flux, plot=plot)
   
     if kepler_view:
         sample_time = 0.020433599999961416  #GET VIEW OF KEPLER (30 min sampling rate)
         
     if sample_time != 0:
-        new_time, new_flux = median_view(new_time, new_flux, bin_width=sample_time) # el de kepler
+        new_time, new_flux = median_view(new_time, new_flux, bin_width=sample_time, plot=plot) # el de kepler
     return new_time, new_flux
