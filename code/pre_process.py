@@ -9,9 +9,7 @@ from astropy.time import TimeDelta
 import math, os,sys
 
 def median_filter(flux, width=25):
-    """
-        Calcula el "moving median filter" a través de la ventana width, steps de a 1
-    """
+    """        Calcula el "moving median filter" a traves de la ventana width, steps de a 1    """
     median_filter = np.zeros_like(flux)
     for i in range(flux.shape[0]):
         lim_inf = int(    i -(width/2))
@@ -136,8 +134,8 @@ def remove_outliers(f, sigm_up = 5, sigm_low=40, with_MAD=False, plot=True):
 
 def mask_values(time, flux, mask=np.nan):
     """"
-        Toma una curva de luz sampleada a través de distintos timesteps y genera una serie continua (con máscara de nans)
-        a través de un suevo sampling rate constante para cada tiempo. Calculado actualmente como el mínimo.
+        Toma una curva de luz sampleada a traves de distintos timesteps y genera una serie continua (con mascara de nans)
+        a traves de un suevo sampling rate constante para cada tiempo. Calculado actualmente como el minimo.
     """
     print("***************Mask values to get uniform sampling rate is being done..")
     flux = np.asarray(flux).copy()
@@ -149,7 +147,7 @@ def mask_values(time, flux, mask=np.nan):
     new_samp_ra = sample_rate[idx_mins[0]]
     i = 1
     while new_samp_ra == 0:
-        new_samp_ra = sample_rate[idx_mins[i]] #el mas pequeño
+        new_samp_ra = sample_rate[idx_mins[i]] #el mas pequeno
         i+=1   
         
     if sample_rate[idx_mins[-1]] - new_samp_ra < 0.000695: #menor que 1 min (60 sec)
@@ -176,7 +174,7 @@ def mask_values(time, flux, mask=np.nan):
     j = 0
     while j < len(time):
         value = new_time[i]
-        if  value - new_samp_ra < time[j] <= value + new_samp_ra: #quizas acá agregar el tema de la mediana..
+        if  value - new_samp_ra < time[j] <= value + new_samp_ra: #quizas aca agregar el tema de la mediana..
             indx_hold[j] = i
             j+=1
         i+=1
