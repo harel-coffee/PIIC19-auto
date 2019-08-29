@@ -50,7 +50,7 @@ def generate_trasition(lc_kepler,df,class_type,path):
             lc_wind_nan = np.concatenate(lc_wind_nan).reshape(-1,1)
             lc_wind_nan = lc_wind_nan/np.abs(np.min(lc_wind_nan)) 
 
-            n_sta=15
+            n_sta=20
             np.random.seed(44)
             markov_model = hmm.GaussianHMM(n_components=n_sta, n_iter=50)
             markov_model.fit(lc_wind_nan , lengths)
@@ -61,7 +61,7 @@ def generate_trasition(lc_kepler,df,class_type,path):
             print('LC %s ya transformada'%(str(npy_name[i])))
         
 class_type = 'FALSE POSITIVE'
-path_save = "/work/work_teamEXOPLANET/MTF_gabo_2/falsos_positivos_15/"
+path_save = "/work/work_teamEXOPLANET/MTF_margarita/falsos_positivos_20/"
 folder_lc = "/work/work_teamEXOPLANET/KOI_LC/"
 #Clean Light Curves
 lc_kepler = np.load(folder_lc+"cleaned/LC_kepler_processed.npy" )        
