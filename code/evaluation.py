@@ -59,7 +59,7 @@ def calculate_metrics(y_true,y_pred,plot=True, title=""):
     dic_return["F1 weighted"] = f1_score(y_true,y_pred,average="weighted",labels=[0,1])
     dic_return["F1 macro"] = f1_score(y_true,y_pred,average="macro",labels=[0,1])
     dic_return["F1 micro"] = f1_score(y_true,y_pred,average="micro",labels=[0,1])
-    matriz=confusion_matrix(y_true,y_pred)
+    matriz=confusion_matrix(y_true,y_pred, labels=[0,1])
     if plot:
         df = pd.DataFrame(dic_return)
         df.index = ["False Positive","Confirmed"]

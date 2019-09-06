@@ -71,14 +71,15 @@ def deconv_bloq(it, filters, kernel_s, pool, conv_pool=False, BN=False, drop=0,p
     return f1
 
 def encoder_model_CNN1D(input_dim, channels, L=1, filters=8,kernel_s =10,
-                        pool=5,BN=False,conv_pool=False,drop=0,padding='same',dil_r=1 ): #parametros estructurales
+                        pool=5,BN=False,conv_pool=False,drop=0,padding='same',dil_r=1,time=False  ): #parametros estructurales
     it = Input(shape=(input_dim,channels))  #fixed length..
     f1 = it
   
     for l in range(L):
         f1 = conv_bloq(f1, filters, kernel_s, pool,BN=BN,conv_pool=conv_pool, drop=drop,padding=padding,dil_r=dil_r) 
         
-        filters = int(filters*2)
+        if not time:
+            filters = int(filters*2)
         if dil_r != 1:
             dil_r = int(dil_r*2)
     return Model(inputs=it, outputs=f1)
@@ -193,10 +194,13 @@ def op4(it_time,it_lc, T):
     print("Parametros modelo: ",decoder_model.count_params())
     return encoder_model, decoder_model
 
-def op4_doubleSimp(it_time,it_lc, T):
+def op4_doubleSimp(it_time,it_lc, T, time=False):
     encoder = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0) #model
     encoder.name = "LC_encoder"
-    encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0)
+    if time:
+        encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=64, pool=2,kernel_s=5, drop=0, time=time) #o mas filtros?
+    else:
+        encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0, time=time)
     encoder_t.name = "Time_encoder"
     inp_dim = encoder.output_shape[1:] 
 
@@ -215,10 +219,13 @@ def op4_doubleSimp(it_time,it_lc, T):
 
 #op 4 con cnn al medio?
 
-def op4_GRU(it_time, it_lc, T):
+def op4_GRU(it_time, it_lc, T, aux_time=False, time=False):
     encoder = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0) #model
     encoder.name = "LC_encoder"
-    encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0) #model
+    if time:
+        encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=32, pool=2,kernel_s=5, drop=0, time=time) #o mas filtros?
+    else:
+        encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0, time=time)
     encoder_t.name= "Time_encoder"
     inp_dim = encoder.output_shape[1:] 
 
@@ -232,10 +239,15 @@ def op4_GRU(it_time, it_lc, T):
 
     out_dim = encoder_model.output_shape[1:] 
     it_embd = Input(shape= out_dim)
-    concat_decoder = keras.layers.Concatenate()([encoder_time, it_embd]) #or multiply?
-    decoder = decoder_model_CNN2D((out_dim[0],out_dim[1]*2), 1, L=5, filters=8, pool=2, kernel_s=5,T=T, drop=0) #model
-    lc_out = decoder(concat_decoder)
-    decoder_model = Model(inputs=[it_time, it_embd], outputs=lc_out)
+    
+    if aux_time:
+        concat_decoder = keras.layers.Concatenate()([encoder_time, it_embd]) #or multiply?
+        out_dim = (out_dim[0],out_dim[1] + encoder_t.output_shape[2])
+    decoder = decoder_model_CNN2D(out_dim, 1, L=5, filters=8, pool=2, kernel_s=5,T=T, drop=0) #model
+    if aux_time:
+        decoder_model = Model(inputs=[it_time, it_embd], outputs=decoder(concat_decoder) )
+    else:
+        decoder_model = Model(inputs=it_embd, outputs=decoder(it_embd))
     decoder_model.name = "decoder"
     print("Parametros modelo: ",decoder_model.count_params())
     return encoder_model, decoder_model
@@ -260,16 +272,25 @@ else: #if not created
     it_time = Input(shape=X_time.shape[1:], name='time_input')
     it_lc = Input(shape=X_lc_scaled.shape[1:], name='lc_input')
 
-    if type_m == "op4":
-        encoder_model, decoder_model = op4(it_time,it_lc, T)
-    elif type_m == "op4_d":
+    #if type_m == "op4":
+    #    encoder_model, decoder_model = op4(it_time,it_lc, T)
+    if type_m == "op4_d":
         encoder_model, decoder_model = op4_doubleSimp(it_time,it_lc, T) 
-    elif type_m == "op4_gru":
-        encoder_model, decoder_model = op4_GRU(it_time,it_lc, T) 
-
+    elif type_m == "op4_dtsimple":
+        encoder_model, decoder_model = op4_doubleSimp(it_time,it_lc, T, time=True) 
+    #elif type_m == "op4_gru":
+    #    encoder_model, decoder_model = op4_GRU(it_time,it_lc, T) 
+    elif type_m == "op4_grut":
+        encoder_model, decoder_model = op4_GRU(it_time,it_lc, T, aux_time=True) 
+    elif type_m == "op4_grutsimple":
+        encoder_model, decoder_model = op4_GRU(it_time,it_lc, T, aux_time=True, time=True) 
+        
     loss_saved = []
     
-    autoencoder = Model([it_time,it_lc],  decoder_model(encoder_model([it_time,it_lc]))) 
+    if "grut" in type_m:
+        autoencoder = Model([it_time,it_lc],  decoder_model([it_time, encoder_model([it_time,it_lc])] )) 
+    else:
+        autoencoder = Model([it_time,it_lc],  decoder_model(encoder_model([it_time,it_lc]))) 
     autoencoder.compile(loss=[mse_masked],optimizer='adam')
 
 ## build autoencoder
