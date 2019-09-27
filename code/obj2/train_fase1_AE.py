@@ -198,7 +198,7 @@ def op4_doubleSimp(it_time,it_lc, T, time=False):
     encoder = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0) #model
     encoder.name = "LC_encoder"
     if time:
-        encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=64, pool=2,kernel_s=5, drop=0, time=time) #o mas filtros?
+        encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=32, pool=2,kernel_s=5, drop=0, time=time) #o mas filtros?
     else:
         encoder_t = encoder_model_CNN1D(T, 1, L=5, filters=8, pool=2,kernel_s=5, drop=0, time=time)
     encoder_t.name = "Time_encoder"
