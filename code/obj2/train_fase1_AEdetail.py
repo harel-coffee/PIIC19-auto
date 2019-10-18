@@ -25,6 +25,11 @@ A_time = bool(opts.auxtime)
 double = bool(opts.double)
 fix_time = bool(opts.fixedtime) ## pendiente
 
+aux_f = "GRU"
+if A_time:
+    aux_f += "T"
+aux_f += "_" +str(S_units)+"U_"+str(L)+"L_"+str(double*1)+"D_"+str(fix_time*1)+"F_AE"
+
 
 from keras import backend as K
 from keras.models import Sequential, Model, load_model
@@ -60,7 +65,7 @@ def sum_bloq(it, pool, filters=1, kernel_s=1, conv_pool=False, BN=False):
             f1 = BatchNormalization()(f1)
     else:
         f1 = AveragePooling1D(pool_size=pool, strides=pool, padding='valid')(it)
-        f1 = Lambda(lambda x: p_s*x)(f1) #revert average to sum
+        f1 = Lambda(lambda x: pool*x)(f1) #revert average to sum
     return f1
 
 def rnn_bloq(it, units, layers=1, bid=False, gru=True, drop=0):
@@ -248,10 +253,6 @@ def op4_GRU(it_time, it_lc, T, aux_time=False, fix_time=False, L = 5, filters=16
     print("Parametros decoder: ",decoder_model.count_params())
     return encoder_model, decoder_model
 
-aux_f = "GRU"
-if A_time:
-    aux_f += "T"
-aux_f += "_" +str(S_units)+"U_"+str(L)+"L_"+str(double*1)+"D_AE"
 
 file_name_mod = aux_f  + "model.h5"
 file_name_wei = aux_f  + "weight.h5"
@@ -283,7 +284,7 @@ start_time = time.time()
 hist = train_model(autoencoder, [X_time,X_lc_scaled], X_lc_scaled, batch_size=256,
                     epochs=epochs+init_ep, initial_epoch=init_ep)  #borar init ep?
 
-#autoencoder.save_weights("./models_det/"+file_name_wei)
+autoencoder.save_weights("./models_det/"+file_name_wei)
 autoencoder.save("./models_det/"+file_name_mod)
 
 new_loss_saved = hist.history["loss"]
