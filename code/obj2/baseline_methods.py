@@ -45,20 +45,20 @@ metadata_used = ["Period", "Duration", "Time of Transit Epoch",
                  "Teq", "Transit Number", "Limb Darkening Coeff1", "Limb Darkening Coeff2"]
 df_meta_obj = df_meta[metadata_used]
 df_meta_obj = impute_on_pandas(df_meta_obj)
-mask_conf = (df_meta["NExScI Disposition"]=="CONFIRMED").values
+#mask_conf = (df_meta["NExScI Disposition"]=="CONFIRMED").values
 
-df_sets = pd.read_csv(folder+"/koi_sets_unb.csv") 
-mask_test = (df_sets["Set"] == "Test").values
+#df_sets = pd.read_csv(folder+"/koi_sets_unb.csv") 
+#mask_test = (df_sets["Set"] == "Test").values
 
-mask_test_conf = mask_conf & mask_test
-KOI_names_test = df_meta["KOI Name"].values[mask_test_conf]
+#mask_test_conf = mask_conf & mask_test
+KOI_names_test = df_meta["KOI Name"].values#[mask_test_conf]
 
 ###### READ LIGHT CURVE
 time_kepler = np.load(folder_lc+"npy/KOI_LC_time.npy")
 process_lc = np.load(folder_lc+'/cleaned/LC_kepler_processed.npy')
 
-time_kepler = time_kepler[mask_test_conf]
-process_lc = process_lc[mask_test_conf]
+time_kepler = time_kepler#[mask_test_conf]
+process_lc = process_lc#[mask_test_conf]
 N, T = time_kepler.shape
 sys_out.write("Datos: "+str(N)+","+str(T)+"\n")
 
@@ -184,3 +184,6 @@ elif method == "tls" or method == "transitleast":
         sys_out.write("Completed prediction on test set\n")
 
     ### faltae l bayesiano
+    #Muy bueno: https://github.com/waqasbhatti/astrobase -- https://astrobase.readthedocs.io/en/latest/astrobase.lcfit.transits.html#astrobase.lcfit.transits.mandelagol_fit_magseries
+    #https://github.com/mrtommyb/ktransit
+    #https://github.com/oscaribv/exotrending
