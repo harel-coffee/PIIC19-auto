@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import KFold
-from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score,f1_score, confusion_matrix, mean_absolute_error,mean_squared_error, median_absolute_error
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score,f1_score, confusion_matrix, mean_absolute_error,mean_squared_error, median_absolute_error, roc_curve, auc
 from sklearn.preprocessing import normalize
 import time
 import matplotlib.pyplot as plt
@@ -69,6 +69,46 @@ def calculate_metrics(y_true,y_pred,plot=True, title=""):
     return dic_return
 
 
+#PAra ejecutar y plotear varios metodos=
+#plot_ROC(y_val, [y_score1, y_score2], ["Metodo 1", "Metodo 2"])
+def plot_ROC(y_true, y_scores, names = []):
+    #Y pred has to be scores or probabilities
+
+    plt.figure(figsize=(8, 6))
+    
+    if len(names) != 0:
+        aux_plot_ROC(y_true, y_scores, names)
+    else:
+        fpr, tpr, thresholds = roc_curve(y_true, y_scores)
+        roc_auc = auc(fpr, tpr)
+        plt.plot(fpr, tpr, color='darkorange',lw=2, label='ROC curve (area = %0.2f)'%roc_auc)
+    
+    plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver operating characteristic (ROC)')
+    plt.legend(loc="lower right")
+    plt.show()
+    
+def aux_plot_ROC(y_true, y_scores, names=[]):
+    #Y pred has to be scores or probabilities
+    
+    #plt.figure(figsize=(8, 6))
+    for y_score, name in zip(y_scores, names):
+        fpr, tpr, thresholds = roc_curve(y_true, y_score)
+        roc_auc = auc(fpr, tpr)
+
+        plt.plot(fpr, tpr,lw=2, label='AUC %s = %0.2f'%(name, roc_auc))
+    #plt.xlim([0.0, 1.0])
+    #plt.ylim([0.0, 1.05])
+    #plt.xlabel('False Positive Rate')
+    #plt.ylabel('True Positive Rate')
+    #plt.title('Receiver operating characteristic (ROC)')
+    #plt.legend(loc="lower right")
+    #plt.show()
+
 def calculate_median_abs_err(real, pred): 
     if len(real.shape) > 1:
         return np.mean([median_absolute_error(real[:,d],pred[:,d]) for d in range(real.shape[1])])   
@@ -129,50 +169,3 @@ def evaluate_metadata_raw(real, pred, plot=True, metadata_used=[""]):
     res_metadata["MApE"].append(np.mean(maPe_raw))
     res_metadata["RMSLE"].append(np.mean(rmsle_raw))
     return res_metadata
-
-"""
-import matplotlib.pyplot as plt
-learners = len(p_test)
-M = np.arange(learners)
-LABELS=["K-NN","SVM","RANDOM FOREST"]
-
-fig = plt.figure(figsize=(12,8))
-
-#PRECISION SCORES
-aux = list(map(list, zip(*p_test))) #transpose
-plt.bar(M-0.15, aux[0], width=0.3,facecolor='#ff0000', edgecolor='white',label="False Positive")
-plt.bar(M+0.15, aux[1], width=0.3,facecolor='#1C9900', edgecolor='white',label="Confirmed")
-
-#RECALL SCORES
-aux = list(map(list, zip(*r_test))) #transpose
-plt.bar(M-0.15, np.array(aux[0])*-1, width=0.3,facecolor='#FF6666', edgecolor='white')
-plt.bar(M+0.15, np.array(aux[1])*-1, width=0.3,facecolor='#76C166', edgecolor='white')
-
-#ANOTATIONS OF SCORES
-for x, (a,b) in zip(M, p_test):
-    plt.text(x + 0.02-0.15, a + 0.01, '%.3f' % a, ha='center', va='bottom')#fp
-    plt.text(x + 0.02+0.15, b + 0.01, '%.3f' % b, ha='center', va='bottom')#conf
-for x, (a,b) in zip(M, r_test):
-    plt.text(x + 0.02-0.15, -a - 0.01, '%.3f' % a, ha='center', va='top')#fp
-    plt.text(x + 0.02+0.15, -b - 0.01, '%.3f' % b, ha='center', va='top')#conf
-        
-plt.xticks(M, LABELS)
-plt.title("PRECISION & RECALL on TEST")   
-plt.xlabel("Learners")  
-plt.ylabel("RECALL - Score - PRECISION") 
-plt.legend()
-plt.ylim(-1.2,1.2)
-plt.show()
-fig = plt.figure(figsize=(12,4))
-plt.bar(M, f1_score_test, facecolor='#9999ff', edgecolor='white')
-
-for x, y in zip(M, f1_score_test):
-    plt.text(x + 0.02, y + 0.01, '%.3f' % y, ha='center', va='bottom')
-    
-plt.xticks(np.arange(learners), LABELS)
-plt.title("F1-SCORE on TEST")   
-plt.xlabel("Learners")  
-plt.ylabel("Score") 
-plt.ylim(0,1.2)
-plt.show()
-"""
