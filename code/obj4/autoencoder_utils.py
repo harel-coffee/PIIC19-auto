@@ -79,6 +79,23 @@ def define_samp_model(D):
     z = keras.layers.Lambda(sampling, output_shape=(D,), name='sample')([mean_inp, log_var_inp])
     return keras.models.Model([mean_inp, log_var_inp], z, name="norm_sampl")
 
+def get_GRU(units, **args):
+    ### Return GRU-layer on gpu or normal (compatible)
+    try:
+        from keras.layers import CuDNNGRU
+        import tensorflow as tf
+        GPU_AVAIL = tf.test.is_gpu_available() 
+    except:
+        GPU_AVAIL = False
+    
+    if GPU_AVAIL:
+        layer = CuDNNGRU(units, **args)
+    else:
+        from keras.layers import GRU
+        gru_args = {'reset_after':True, 'recurrent_activation':'sigmoid', 'implementation':2} 
+        layer = GRU(units, **gru_args, **args)
+    return layer
+
 ########## LAYERS ON SCALE ############
 def check_dims(a,b):
     a_shape = list(K.int_shape(a))
@@ -104,7 +121,15 @@ def Mul_L(args):
     x,s = args
     x,s = check_dims(x,s)
     return x*s
+
 def Div_L(args):
     x,s = args
     x,s = check_dims(x,s)
     return x/s
+
+def Norm_L(x, mu, std):
+    x = K.log(x) #to normalize diifference on scale
+    return (x-mu)/std
+
+def RevertNorm_L(x, mu, std):
+    return K.exp(x*std+mu)
