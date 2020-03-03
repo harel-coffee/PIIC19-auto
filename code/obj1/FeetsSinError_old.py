@@ -11,14 +11,13 @@ import os,sys, gc
 warnings.filterwarnings('ignore')
 
 import multiprocessing 
-cores = min(8,multiprocessing.cpu_count())
+cores = multiprocessing.cpu_count()
 print("Codigo ejecutado sobre %d cores"%cores)
 
 folder_lc = "/work/work_teamEXOPLANET/KOI_LC/"
 time_kepler = np.load(folder_lc+"npy/KOI_LC_time.npy")
 lc_kepler = np.load(folder_lc+"npy/KOI_LC_init.npy" )
 #err_kepler = np.load(folder_lc+"npy/KOI_LC_init_err.npy" )
-#process_lc = np.load(folder_lc+'/cleaned/LC_kepler_processed.npy')
 N, T = time_kepler.shape
 print((N,T))
 
@@ -52,8 +51,7 @@ df_meta = pd.read_csv("/users/mbugueno/PIIC19/KOI_Data/kepler_dataset.csv")
 kois=df_meta['KOI Name'].values
 
 
-import time
-import csv
+import time, csv
 def safe_write(save_f, value):
     while(1):
         try:

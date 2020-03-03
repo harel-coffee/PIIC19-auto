@@ -133,3 +133,37 @@ def Norm_L(x, mu, std):
 
 def RevertNorm_L(x, mu, std):
     return K.exp(x*std+mu)
+
+
+
+###### FEATURES ANALYSIS
+def corr_between(a,b):
+    a_len = a.shape[1]
+    return np.corrcoef(a, b, rowvar=False)[:a_len,a_len:]
+
+
+from sklearn.feature_selection import mutual_info_regression as MI
+def MI_between(A, B, k=3):
+    MutI = np.zeros((A.shape[1],B.shape[1]))
+    for d in range(B.shape[1]):
+        MutI[:,d] = MI(A, B[:,d], n_neighbors=k)
+    return MutI
+
+def NMI_between(A, B, k=3, version=1):
+    I_AB = MI_between(A,B, k=k)
+
+    H_A = entropy_matrix(A, k=k)
+    H_B = entropy_matrix(B, k=k)
+    
+    return_v = np.zeros((A.shape[1],B.shape[1])) #normalize
+    for i in range(A.shape[1]):
+        for j in range(B.shape[1]):    
+            if version == 1:    
+                joint_H = np.max([H_A[i], H_B[j]]) # max{ H(A), H(B)} as wikipedia shows or average, as sklearn shows
+            elif version==2:
+                joint_H = H_A[i] + H_B[j] - I_AB[i,j]
+            return_v[i,j] = I_AB[i,j]/joint_H
+    return return_v
+
+def entropy_matrix(X, k=3):
+    return np.asarray([ MI(X[:,column][:,None], X[:,column], n_neighbors=k) for column in range(X.shape[1])])    
