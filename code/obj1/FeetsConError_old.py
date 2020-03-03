@@ -68,6 +68,7 @@ def feets_parallel(i, times, mags, errs,  koi_n, save_f):
     if koi_n in resumen["KOI Name"].values:
         print ("Se omite curva %d: %s "%(i,koi_n))
     else:
+        start_time= time.time()
         print ("Trabajando en curva %d: %s... "%(i,koi_n), end='')
 
         fs = feets.FeatureSpace(data=['time','magnitude','error'])
@@ -75,10 +76,10 @@ def feets_parallel(i, times, mags, errs,  koi_n, save_f):
 
         res = [koi_n]+list(values.T)
         safe_write(save_f, res) #read and save
-        print("Terminado!")
+        print("Terminado! en %f segundos"%(time.time()-start_time))
 
 
-name_saved_file = "Feets_Features/ResumenFeets_conError.csv"
+name_saved_file = "Feets_Features/ResumenFeets_conError_seq.csv"
 if not os.path.isfile(name_saved_file):
     fs = feets.FeatureSpace(data=['time','magnitude','error'])
     resumen=pd.DataFrame(columns =['KOI Name']+list(fs.features_as_array_))
@@ -92,17 +93,12 @@ if start_i == N:
     assert False
 print("Comienza ejecucion en ",start_i)
     
-for s in np.arange(start_i, N, cores):
-    #va ejecutando cada #cores simultaneamente
-    pool = multiprocessing.Pool(processes=cores)  
-    for i in range(s, min(s+cores, N) ): #ejecutar cantidad de cores
-        pool.apply_async(feets_parallel, args=(i,
-                                                     coupled_time[i],
-                                                     coupled_lc[i], 
-                                                     coupled_err[i],
-                                                     kois[i], 
-                                                     name_saved_file))
-    pool.close()
-    pool.join()
-    print("%d codigos correctamente ejecutados"%cores)
+for i in range(N): 
+    feets_parallel(i,
+                                                 coupled_time[i],
+                                                 coupled_lc[i], 
+                                                 coupled_err[i],
+                                                 kois[i], 
+                                                 name_saved_file)
+
 print("Ejecutando todos")
