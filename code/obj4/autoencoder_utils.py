@@ -65,6 +65,16 @@ class Recon_eval():
                 return entropy.spectral_entropy(x, 100, method='welch', normalize=True) # Spectral entropy
         except:
             raise Exception("You do not have installed entropy package: https://github.com/raphaelvallat/entropy")
+            
+    def prob_entropy(self,x, normalize=False):
+        x -= x.min() 
+        x += 1e-7
+        x = x/x.sum(keepdims=True)
+        H = -np.nansum(x*np.log(x))
+        if normalize:
+            H = H/np.log(len(x))
+        return H
+    
     
 import keras
 from keras import backend as K
