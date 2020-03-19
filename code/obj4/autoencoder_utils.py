@@ -67,6 +67,7 @@ class Recon_eval():
             raise Exception("You do not have installed entropy package: https://github.com/raphaelvallat/entropy")
             
     def prob_entropy(self,x, normalize=False):
+        x = x.copy()
         x -= x.min() 
         x += 1e-7
         x = x/x.sum(keepdims=True)
