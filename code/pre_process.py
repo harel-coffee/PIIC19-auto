@@ -36,10 +36,11 @@ def SavGol(y, win=151, return_filter=False):
     if len(y) <= win:
         print("BIG ERROR! short light curve")
         return
+    y_used = np.asarray(y).copy()
     to_return = np.asarray(y).copy()
     mask_null = np.isnan(y)
     
-    aux_y = y[~mask_null] #saltarse los nans
+    aux_y =y_used[~mask_null] #saltarse los nans
     #aux_y = np.nan_to_num(y)
     
     """ APPLIED FILTER and get residual"""
@@ -67,7 +68,8 @@ def clean_LC(flux, kernel_median=25, kernel_pol=151, savgol=True, median_t='subt
     med = np.nanmedian(flux)
     if  np.abs(med - 1) < 0.1:
         flux -= 1
-    elif med > 1:
+    #elif med > 1:
+    else:
         flux = flux/med - 1 #revisar en otros dataset.. si hacerlo despues de lc_savgol se realice..
         
     if kernel_median%2 ==0:
