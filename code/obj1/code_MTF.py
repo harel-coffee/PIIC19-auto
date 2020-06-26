@@ -1,6 +1,8 @@
 import numpy as np
+from numba import njit, jit
 
 ############# DEFINE GRID #############
+@njit(parallel=False, cache=True, fastmath=False)
 def det_state(a, b, n_sta):
     topes=np.linspace(a, b, n_sta+1)
     estados= []
@@ -9,6 +11,8 @@ def det_state(a, b, n_sta):
         estados.append((top,topes[ind]))
         ind+=1
     return estados
+
+@njit(parallel=False, cache=True, fastmath=False)
 def det_state_2ways(a, b, n_sta_up, n_sta_low):
     estados_up = det_state(a, 0, n_sta_up)
     estados_low = det_state(0, b, n_sta_low)
@@ -16,7 +20,6 @@ def det_state_2ways(a, b, n_sta_up, n_sta_low):
 ############# DEFINE GRID #############
 
 
-from numba import njit, jit
 @njit(parallel=False, cache=True, fastmath=False)
 def det_celda(num, estados): 
     for celda, (est_low, est_up) in enumerate(estados):
@@ -52,8 +55,6 @@ def count_MTF_gN(fluxs, states, N=1):
     
     
 
-
-
 def create_MTF_gN(fluxs, n_up, n_down,N=1):
     states_values = det_state_2ways(1,-1, n_sta_up=n_up, n_sta_low=n_down) 
 
@@ -62,4 +63,24 @@ def create_MTF_gN(fluxs, n_up, n_down,N=1):
     transition_m = transition_m/transition_m.sum(axis=1,keepdims=True) #normalize
     return transition_m
 
+
+
+@njit(parallel=False, cache=True, fastmath=False) 
+def build_MTF(x_l, s_l, n_up , n_down, delta_M=0.03125, norm=True): #delta_M = 45 mins
+    #paper
+    T_l = len(x_l)
+    N = n_up+n_down
+    M = np.zeros((N, N))
+    S_grid = det_state_2ways(1,-1, n_sta_up=n_up, n_sta_low=n_down) 
+    
+    for t in range(T_l-1):
+        delta = s_l[t+1] - s_l[t]
+        if delta <= delta_M:
+            i = det_celda(x_l[t], S_grid)
+            j = det_celda(x_l[t+1], S_grid)
+            M[i,j] += 1
+    if norm:
+        M += 1 #priors
+        M = M/ np.expand_dims(M.sum(axis=1), axis=1) #normalize
+    return M
 
