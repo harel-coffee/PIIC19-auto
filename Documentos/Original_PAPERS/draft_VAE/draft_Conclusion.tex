@@ -1,0 +1,11 @@
+\section{Conclusions}
+\label{concl}
+
+In this work we propose to use variational (stochastic) autoencoder models to learn quality deep representation in the problem of transit modeling. 
+We focus on adapting the variational autoencoders to properly handle unevenly-sampled light curves (time series) making improvements to their deterministic counterparts.
+We presented a new model that includes the re-scaling pre-processing of time series into the model (as a end-to-end architecture), which leads to improvements on different evaluation schemes.
+
+The evaluation on the learned representation shows that the variational proposed models have a higher quality. This mean that the representation is: i) more \textit{informative}, i.e. more independent features, so more information could be stored, ii) more \textit{useful}, i.e. more effective for the classification of exoplanets, and iii) more \textit{robust}, i.e. learn a noiseless light curve reconstruction.
+By adding the re-scaling into the model, this three effects increase. For example, the S-VRAE$_t$ model ends up being almost as informative as the optimal PCA, at the same time that produces a denoising effect similar to a Mandel Agol fitted model.
+
+Future work includes an extension of the re-scaled model that defines a learnable function built over the raw input measurements, i.e. $s^{(i)}= f(x^{(i)})$, and performing a sensitivity analysis on the architecture parameters. Also, we believe that interpreting these informative, useful and robust features by mapping each dimension to an astronomical concept, could enrich the current knowledge about exoplanets.

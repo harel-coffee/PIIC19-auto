@@ -1,0 +1,25 @@
+\section{Introduction}
+
+Since the first confirmed detection of the giant exoplanet 51 Pegasi b \citep{mayor1995jupiter}, the advances in instrumentation and data analysis techniques have allowed the discovery of thousands of exoplanets. NASA has reported\footnote{Last updated April 7, 2020: \texttt{exoplanets.nasa.gov}} more than 4000 exoplanet detected using different techniques, despite the fact that planets emits or reflect very dim magnitudes compared to their host star, and their orbital distance is very small with respect to the observational distance. While confirmation of exoplanets rely on a diverse range of techniques, as radial velocity, gravitational microlensing and visual imaging, the analysis of \textit{light curves} is the main source of candidate objects. Light curves are photometric observations of light intensity as a function of time, where the star luminosity can vary in time as a result of intrinsic processes, or due to external influence such as an orbiting planet eclipsing the star. This last phenomenon is called \textit{transit} and it is used as an effective\footnote{\texttt{http://exoplanetarchive.ipac.caltech.edu/docs/counts\_detail.html}} method to find candidate objects orbiting a star. A transit light curve can be mathematically modeled as a natural phenomenon of an orbiting object, and algorithms such as the well-known Mandel-Agol method \citep{mandel2002analytic} can be used to fit such models. Unfortunately, the diversity of planetary systems prevents an accurate model selection, due to the unknown number of transits, complex dynamics such as eclipsing binaries, or very dim observations \citep{moutou2005compar}. 
+
+An alternative is to use \emph{model-free} methods \citep{mackenzie2016clustering,naul2018recurrent}, where the key features for detecting a candidate exoplanet are \emph{learned} from data rather than imposing a model without the correct capacity (i.e., too simple or too complex for the observed data).  
+Another advantage is that these methods can use all the available data without the need to have labels of some objective task (i.e., \textit{unsupervised learning}). 
+
+A major challenge when working with time series in astronomy is that they are usually uneven on their sampling, meaning that there are missing values for several timestamps or measurements are intrinsically non-uniform.
+Different approaches have been proposed to solve this issue, such as binning the light curve based on a previous folding of the periodic behavior \citep{shallue2018identifying}, extracting specialized features based on subsets of data points \citep{richards2011machine}, or explicitly modeling the time dependencies \citep{lomb1976least}. 
+Based on the latter, some approaches have included the time information into the learning model, showing improved results \citep{naul2018recurrent,tsang2019deep,aguirre2019deep}.
+%Introduction to DL and AE.
+
+Motivated by the success of deep learning techniques \citep{surveyDL2017} in different research fields, we focus on the use autoencoders models. %o framework
+In this paper we propose to use variational (stochastic) models as dimensionality reduction techniques, in order to learn a quality deep representation for unevenly-sampled light curves. 
+Specifically, we propose two variational recurrent auto-encoder extensions that can process unevenly-sampled time series by using the time information of each observation. 
+We extend the idea of using all the information on the time series by including the re-scaling pre-processing task into the learning model as an end-to-end architecture.
+The motivation to extract the information stored on the original scales emerges from the fact that relative sizes of exoplanets and noise are correlated with the scales on the signal.
+
+The concept of \textit{quality} used in this paper is based on obtaining a compact yet robust representation (i.e., parsimonious), with the capability of denoising the time series and with less correlated features. Besides, we show that a good quality implies an informative representation of the behavior on the time series, having a better performance on classification tasks as the time series categories.
+
+Our experiments show that the proposed variational models are robust in learning patterns without noise (denoising effect), having a balanced behavior between reproducing the original time series and smoothing. Indeed, the resulting light curve could be compared to an isolated simulation of a transit object. 
+The quality factor of the representation is achieved as well, having an improvement over the deterministic counterparts proposed so far.
+%MORE????
+
+This paper is organized as follows. In section \ref{soa}, the main methods for Transit Detection and its characteristics are described. Later, in section \ref{proposal}, our proposal method and its model is presented and explained. Next, the experiments setting and metrics are introduced in section \ref{exp}, and in section \ref{res} the results over that setting is presented. Finally the conclusions are commented in section \ref{concl}. 

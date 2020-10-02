@@ -1,0 +1,56 @@
+
+\section{Transit Detection Methods} %  no me convence mucho, ya que las estrellas variables no son transitos.. algo mas general
+%Light Curve Detection Methods
+%Time series in Astronomy
+\label{soa}
+
+%In astronomy there exists different type of data that are processed, studied and analyzed, i.e. catalogs, time series and data cubes.
+%In the exoplanet detection field the data type used is time series, particularly light curves.
+A \textit{light curve} is a time series (function of time) with measurements of light intensity of a celestial object or region.
+When one celestial body crosses in front of another astronomical object and blocks any fraction of its light, it is called a \textit{transit}. In this section, we briefly introduce model-based and self-learned representations used for detecting exoplanet transits and related fields.
+
+\subsection{Model-based Representations}
+
+The Mandel-Agol (M-A) simulation process \citep{mandel2002analytic}, models the transit of a spherical planet around a spherical star assuming an uniform light source. It does this by modeling the opacity observed on the light intensity $\ell c(t)$ according to the planet position. When the planet eclipses the star, the opacity is maximum ($\ell c<1$)). On the other hand, when the planet orbits without eclipsing the star, the opacity is minimum and uniform ($\ell c = 1$). When the planet is close to eclipse the star the intensity $\ell c(t)$ is modeled as a polynomial based on the limb darkening of the star. It requires to know the distance from the center of the planet to the center of the parent star, as well as the radius of each one of the bodies, the transit period, inclination and the limb darkening models (coefficients). There are a few Python libraries that have implemented this simulation, from which we selected \textbf{batman}\footnote{\texttt{github.com/lkreidberg/batman}}.
+
+However, variable light curves are not caused only by transits, and several inherent and exogenous processes might be involved in a the variability on the observed intensity of a star. Therefore, several machine learning techniques have been used to classify variable stars, typically by manually extracting specialized features from the light curve and applying classic pattern recognition methods to them. 
+For example, \citep{richards2011machine} presents a catalog of variable stars where 32 specialized features are extracted from light-curve through statistics such as kurtosis, skewness, standard deviation, and stetson, plus other features based on the period and frequency analysis of a Lomb-Scargle \citep{lomb1976least} fitted model. 
+\citep{donalek2013feature} also worked on classifying variable stars from the Catalina Real-Time Transient Survey (CRTS) and the Kepler Mission, extracting similar features from the light curves. 
+In \citep{nun2014supervised}, statistical descriptors are used as inputs for a Random Forest algorithm that can detect anomalous light curves based on probabilistic learning models. 
+These outliers are removed from the training set used in variable stars classification. 
+
+Specifically for transit detection we found the work of \citep{mccauliff2015automatic}, the so-called \textit{Autovetter}, which uses Random Forest over the features derived from the statistics pipeline on the Kepler mission for classifying candidate objects. 
+Another approach is to represent the light curve as phase aligned sections called ``folds'' to tackle the irregular sampling problem in transits. This folded light curve centers the transit and stacks all the times on which occurs as shown in Figure~\ref{fig:lc_ex}. It usually get binned based on a window proportional to the period of the transit computed with a Lomb-Scargle \citep{lomb1976least} periodogram fit. For example, \citep{thompson2015machine} proposes a \textit{Locality Preserving Projection} (LPP) and \citep{armstrong2016transit} proposes using \textit{Self-Organization Map} (SOM) as a dimensionality reduction method of the folded light curve for finding transit shape objects on those extracted features. 
+
+%\subsection{DL - Transit Detection}
+Neural Networks and Deep Learning \citep{surveyDL2017} algorithms have become very popular on problems where feature extraction from data is non-trivial. These algorithms have been successfully used for transit detection on light curves in recent years. For example, \citep{shallue2018identifying} uses a 1D convolutional neural network (CNN) model \citep{krizhevsky2012imagenet} to classify exoplanets on the Kepler mission with a global and local representation of the folded light curve. 
+\citep{pearson2018searching} used a similar approach to \citep{shallue2018identifying} for detecting transit shape objects trained on simulated data and evaluated using Kepler mission dataset.
+\citep{schanche2019machine} also used a 1D CNN network to detect exoplanets among variable stars (4 classes) on WASP dataset. 
+
+\subsection{Self-generated Representations}
+
+While most of the representations focuses on using astrophysical knowledge to ease the classification of star variability or transits, only a few of them had tried different representation approaches without direct human intervention.
+\citep{mackenzie2016clustering} used an unsupervised learning algorithm known as \textit{Affinity Propagation} 
+%\citep{Frey2007affinityPropagation}
+with a custom distance function to build a new representation from light curves and then use it on a linear SVM (\textit{Support Vector Machine}) classifier. The representation is based on the similarity between fragments of the light curves and cluster exemplars or centroids.
+
+In \citep{mahabal2017deep} an image representation (i.e., grid) is obtained with variations of magnitude through time from unevenly-sampled light curves. This work used the variable star data from the Catalina-Real Time Transient Survey (CRTS) dataset and complete the classification task using 2-Dimensional Convolutional Neural Networks (CNN).
+\citep{aguirre2019deep} also obtained the variations in magnitude from variable stars light curves and the delta time of each sample. These were used as different input channels to train a 1-Dimensional CNN classifier with shared-weights through novel data augmentation techniques.
+
+\citep{naul2018recurrent} uses time as an additional channel, but through Recurrent Neural Network (RNN) models \citep{lipton2015critical}. Here it present a Recurrent Auto-Encoder (RAE) that learns an embedding of a light curve and then reconstructs it by setting the original times using RNN models on the encoder and decoder phase, that we named \textbf{RAE$_t$} (RAE \textit{plus} time information). \citep{naul2018recurrent} and \citep{tsang2019deep} show that learned representations are useful to classify variable stars, improving the results obtained using statistical features \citep{richards2011machine}. It also explores the use of the folded light curve representation improving even more the obtained results.
+
+To the best of our knowledge, including delta times as an input to the models in unevenly-sampled times series was first explored by \citep{che2018recurrent}. This research presents a modification of a \textit{Gated Recurrent Unit} (GRU) model \citep{cho2014properties}, namely GRU-D, which uses a binary mask for missing values and the delta times as input channels. The objective is impute (fill) the missing values to improve the predictions on medical problems.
+
+
+\subsection{Variational Auto-Encoders}
+The Variational Auto-Encoder (VAE) is an stochastic Auto-Encoder (AE) learned in a probabilistic fashion, based on the variational lower bound or evidence lower bound (ELBO). 
+The VAE framework \citep{kingma2013auto} is extended to work with uniform time series on the Variational Recurrent Auto-Encoder (VRAE) by \citep{fabius2014variational}. 
+The motivation behind this is VAEs are deep generative models trained on an unsupervised scenario, learning latent variable representation as it trains. These variables are learned through the observed distribution, so it is built to adapt the variations on the behavior of the data. 
+This is the main difference to \textit{vanilla} deterministic AEs that learn an invariable specific point for the input pattern \citep{vincent2010stacked}.
+
+The use of the VRAE on different time series applications is associated to anomaly detection \citep{park2018multimodal,guo2018multidimensional,xu2018unsupervised}, with the objective of detecting outliers. It usually compares the reconstructed (or generated) input with the original values and set some threshold of tolerance to normal behavior. 
+The sampled values from the latent distribution has smooth transitions \citep{kingma2013auto}, so the reconstructed data should reduce the bias of the specific patterns \citep{xu2018unsupervised}.
+In addition, a VAE for generating transit-shape light curves as data augmentation technique is presented by \citep{woodward2019generating}.
+
+
+%comentar sobre los denoising autoencoders? quizas el VAE logra lo mismo.. by introducing corrupted input with Gaussian noise,

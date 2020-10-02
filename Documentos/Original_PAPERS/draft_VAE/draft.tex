@@ -1,0 +1,103 @@
+\documentclass[review]{elsarticle}
+
+%%% Le da el formato final -- una vez aceptado
+%\documentclass[final,authoryear,5p,times]{elsarticle}
+%\documentclass[final,authoryear,5p,times,twocolumn]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+
+\usepackage{algorithm} 
+\usepackage{algpseudocode} 
+
+%PO
+\usepackage{color} % Use colors on text
+\usepackage[normalem]{ulem} % Strike through text
+
+
+\journal{Astronomy and Computing}
+
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Harvard
+\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+%\title{Variational Autoencoders with Scale for Light-curves: Learning a Deep Interpretable Representation and a Denoising Model Together!}
+%\title{Learning Quality Deep Representations for Light Curves using Variational Autoencoders with Rescaling}
+\title{On the Quality of Deep Representations for Unevenly-Sampled Light-Curves using Variational AutoEncoders}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+% On the Quality of Deep Representations for Light-Curves using Variantional Autoencoders
+
+\author[UTFSM_SJ]{Francisco Mena\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{francisco.menat@usm.cl}
+
+\author[UTFSM_CC]{Patricio Olivares}
+%\ead[url]{www.elsevier.com}
+
+\author[UTFSM_SJ]{Margarita Bugue\~no}
+%\ead[url]{www.elsevier.com}
+
+\author[UTFSM_SJ]{Gabriel Molina}
+%\ead[url]{www.elsevier.com}
+
+\author[UTFSM_CC]{Mauricio Araya}
+%\ead[url]{www.elsevier.com}
+
+
+\address[UTFSM_SJ]{Depto. Inform\'atica, Universidad T\'ecnica Federico Santa Mar\'ia, Santiago, Chile}
+\address[UTFSM_CC]{Depto. Electr\'onica, Universidad T\'ecnica Federico Santa Mar\'ia, Valpara\'iso, Chile}
+
+
+\begin{abstract} %motivation, problem, approach, result, concl
+ Analyzing light curves nowadays usually involves processing large datasets. Therefore, finding a good representation for them is both, a key and a non trivial task. In this paper we show that variational (stochastic) autoencoder models (VRAE$_t$) can be applied to learn an effective, informative and robust deep representation of transit light curves.
+In addition, we introduce S-VRAE$_t$, which stands for \textit{re-Scaling Variational Recurrent Auto Encoder}, a technique that embeds the re-scaling preprocessing of a time series into the learning model in order to use the scale information in the detection of transit exoplanets.
+The objective is to achieve the most likely low dimensional output of unevenly-sampled time series that matches latent variables to reconstruct it.
+For assessing our approach we use the largest transit dataset obtained by the Kepler mission in the past four years, and compare our results with similar techniques used for light curves. 
+Our results show that the stochastic models have an improvement on the quality of representation with respect to their deterministic counterparts. Moreover, the S-VRAE$_t$ model is at the same time a deep denoising model, generating light curves similar to the Mandel Agol fit.
+\end{abstract}
+
+\begin{keyword}
+Variational Autoencoder \sep  Transit Model \sep Light-Curve
+\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+
+
+\linenumbers
+
+\input{draft_Introduction.tex}
+
+\input{draft_SoA.tex}
+
+\input{draft_Proposal.tex}
+
+\input{draft_Experiments.tex}
+
+\input{draft_Results.tex}
+
+\input{draft_Conclusion.tex}
+
+
+\section*{Acknowledgments}
+This research was possible due to the funding of \textit{Programa de Iniciaci\'on Cient\'ifica} PIIC-DGIP of Universidad T\'ecnica Feder\'ico Santa Mar\'ia, ANID-Basal Project FB0008 (AC3E) and ANID PIA/APOYO AFB180002 (CCTVal).
+
+\bibliography{mybibfile}
+
+\end{document}

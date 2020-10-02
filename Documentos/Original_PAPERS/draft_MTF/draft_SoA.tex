@@ -1,0 +1,72 @@
+\section{Pattern Recognition on Light Curves}
+
+When the light intensity of a star is measured, the resulting time series could varies its values as a result of the star composition or because of an orbiting planet. 
+The first case correspond to variable stars, which can be produced depending on the chemical composition of the star or because a celestial body (non necessarily planets) blocks the light. 
+By the other hand, if a planet is involved, it passes in front of the star and a fraction of the light is blocked. This phenomenon is called \textbf{transit} and is an effective method to find exoplanets.
+
+Time series on astronomy has the challenge that they are quite uneven on their sampling, meaning that the measurements are not acquired uniformly with missing values from several timestamps. Some factors could be due to cloudy weather or Earth rotation.
+
+The pattern recognition approaches found in the literature for the two different tasks associated with light curves (variable star and exoplanet detection) are commonly similar or even the same, which we classify as follows.
+
+\subsection{Classic Methods}
+The common approach used to classify a light curve is to extract hand-crafted \textit{specialized features} from it and then, if needed, apply classic machine learning methods.
+With specialized features we refer to any guided feature extraction process, from generic summary statistics to specific task-based features. For example,
+\citet{richards2011machine} present 32 specialized features that can be extracted for light curves: some of them are generic statistics: like mean, standard deviation and kurtosis, while others are based on the period analysis of Lomb-Scargle \citep{lomb1976least} method. 
+These features were successfully used on variable star detection for the Catalina Real-Time Transient Survey (CRTS) and the Kepler mission by \citet{donalek2013feature} using $k$-NN and Decision Tree models.
+Similarly, \citet{hinners2017machine} used these features in order to predict Kepler features (metadata) by comparing a number of machine learning methods: Support Vector Machine (SVM), $k$-Nearest Neighbor ($k$-NN), Naive Bayes, and Random Forest (RF).
+Other works use even more specialized features for each survey. For example, the \textit{Autovetter} \citep{mccauliff2015automatic} uses a RF model based on features derived from the statistics pipeline on the Kepler mission. 
+
+A more general approach is proposed by \citep{bugueno2018refining} on the Kepler mission, were a feature extractor technique is learned over the dataset. A Principal Component Analysis (PCA) extractor on the frequency domain representation with a Discrete Fourier transform is used to perform classification using different machine learning methods (SVM, $k$-NN, RF and Logistic Regression). %ventajas de la propuesta? fue mas rapido?
+
+To address the uneven sampling problem some authors have used a condensed light curve representation called \textit{fold} or \textit{phase}. The folded light curve center the transit and stack all the times that it occurs. It usually get binned based on a window proportional to the period\footnote{That is usually calculated with a Lomb-Scargle \citep{lomb1976least} periodogram fit.} of the transit. For example, on Kepler mission, \citep{thompson2015machine} proposed \textit{Locality Preserving Projection} (LPP) and Armstrong et al. \citep{armstrong2016transit} proposed \textit{Self-Organization Map} (SOM) as dimensional reduction methods with the aim of finding transit shape objects on those extracted features with a $k$-NN model. 
+Unfortunately, these methods strongly depend on the precision of the period fit, which is not always a reliable variable for complex systems or for small planets. 
+
+\subsection{Deep Learning}
+
+Deep learning is a new paradigm for neural networks that focuses on automatically learning a suitable representation as part of the learning task through the use of several layers. Recently, a few techniques for light-curve analysis have been proposed using this kind of models. For example, \citet{shallue2018identifying} use convolutional neural network (CNN) models \citep{krizhevsky2012imagenet}, to classify exoplanets on Kepler Mission with two separated inputs: global and local representations of the folded light curve. The so-called \textit{Astronet} \citep{shallue2018identifying} processes both inputs through different sub-nets (1D CNN). The authors use the final outputs to perform the classification with fully connected layers. \citet{ansdell2018scientific} add another channel to both inputs of \citet{shallue2018identifying} proposal, related to the center pixel of the light measurements (centroid). They indicate that the time series centroid could be useful for detect shifts on the source (host star). Another example is \textit{Exonet} \citep{ansdell2018scientific}, which adds scientific domain knowledge of the stellar parameters (metadata) as input to the model.
+\citet{osborn2020rapid} successfully applied a version of Exonet with fewer parameters to TESS dataset. %with fewer parameters. 
+The difficulty of both techniques (Astronet and Exonet) is that they require additional information which may be expensive to obtain or to compute (metadata), e.g. the period. %human-designed knowledge
+\citet{pearson2018searching} propose a similar approach to \citet{shallue2018identifying} in order to detect transit shape objects. The authors validate their proposal on simulated data and evaluate on Kepler mission using binned folded light curves. \citet{schanche2019machine} use the binned light curves with a 1D CNN network to detect exoplanets within variable stars (4 classes) on WASP dataset.
+
+A different approach is introduced by \citet{aguirre2019deep} by directly using the raw measurements (unfolded light curve). The work uses the delta time of every measurements as a separate channel of the input. It also uses the delta magnitude representation of the light curve in order to classify the star variability. They propose a shared-weight 1D CNN network, trained %with data augmentation techniques 
+and validated, on three different surveys.
+
+\subsection{Time Series Techniques}
+
+Time series are commonly found in any other field that involves temporal measurements such as: statistics, signal processing, mathematical finance and audio processing. %In other words, in any domain which involves temporal measurements.
+%Time series analysis comprises methods for analyzing time series data in order to extract meaningful statistics and other characteristics of the data comparing values at different points in time. 
+%Methods for time series analysis may be divided into two classes: time-domain methods and frequency-domain methods.
+Time series methods can be classified as Time-domain, Frequency-domain and Image-domain methods.
+%The methods for time series analysis comprise different approaches that can be divided into the domain.% classes: time-domain methods and frequency-domain methods.
+
+\subsubsection{Time-domain methods}
+The simpler technique to face time series on the time-domain is the feature extraction of simple statistics such as mean, standard deviation, maximum, amplitude, among others. This transforms the time series into a subset of $D$ features. An example is the UPSILoN classifier \citep{kim2016package}, where the authors present a model that could be applied to any single-band optical light curve with arbitrary time sampling. %The classifier use features extracted from the light curves (e.g., mean, amplitude, skewness, kurtosis, quartiles difference).
+
+%otro ejemplo??
+
+\subsubsection{Frequency-domain methods}
+The Discrete Fourier Transform (DFT) \citep{cooley1969fast} maps a uniform sampling time series or signal from the time-domain to the frequency domain (spectrum of the signal). In fact, the Lomb-Scargle method \citep{lomb1976least} uses least-squares of periodogram to finds the signal spectrum of the signal in the irregular sampled time-domain. %%The difficulty is that the methods is quite computational expensive if the time series are too long.
+
+There exist other methods that also extract features on the frequency domain (spectrum) of a signal. The Mel Frequency Cepstral Coefficients (MFCC) method summarizes the spectrum of a signal into 20-30 features/coefficients \citep{zheng2001comparison}. These are usually calculated by frames over the signal returning one matrix per time series. The number of coefficients and the number of frames are in different axes.
+Specialized features can be also extracted from the spectrum (frequency/period domain) based on the periodicity of the object. For example, some periodic features are extracted from light-curves using Lomb-Scargle method by \citep{richards2011machine} and \citep{cabral2018fats}, e.g. the spectrum amplitude (phase) of the harmonics and the period.
+
+
+\subsubsection{Image-domain methods} %or image-based
+A time-domain time series could be processed by a Markov Transition Field (MTF). This method produces an image or matrix representation of transition probabilities for a discretized time-continuous series \citep{wang2015encoding}. %time -> image
+
+\citep{wang2015imaging} and \citep{wang2015encoding}, inspired by the success of Deep Learning in computer vision, used MTF and Gramian Angular Field (GAF), GAF of Summation (GASF) and GAF of Difference (GADF), to produce 3-channel images for encoding time series as images %which are processed by convolutional neural networks
+on 20 datasets of different domains. Using 2D Tiled CNN to learn high-level features they reported competitive results against several time series state-of-the-art approaches.
+\citep{hatami2018classification} improve the results of \citep{wang2015imaging} on some of the 20 datasets by using standard CNNs on a different image representation, based on Recurrence Plots (RP), which are built with a step function over transitions differences (1 if the difference is higher than certain threshold). %RP refleja comportamientos periodicos y la fase de donde se "repite" ciertas transiciones
+\citep{yang2020sensor} compares the effectiveness of each one of the three channel images from \citep{wang2015imaging}, applying a dimensional reduction with Piecewise Aggregate Approximation (PAA). The proposal concatenates the images of each dimension on multivariate time series and uses \textit{VGGNet} \citep{simonyan2014very} in two real-sensor classification problems.
+In \citep{mahabal2017deep}, an image-based representation (i.e., grid) is obtained with the variations of magnitude through time (y-\textit{axis}) and the variations of time (x-\textit{axis}). This method works with on unevenly-sampled light curves, specifically classification of variable star from the Catalina-Real Time Transient Survey (CRTS) dataset using 2D CNN.
+
+
+
+%\subsection*{What about Recurrent Neural Networks?}
+\subsection{Drawbacks of Recurrent Neural Network}
+
+If a time series is short and uniformly sampled, it can be processed in the raw time-domain with recent techniques of Deep Learning \citep{gamboa2017deep}, such as recurrent neural networks (RNNs) and 1D convolutional neural networks (CNNs).
+%https://arxiv.org/pdf/1701.01887.pdf
+However, RNNs (i.e., deep learning models that learn temporal dependencies \citep{lipton2015critical}) are difficult to train, not only due to the well-known gradient vanish or exploding gradient problems, but also due to long-term patterns, as in our problem. The long short-term memory (LSTM) by \citet{hochreiter1997long} and the gated recurrent unit (GRU) by \citep{cho2014properties} were developed to address these problems, but the use of hyperbolic tangent and the sigmoid activation functions result in gradient decay over layers\footnote{The exploding gradients are theoretically avoided with these activation functions.}. Some in-place solutions are to truncate the sequences or truncate the back-propagation through time (BPTT) \citep{werbos1990backpropagation} by using a subset of the last time steps. Another technique is to summarize the sequence with a random sampling or performing a gradient clipping. The problem is that these empirical solutions does not take advantage of all the time information in the time series.
+
+The work of \citet{li2018independently} shows the limitations of the recurrent models. For example, a RNN model could be trained with sequences shorter than 100 values, LSTM/GRU with sequences shorter than 1000 values and the proposed model (IndRNN) handle 5000 length sequences. Some other works use CNN, that do not present gradient problems, to learn middle-level features. For example, \citet{wu2017convolutional} stack a RNN over the 1D CNN for spectral classification, and \citep{oord2016wavenet} only use 1D CNN to learn a generative audio model. % In the text domain, a hierarchical RNN is proposed by \citep{lin2015hierarchical} to learn middle-level features from paragraph (sequence of words) and then perform operations over documents (sequence of paragraphs).

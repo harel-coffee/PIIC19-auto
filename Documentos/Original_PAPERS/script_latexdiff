@@ -1,0 +1,6 @@
+#!/bin/sh
+draft_folder="$1"
+latexdiff --flatten $draft_folder/draft.tex $draft_folder/draft.tex > flattened_draft.tex
+latexdiff --flatten main.tex main.tex > flattened_main.tex
+latexdiff --flatten flattened_draft.tex flattened_main.tex  > main_diff.tex
+rm *flattened*.tex

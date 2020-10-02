@@ -1,0 +1,110 @@
+\documentclass[review]{elsarticle}
+
+%%% Le da el formato final -- una vez aceptado
+%\documentclass[final,authoryear,5p,times]{elsarticle}
+%\documentclass[final,authoryear,5p,times,twocolumn]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{algorithm} 
+\usepackage{algpseudocode} 
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{relsize}
+
+\usepackage{tikz}
+\usetikzlibrary{matrix,decorations.pathreplacing,calc,fit}
+
+
+\journal{Astronomy and Computing}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Harvard
+\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Harnessing the power of CNNs for Unevenly-Sampled Light-Curves using Markov Transition Field}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+
+\author[UTFSM_SJ]{Margarita Bugue\~no\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{margarita.bugueno@usm.cl}
+
+
+\author[UTFSM_SJ]{Gabriel Molina}
+%\ead[url]{www.elsevier.com}
+
+\author[UTFSM_SJ]{Francisco Mena}
+%\ead[url]{www.elsevier.com}
+
+\author[UTFSM_CC]{Patricio Olivares}
+%\ead[url]{www.elsevier.com}
+
+\author[UTFSM_CC]{Mauricio Araya}
+%\ead[url]{www.elsevier.com}
+
+
+\address[UTFSM_SJ]{Depto. Inform\'atica, Universidad T\'ecnica Federico Santa Mar\'ia, Santiago, Chile}
+\address[UTFSM_CC]{Depto. Electr\'onica, Universidad T\'ecnica Federico Santa Mar\'ia, Valpara\'iso, Chile}
+
+
+\begin{abstract}
+%The exoplanet detection problem has change from time-consuming manual processes to more modern automatic technique like the use of machine learning. Even so, machine learning methods are more fast that manual processes, they still need high-level features (meta-data) extracted by hand to achieve good results. In this paper, we proposed a method that only required the raw data (light curve) to make an exoplanet classification by transform the uneven sampled time series (light curves) into an image thought the Markov Transition technique. Using this new image of the light curve and convolutional neural network this work achieve 76\% of correct data classification (F1 Macro) in the Kepler mission dataset.
+
+%The exoplanet detection problem  — astronomical bodies that orbit another astronomical body — has change from time-consuming to more modern automatic techniques. 
+%Knowing variations from a light curve are proof of a planet existence, requires applying advanced pattern recognition methods to a very large number of candidate stars. 
+Exoplanet detection has evolved from case by case data inspection to automatic pattern recognition methods for processing a very large number of light curves.
+For this reason, the use of machine learning techniques has become a common practice in the field, where deep learning models are now in the spotlight as a promising leap forward towards automation. However, despite being faster than manual inspection, they usually still need hand-crafted features to achieve good results. Moreover, not all methods allow real world data where a large portion of the data is missing or at least is not regularly sampled.
+In this paper, we propose a method that only requires the raw light curve to make an exoplanet classification without the need of additional metadata or specific formats for the time series. 
+We transform the unevenly-sampled time series (light curves) into a 2-channel image using Markov Transition Fields, which feeds a convolutional neural network that classifies candidate transients. We conducted experiments using the Kepler Mission dataset, identifying two key results: (1) the method is competitive in terms of performance to the state-of-the-art alternatives, yet it is simpler and faster. %on the exoplanet detection task problem/field/area.
+Based on this result, we also show that (2) a Markov Transition Field can be used as an effective stand-alone data product for analyzing unevenly-sampled transient light curves.
+%$The proposal is competitive to algorithms that make use of the metadata and Markov Transition Fields can help to speed up the very time-consuming manual process which is currently done by scientific experts even when the light curve is incomplete$
+
+\end{abstract}
+
+\begin{keyword}
+Markov Transition Fields\sep Light Curves \sep Exoplanet Detection\sep Convolutional Neural Networks\sep Unevenly-Sampled Light Curves
+\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+
+
+\linenumbers
+
+\input{draft_Introduction.tex}
+
+\input{draft_SoA.tex}
+
+\input{draft_Proposal.tex}
+
+\input{draft_Experiments.tex}
+
+\input{draft_Results.tex}
+
+\input{draft_Conclusion.tex}
+
+
+\section*{Acknowledgments}
+This research was possible due to the funding of \textit{Programa de Iniciaci\'on Cient\'ifica} PIIC-DGIP of Universidad T\'ecnica Feder\'ico Santa Mar\'ia, ANID-Basal Project FB0008 (AC3E) and ANID PIA/APOYO AFB180002 (CCTVal).
+
+\bibliography{mybibfile}
+
+\end{document}
