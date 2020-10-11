@@ -30,12 +30,13 @@ class Recon_eval():
         #https://en.wikipedia.org/wiki/Autocorrelation
         #https://stats.stackexchange.com/questions/24607/how-to-measure-smoothness-of-a-time-series-in-r
         #FATS: https://arxiv.org/pdf/1506.00010.pdf
+        var = np.var(x, ddof=len(x)-1)
+        if var == 0:
+            return np.tile(0, len(x))
         
-        if np.sum(x) == 0:
-            return 0
         inp = x - np.mean(x)
         result = np.correlate(inp, inp, mode='full')
-        return result[len(x)-1:]/np.var(x, ddof=len(x)-1)
+        return result[len(x)-1:]/var
 
     def std_diff(self,x):
         #:::::::lag-one autocorrelation
@@ -52,7 +53,7 @@ class Recon_eval():
         if np.sum(x) == 0:
             return 0
         aux = np.abs(np.diff(x, axis=-1))
-        return np.mean(aux)#/np.mean(aux)
+        return np.mean(aux)
     
     def series_entropy(self,x, k=3,which='perm'):
         ### menor entropia indica mas suave (menos frecuencias de patrones)
