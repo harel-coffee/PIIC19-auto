@@ -53,12 +53,13 @@ def calculate_metrics(y_true,y_pred,plot=True, title=""):
     dic_return = {}
     dic_return["Precision raw"] = precision_score(y_true,y_pred,average=None,labels=[0,1])
     dic_return["Recall raw"] = recall_score(y_true,y_pred,average=None,labels=[0,1])
-    #dic_return["Precision"] = precision_score(y_true,y_pred,average=None,labels=[0,1])
-    #dic_return["Recall"] = recall_score(y_true,y_pred,average=None,labels=[0,1])
+    #dic_return["Precision macro"] = precision_score(y_true,y_pred,average=None,labels=[0,1])
+    #dic_return["Recall macro"] = recall_score(y_true,y_pred,average=None,labels=[0,1])
     dic_return["F1 raw"] = f1_score(y_true,y_pred,average=None,labels=[0,1])
     dic_return["F1 weighted"] = f1_score(y_true,y_pred,average="weighted",labels=[0,1])
     dic_return["F1 macro"] = f1_score(y_true,y_pred,average="macro",labels=[0,1])
     dic_return["F1 micro"] = f1_score(y_true,y_pred,average="micro",labels=[0,1])
+    dic_return["Accuracy"] = accuracy_score(y_true,y_pred)
     matriz=confusion_matrix(y_true,y_pred, labels=[0,1])
     if plot:
         df = pd.DataFrame(dic_return)
