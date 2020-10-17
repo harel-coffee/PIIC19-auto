@@ -55,8 +55,9 @@ def count_MTF_gN(fluxs, states, N=1):
     
     
 
-def create_MTF_gN(fluxs, n_up, n_down,N=1):
-    states_values = det_state_2ways(1,-1, n_sta_up=n_up, n_sta_low=n_down) 
+def create_MTF_gN(fluxs, n_up, n_down, N=1, states_values=[]):
+    if len(states_values) == 0:
+        states_values = det_state_2ways(1,-1, n_sta_up=n_up, n_sta_low=n_down) 
 
     transition_m = count_MTF_gN(fluxs, states_values, N=N)
     transition_m += 1 #priors
@@ -68,6 +69,8 @@ def create_MTF_gN(fluxs, n_up, n_down,N=1):
 @njit(parallel=False, cache=True, fastmath=False) 
 def build_MTF(x_l, s_l, n_up , n_down, delta_M=0.03125, norm=True): #delta_M = 45 mins
     #paper
+    if len(x_l) != len(s_l):
+        raise Exception("Flux length and time length should be the same!")
     T_l = len(x_l)
     N = n_up+n_down
     M = np.zeros((N, N))
