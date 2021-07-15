@@ -30,13 +30,14 @@ class Recon_eval():
         #https://en.wikipedia.org/wiki/Autocorrelation
         #https://stats.stackexchange.com/questions/24607/how-to-measure-smoothness-of-a-time-series-in-r
         #FATS: https://arxiv.org/pdf/1506.00010.pdf
-        var = np.var(x, ddof=len(x)-1)
+        N = len(x)
+        var = np.nanvar(x, ddof=N-1)
         if var == 0:
-            return np.tile(0, len(x))
+            return np.tile(0., N)
         
-        inp = x - np.mean(x)
+        inp = x - np.nanmean(x)
         result = np.correlate(inp, inp, mode='full')
-        return result[len(x)-1:]/var
+        return result[N-1:]/var
 
     def std_diff(self,x):
         #:::::::lag-one autocorrelation
@@ -59,13 +60,13 @@ class Recon_eval():
         ### menor entropia indica mas suave (menos frecuencias de patrones)
         ### mayor entropía quiere decir que es puro ruido X= random()
         try:
-            import entropy
+            import antropy as ant
             if which == 'perm':
-                return entropy.perm_entropy(x, order=k, normalize=True)                 # Permutation entropy
+                return ant.perm_entropy(x, order=k, normalize=True)                 # Permutation entropy
             elif which =='spec':
-                return entropy.spectral_entropy(x, 100, method='welch', normalize=True) # Spectral entropy
+                return ant.spectral_entropy(x, 100, method='welch', normalize=True) # Spectral entropy
         except:
-            raise Exception("You do not have installed entropy package: https://github.com/raphaelvallat/entropy")
+            raise Exception("You do not have installed antropy package: https://github.com/raphaelvallat/antropy")
             
     def prob_entropy(self,x, normalize=False):
         x = x.copy()
